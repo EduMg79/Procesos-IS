@@ -1,0 +1,23 @@
+/* Base layout enhancements */
+body{ background: #f6f8fb; }
+.navbar-brand{ font-weight:700; }
+.container-fluid{ max-width: 900px; }
+
+/* Card-like sections for components */
+.form-group{ background:#fff; border-radius:12px; padding:16px; box-shadow:0 6px 16px rgba(0,0,0,0.06); margin-top:16px; }
+.form-group h5{ margin-bottom:12px; font-weight:600; }
+
+/* Buttons spacing and icons */
+.btn i{ margin-right:6px; }
+
+/* Results styling */
+#resAgregar, #listaUsuarios, #resNum, #resActivo, #resEliminar{ transition: all .2s ease; }
+
+/* Inputs */
+input.form-control{ border-radius:10px; }
+
+/* Lists */
+.list-group-item{ border:0; border-bottom:1px solid #eef2f7; }
+
+/* Alerts tweak */
+.alert{ border-radius:10px; }

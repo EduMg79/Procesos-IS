@@ -29,10 +29,11 @@ function ControlWeb() {
     this.mostrarAgregarUsuario = function() {
         const html = [
             '<div class="form-group" id="cmp-agregar">',
-            '  <label for="nickAgregar">Nombre de usuario</label>',
+            '  <h5><i class="fa fa-user-plus text-primary"></i> Agregar usuario</h5>',
+            '  <label for="nickAgregar" class="small text-muted">Nombre de usuario</label>',
             '  <input type="text" class="form-control" id="nickAgregar" placeholder="p.ej. Pepe" />',
-            '  <button id="btnAgregar" type="button" class="btn btn-primary mt-2">Agregar usuario</button>',
-            '  <div id="resAgregar" class="mt-2"></div>',
+            '  <button id="btnAgregar" type="button" class="btn btn-primary mt-3"><i class="fa fa-plus"></i> Agregar usuario</button>',
+            '  <div id="resAgregar" class="mt-3"></div>',
             '</div>'
         ].join('');
         $(contenedorId).append(html);
@@ -60,8 +61,9 @@ function ControlWeb() {
     this.mostrarObtenerUsuarios = function() {
         const html = [
             '<div class="form-group" id="cmp-obtener">',
-            '  <button id="btnObtener" type="button" class="btn btn-info mb-2">Obtener usuarios</button>',
-            '  <div id="listaUsuarios"></div>',
+            '  <h5><i class="fa fa-users text-info"></i> Obtener usuarios</h5>',
+            '  <button id="btnObtener" type="button" class="btn btn-info mb-2"><i class="fa fa-list"></i> Obtener usuarios</button>',
+            '  <div id="listaUsuarios" class="mt-2"></div>',
             '</div>'
         ].join('');
         $(contenedorId).append(html);
@@ -93,8 +95,9 @@ function ControlWeb() {
     this.mostrarUsuarioActivo = function() {
         const html = [
             '<div class="form-group" id="cmp-activo">',
+            '  <h5><i class="fa fa-user-check text-warning"></i> ¿Usuario activo?</h5>',
             '  <input type="text" id="nickActivo" class="form-control mb-2" placeholder="Nick a comprobar" />',
-            '  <button id="btnActivo" type="button" class="btn btn-warning">¿Usuario activo?</button>',
+            '  <button id="btnActivo" type="button" class="btn btn-warning"><i class="fa fa-search"></i> Comprobar</button>',
             '  <div id="resActivo" class="mt-2"></div>',
             '</div>'
         ].join('');
@@ -128,7 +131,8 @@ function ControlWeb() {
     this.mostrarNumeroUsuarios = function() {
         const html = [
             '<div class="form-group" id="cmp-num">',
-            '  <button id="btnNum" type="button" class="btn btn-secondary">Número de usuarios</button>',
+            '  <h5><i class="fa fa-hashtag text-secondary"></i> Número de usuarios</h5>',
+            '  <button id="btnNum" type="button" class="btn btn-secondary"><i class="fa fa-hashtag"></i> Consultar</button>',
             '  <div id="resNum" class="mt-2"></div>',
             '</div>'
         ].join('');
@@ -166,8 +170,9 @@ function ControlWeb() {
     this.mostrarEliminarUsuario = function() {
         const html = [
             '<div class="form-group" id="cmp-eliminar">',
+            '  <h5><i class="fa fa-user-times text-danger"></i> Eliminar usuario</h5>',
             '  <input type="text" id="nickEliminar" class="form-control mb-2" placeholder="Nick a eliminar" />',
-            '  <button id="btnEliminar" type="button" class="btn btn-danger">Eliminar usuario</button>',
+            '  <button id="btnEliminar" type="button" class="btn btn-danger"><i class="fa fa-trash"></i> Eliminar usuario</button>',
             '  <div id="resEliminar" class="mt-2"></div>',
             '</div>'
         ].join('');

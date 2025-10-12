@@ -1,10 +1,14 @@
 const fs = require("fs");
+const path = require('path');
 const express = require('express');
 const app = express();
 const modelo = require("./Servidor/modelo.js");
 const PORT = process.env.PORT || 3000;
 let sistema = new modelo.Sistema();
-app.use(express.static(__dirname + "/"));
+// Servir archivos estáticos desde la carpeta 'Cliente' (ojo a mayúsculas en despliegue)
+app.use(express.static(path.join(__dirname, 'Cliente')));
+// También servir estáticos bajo /Cliente para compatibilidad con rutas profundas
+app.use('/Cliente', express.static(path.join(__dirname, 'Cliente')));
 
 app.get("/agregarUsuario/:nick", function(request, response) {
     let nick = request.params.nick;
@@ -48,4 +52,8 @@ app.get("/eliminarUsuario/:nick", function(request, response) {
 app.listen(PORT, () => {
     console.log(`App está escuchando en el puerto ${PORT}`);
     console.log('Ctrl+C para salir');
+});
+
+app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, 'Cliente', 'index.html'));
 });
