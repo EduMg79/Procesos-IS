@@ -1,3 +1,8 @@
+import dotenv from "dotenv";
+dotenv.config();
+
+const apiKey = secretos.env.API_KEY;
+
 const fs = require("fs");
 const passport=require("passport");
 const cookieSession=require("cookie-session");
