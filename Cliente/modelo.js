@@ -1,5 +1,7 @@
+
+
 function Sistema(){
- this.usuarios={};
+
 
 this.agregarUsuario=function(nick){
 let res={"nick":-1};
@@ -31,6 +33,7 @@ this.numeroUsuarios=function(){
     return Object.keys(this.usuarios).length;
 }
 }
+
 function Usuario(nick){
  this.nick=nick;
 }
