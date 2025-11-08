@@ -54,6 +54,46 @@ app.get('/google/callback',
     }
 );
 
+this.registrarUsuario = function(email, password) {
+  $.ajax({
+    type: 'POST',
+    url: '/registrarUsuario',
+    data: JSON.stringify({ "email": email, "password": password }),
+    success: function(data) {
+      if (data.nick != -1) {
+        console.log("Usuario " + data.nick + " ha sido registrado");
+        $.cookie("nick", data.nick);
+        cw.limpiar();
+        cw.mostrarMensaje("Bienvenido al sistema, " + data.nick);
+        // cw.mostrarLogin();
+      } else {
+        console.log("El nick está ocupado");
+      }
+    },
+    error: function(xhr, textStatus, errorThrown) {
+      console.log("Status: " + textStatus);
+      console.log("Error: " + errorThrown);
+    },
+    contentType: 'application/json'
+  });
+};
+
+
+app.post("/registrarUsuario", function(request, response) {
+    sistema.registrarUsuario(request.body, function(res) {
+        if (res && res.email && res.email !== -1) {
+            response.send({ ok: true, nick: res.email, msg: `Usuario <b>${res.email}</b> registrado correctamente.` });
+        } else {
+            response.status(409).send({ ok: false, msg: `El usuario ya está registrado.` });
+        }
+    });
+});
+
+
+
+
+
+
 // Endpoint to receive Google One Tap credential (id_token)
 app.post('/oneTap/callback', (req, res) => {
     const id_token = req.body.credential;
@@ -118,12 +158,11 @@ app.get("/agregarUsuario/:nick", function(request, response) {
     let nick = request.params.nick;
     let existed = sistema.usuarioActivo(nick);
     if (existed) {
-        response.status(409).json({ ok: false });
+        response.status(409).json({ ok: false, msg: `El nick <b>${nick}</b> ya está ocupado.` });
     } else {
         let res = sistema.agregarUsuario(nick);
-        response.status(200).json(res);
+        response.status(200).json({ ok: true, nick: res.nick, msg: `Usuario <b>${nick}</b> registrado correctamente.` });
     }
-    
 });
 
 app.get("/obtenerUsuarios", function(request, response) {

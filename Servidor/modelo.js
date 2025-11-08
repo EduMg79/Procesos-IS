@@ -1,3 +1,4 @@
+
 function Sistema(){
 const datos=require("./cad.js");
 
@@ -24,6 +25,30 @@ callback(obj);
         }
         return res;
     }
+this.buscarUsuario=function(obj,callback){
+    this.cad.buscarUsuario(obj,callback);
+}
+
+this.insertarUsuario=function(usuario,callback){
+    this.cad.insertarUsuario(usuario,callback);
+}
+this.registrarUsuario=function(obj,callback){
+    let modelo=this;
+    if (!obj.nick){
+        obj.nick=obj.email;
+    }
+    this.buscarUsuario(obj,function(usr){
+        if (!usr){
+            modelo.insertarUsuario(obj,function(res){
+                callback(res);
+            });
+        }
+        else
+        {
+            callback({"email":-1});
+        }
+    });
+}
 
 
 

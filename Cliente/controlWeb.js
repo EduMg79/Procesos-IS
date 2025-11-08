@@ -68,17 +68,19 @@ function ControlWeb() {
 
             $.getJSON("/agregarUsuario/" + encodeURIComponent(nick))
              .done((data) => {
-                if (data && data.nick && data.nick !== -1) {
-                    //localStorage.setItem("nick", nick);
+                if (data && data.ok) {
                     $.cookie("nick", nick)
-                    $("#resAgregar").html(`<div class="alert alert-success">Usuario <b>${nick}</b> registrado correctamente.</div>`);
+                    $("#resAgregar").html(`<div class="alert alert-success">${data.msg}</div>`);
+                    $("#msg").html(`<div class="alert alert-success">${data.msg}</div>`);
                     this.comprobarSesion(); // refresca la sesión
                 } else {
-                    $("#resAgregar").html(`<div class="alert alert-danger">El nick <b>${nick}</b> ya está ocupado.</div>`);
+                    $("#resAgregar").html(`<div class="alert alert-danger">${data.msg || 'El nick ya está ocupado.'}</div>`);
+                    $("#msg").html(`<div class="alert alert-danger">${data.msg || 'El nick ya está ocupado.'}</div>`);
                 }
              })
              .fail(() => {
                 $("#resAgregar").html('<div class="alert alert-danger">Error al registrar usuario.</div>');
+                $("#msg").html('<div class="alert alert-danger">Error al registrar usuario.</div>');
              });
         });
     };
@@ -254,7 +256,7 @@ function ControlWeb() {
         if (nick) {
             this.mostrarMensaje("Bienvenido al sistema, " + nick);
         } else {
-            this.mostrarAgregarUsuario();
+            this.mostrarRegistro();
         }
     };
 
@@ -276,5 +278,42 @@ function ControlWeb() {
             this.salir();
         });
     };
+
+    this.mostrarRegistro = function() {
+        $("#fmRegistro").remove();
+        $("#registro").load("./cliente/registro.html", function() {
+            $("#btnRegistro").on("click", function(e) {
+                e.preventDefault();
+                let email = $("#email").val();
+                let pwd = $("#pwd").val();
+                let apellidos = $("#apellidos").val();
+                let nombre = $("#nombre").val();
+                if (email && pwd && apellidos && nombre) {
+                    $.ajax({
+                        type: 'POST',
+                        url: '/registrarUsuario',
+                        data: JSON.stringify({ email, password: pwd, apellidos, nombre }),
+                        contentType: 'application/json',
+                        success: function(data) {
+                            if (data && data.ok) {
+                                $("#msg").html(`<div class='alert alert-success'>${data.msg || 'Registro realizado correctamente.'}</div>`);
+                                $.cookie("nick", data.nick);
+                                cw.comprobarSesion();
+                            } else {
+                                $("#msg").html(`<div class='alert alert-danger'>${data.msg || 'Error al registrar usuario.'}</div>`);
+                            }
+                        },
+                        error: function(xhr) {
+                            let errMsg = 'Error al registrar usuario.';
+                            if (xhr.responseJSON && xhr.responseJSON.msg) errMsg = xhr.responseJSON.msg;
+                            $("#msg").html(`<div class='alert alert-danger'>${errMsg}</div>`);
+                        }
+                    });
+                } else {
+                    $("#msg").html(`<div class='alert alert-warning'>Rellena todos los campos.</div>`);
+                }
+            });
+        });
+    }
 
 }
