@@ -26,6 +26,9 @@ insertar(this.usuarios,usuario,callback);
 }
 
 
+
+
+
   // Métodos privados
   function buscar(coleccion, criterio, callback) {
     coleccion.find(criterio).toArray(function(error, usuarios) {

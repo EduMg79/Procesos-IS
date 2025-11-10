@@ -80,4 +80,38 @@ function ClienteRest() {
         });
     };
 
+    // ----------------------------
+    // Login de usuario
+    // ----------------------------
+    this.loginUsuario = function(email, password) {
+        $.ajax({
+            type: 'POST',
+            url: '/loginUsuario',
+            data: JSON.stringify({ email: email, password: password }),
+            contentType: 'application/json',
+            success: function(data) {
+                if (data && data.ok && data.nick){
+                    $.cookie('nick', data.nick);
+                    if (typeof $("#msg").html === 'function'){
+                        $("#msg").html('<div class="alert alert-success">Bienvenido al sistema, ' + data.nick + '</div>');
+                    }
+                    if (typeof cw !== 'undefined' && cw && typeof cw.comprobarSesion === 'function'){
+                        cw.comprobarSesion();
+                    }
+                } else {
+                    if (typeof $("#msg").html === 'function'){
+                        $("#msg").html('<div class="alert alert-danger">No se pudo iniciar sesión.</div>');
+                    }
+                }
+            },
+            error: function(xhr){
+                let msg = 'No se pudo iniciar sesión.';
+                if (xhr && xhr.responseJSON && xhr.responseJSON.msg){ msg = xhr.responseJSON.msg; }
+                if (typeof $("#msg").html === 'function'){
+                    $("#msg").html('<div class="alert alert-danger">'+msg+'</div>');
+                }
+            }
+        });
+    };
+
 }

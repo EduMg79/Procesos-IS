@@ -46,9 +46,9 @@
                 <a id="salir" class="nav-link" href="#">Salir</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link 2</a>
-            </li>
-            <li class="nav-item">
+                    <li class="nav-item">
+                        <a id="linkLogin" class="nav-link btn btn-primary text-white mx-2" href="#">Login</a>
+                    </li>
                 <a class="nav-link" href="#">Link 3</a>
             </li>
         </ul>
@@ -64,12 +64,17 @@
     <script>
         rest = new ClienteRest();
         cw = new ControlWeb();
-
+   
         cw.comprobarSesion();
-        cw.mostrarObtenerUsuarios();
-        cw.mostrarNumeroUsuarios();
-        cw.mostrarUsuarioActivo();
-        cw.mostrarEliminarUsuario();
+       
+
+                $("#linkLogin").on("click", function(e){
+                    e.preventDefault();
+                    if (cw && typeof cw.mostrarLogin === 'function') {
+                        cw.mostrarLogin();
+                    }
+                });
+
 
         $("#salir").on("click", function(e){
             e.preventDefault();

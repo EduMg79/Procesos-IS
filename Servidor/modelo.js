@@ -1,4 +1,6 @@
 
+const bcrypt = require('bcrypt');
+
 function Sistema(){
 const datos=require("./cad.js");
 
@@ -7,6 +9,27 @@ this.cad=new datos.CAD();
 this.cad.conectar(function(db){
  console.log("Conectado a Mongo Atlas");
 });
+
+
+this.loginUsuario = function(obj, callback) {
+  let modelo = this;
+
+  this.cad.buscarUsuario({ "email": obj.email, "confirmada": true }, function(usr) {
+    if (!usr) {
+      callback({ "email": -1 });
+      return -1;
+    } else {
+      bcrypt.compare(obj.password, usr.password, function(err, result) {
+        if (result) {
+          callback(usr);
+          modelo.agregarUsuario(usr);
+        } else {
+          callback({ "email": -1 });
+        }
+      });
+    }
+  });
+}
 
 this.usuarioGoogle=function(usr,callback){
 this.cad.buscarOCrearUsuario(usr,function(obj){
@@ -32,23 +55,7 @@ this.buscarUsuario=function(obj,callback){
 this.insertarUsuario=function(usuario,callback){
     this.cad.insertarUsuario(usuario,callback);
 }
-this.registrarUsuario=function(obj,callback){
-    let modelo=this;
-    if (!obj.nick){
-        obj.nick=obj.email;
-    }
-    this.buscarUsuario(obj,function(usr){
-        if (!usr){
-            modelo.insertarUsuario(obj,function(res){
-                callback(res);
-            });
-        }
-        else
-        {
-            callback({"email":-1});
-        }
-    });
-}
+
 
 
 
@@ -69,6 +76,28 @@ this.eliminarUsuario=function(nick){
 this.numeroUsuarios=function(){
     return {num: Object.keys(this.usuarios).length
 }}
+
+this.registrarUsuario = function (obj, callback) {
+    let modelo = this;
+    if (!obj.nick) {
+        obj.nick = obj.email;
+    }
+    this.cad.buscarUsuario({ "email": obj.email }, async function (usr) {
+        if (!usr) {
+            // Simplificado: confirmada directamente sin email de confirmación
+            obj.confirmada = true;
+            const hash = await bcrypt.hash(obj.password, 10);
+            obj.password = hash;
+            modelo.cad.insertarUsuario(obj, function (res) {
+                callback(res);
+            });
+        } else {
+            callback({ "email": -1 });
+        }
+    });
+};
+
+
 }
 function Usuario(nick){
  this.nick=nick;

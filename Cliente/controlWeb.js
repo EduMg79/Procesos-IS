@@ -1,3 +1,4 @@
+
 function ControlWeb() {
 
     const contenedorId = '#au'; // contenedor principal para pintar componentes
@@ -256,9 +257,12 @@ function ControlWeb() {
         if (nick) {
             this.mostrarMensaje("Bienvenido al sistema, " + nick);
         } else {
+            this.mostrarAgregarUsuario();
             this.mostrarRegistro();
         }
     };
+
+  
 
     // ----------------------------
     // Cerrar sesión
@@ -315,5 +319,26 @@ function ControlWeb() {
             });
         });
     }
+
+ this.mostrarLogin = function() {
+  if ($.cookie('nick')) {
+    return true;
+  }
+
+  $("#fmLogin").remove();
+    $("#registro").load("./cliente/login.html", function() {
+        $("#btnLogin").on("click", function(e) {
+            e.preventDefault();
+            let email = $("#email").val();
+            let pwd = $("#pwd").val();
+            if (email && pwd) {
+                rest.loginUsuario(email, pwd);
+            } else {
+                $("#msg").html('<div class="alert alert-warning">Rellena email y contraseña.</div>');
+            }
+        });
+    });
+}
+
 
 }
