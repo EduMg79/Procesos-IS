@@ -295,9 +295,9 @@ function ControlWeb() {
                         contentType: 'application/json',
                         success: function(data) {
                             if (data && data.ok) {
-                                $("#msg").html(`<div class='alert alert-success'>${data.msg || 'Registro realizado correctamente.'}</div>`);
-                                $.cookie("nick", data.nick);
-                                cw.comprobarSesion();
+                                // No auto-login: mostrar formulario de login y mensaje de confirmación pendiente
+                                $("#msg").html(`<div class='alert alert-success'>${data.msg || 'Registro correcto, falta confirmación'}</div>`);
+                                cw.mostrarLogin();
                             } else {
                                 $("#msg").html(`<div class='alert alert-danger'>${data.msg || 'Error al registrar usuario.'}</div>`);
                             }

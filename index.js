@@ -79,7 +79,7 @@ this.registrarUsuario = function(email, password) {
         $.cookie("nick", data.nick);
         cw.limpiar();
         cw.mostrarMensaje("Bienvenido al sistema, " + data.nick);
-        // cw.mostrarLogin();
+        cw.mostrarLogin();
       } else {
         console.log("El nick está ocupado");
       }
@@ -96,7 +96,8 @@ this.registrarUsuario = function(email, password) {
 app.post("/registrarUsuario", function(request, response) {
     sistema.registrarUsuario(request.body, function(res) {
         if (res && res.email && res.email !== -1) {
-            response.send({ ok: true, nick: res.email, msg: `Usuario <b>${res.email}</b> registrado correctamente.` });
+            // Mensaje adaptado: registro correcto pero pendiente de confirmación
+            response.send({ ok: true, nick: res.email, msg: "Registro correcto, falta confirmación" });
         } else {
             response.status(409).send({ ok: false, msg: `El usuario ya está registrado.` });
         }
