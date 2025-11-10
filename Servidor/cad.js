@@ -25,9 +25,28 @@ this.insertarUsuario=function(usuario,callback){
 insertar(this.usuarios,usuario,callback);
 }
 
+this.actualizarUsuario=function(obj,callback){
+actualizar(this.usuarios,obj,callback);
+}
 
 
 
+
+ function actualizar(coleccion, obj, callback) {
+  coleccion.findOneAndUpdate(
+    { _id: ObjectId(obj._id) },
+    { $set: obj },
+    { upsert: false, returnDocument: "after", projection: { email: 1 } },
+    function(err, doc) {
+      if (err) { 
+        throw err; 
+      }
+     else {
+   console.log("Elemento actualizado");
+   callback({email:doc.value.email});
+}
+});
+}
 
   // Métodos privados
   function buscar(coleccion, criterio, callback) {

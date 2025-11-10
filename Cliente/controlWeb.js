@@ -267,12 +267,7 @@ function ControlWeb() {
     // ----------------------------
     // Cerrar sesión
     // ----------------------------
-    this.salir = function() {
-        //localStorage.removeItem("nick");
-        $.removeCookie("nick")
-        this.mostrarMensaje("Has cerrado sesión.");
-        location.reload();
-    };
+    
 
     // ----------------------------
     // Botón de salir
@@ -339,6 +334,14 @@ function ControlWeb() {
         });
     });
 }
+
+this.salir=function(){
+//localStorage.removeItem("nick");
+$.removeCookie("nick");
+location.reload();
+rest.cerrarSesion();
+}
+
 
 
 }

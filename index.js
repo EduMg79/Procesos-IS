@@ -1,7 +1,6 @@
 
 
 const bodyParser=require("body-parser");
-
 const fs = require("fs");
 const passport=require("passport");
 const cookieSession=require("cookie-session");
@@ -32,6 +31,21 @@ app.use(cookieSession({
 
 app.use(passport.initialize());
 app.use(passport.session());
+
+// Estrategia local (email + password) usando sistema.loginUsuario
+const LocalStrategy = require('passport-local').Strategy;
+
+passport.use(new LocalStrategy({ usernameField: 'email', passwordField: 'password' },
+    function(email, password, done) {
+        sistema.loginUsuario({ email: email, password: password }, function(user, msg){
+            if (user && user.email && user.email !== -1) {
+                return done(null, user);
+            } else {
+                return done(null, false, { message: msg || 'Credenciales inválidas' });
+            }
+        });
+    }
+));
 
 app.get("/auth/google",passport.authenticate('google', { scope: ['profile','email'] }));
 
@@ -89,6 +103,18 @@ app.post("/registrarUsuario", function(request, response) {
     });
 });
 
+app.get("/confirmarUsuario/:email/:key",function(request,response){
+let email=request.params.email;
+let key=request.params.key;
+sistema.confirmarUsuario({"email":email,"key":key},function(usr){
+if (usr.email!=-1){
+response.cookie('nick',usr.email);
+}
+response.redirect('/');
+});
+})
+
+
 
 this.loginUsuario = function(email, password) {
   $.ajax({
@@ -116,22 +142,38 @@ this.loginUsuario = function(email, password) {
   });
 }
 
-app.post('/loginUsuario', function(req, res){
-    const { email, password } = req.body || {};
-    if (!email || !password){
-        return res.status(400).send({ ok:false, msg:'Faltan credenciales' });
-    }
-    sistema.loginUsuario({ email, password }, function(result){
-        if (result && result.email && result.email !== -1){
-            res.cookie('nick', result.email);
-            return res.send({ ok:true, nick: result.email });
-        } else {
-            return res.status(401).send({ ok:false, msg:'Credenciales inválidas' });
-        }
-    });
+// Endpoint login con Passport Local que devuelve JSON (sin redirecciones)
+app.post('/loginUsuario', function(req, res, next){
+    passport.authenticate('local', function(err, user){
+        if (err){ return res.status(500).send({ok:false,msg:'Error interno'}); }
+        if (!user){ return res.status(401).send({ok:false,msg:'Credenciales inválidas'}); }
+        req.login(user, function(err2){
+            if (err2){ return res.status(500).send({ok:false,msg:'Error creando sesión'}); }
+            // Establecer cookie 'nick' con el email
+            try { res.cookie('nick', user.email); } catch(e) {}
+            return res.send({ok:true,nick:user.email});
+        });
+    })(req,res,next);
+});
+app.get("/ok",function(request,response){
+response.send({ok:true,nick:request.user.email})
 });
 
 
+const haIniciado=function(request,response,next){
+if (request.user){
+next();
+}
+else{
+response.redirect("/")
+}
+}
+
+
+app.get("/obtenerUsuarios",haIniciado,function(request,response){
+let lista=sistema.obtenerUsuarios();
+response.send(lista);
+})
 
 
 // Endpoint to receive Google One Tap credential (id_token)
@@ -190,7 +232,7 @@ response.redirect('/');
 // Eliminado /good duplicado; el flujo se maneja en /google/callback
 
 app.get("/fallo",function(request,response){
- response.send({nick:"nook"})
+ response.status(401).send({ok:false,msg:"Credenciales inválidas"})
 });
 
 
@@ -230,6 +272,30 @@ app.get("/eliminarUsuario/:nick", function(request, response) {
     } else {
         response.json({ ok: false });
     }
+});
+
+// Cerrar sesión y eliminar usuario en memoria
+app.get("/cerrarSesion", haIniciado, function(request, response){
+    let nick = undefined;
+    if (request.user){
+        // Para usuarios Google el email viene en emails[0].value
+        if (request.user.email){
+            nick = request.user.email;
+        } else if (request.user.emails && request.user.emails[0] && request.user.emails[0].value){
+            nick = request.user.emails[0].value;
+        }
+    }
+    // Passport 0.6 logout requiere callback
+    request.logout(function(err){
+        if (err){
+            return response.status(500).send({ok:false,msg:"Error cerrando sesión"});
+        }
+        if (nick){
+            sistema.eliminarUsuario(nick);
+        }
+        response.clearCookie('nick');
+        response.redirect('/');
+    });
 });
 
 // Servir favicon para evitar "Cannot GET /favicon.ico" cuando se visite tu app

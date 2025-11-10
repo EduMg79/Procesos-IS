@@ -114,4 +114,17 @@ function ClienteRest() {
         });
     };
 
+    // ----------------------------
+    // Cerrar sesión
+    // ----------------------------
+    this.cerrarSesion = function(){
+        $.getJSON("/cerrarSesion", function(){
+            console.log("Sesión cerrada");
+            $.removeCookie("nick");
+            if (typeof cw !== 'undefined' && cw && typeof cw.comprobarSesion === 'function'){
+                cw.comprobarSesion();
+            }
+        });
+    };
+
 }

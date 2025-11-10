@@ -40,7 +40,7 @@
 
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="navbar-brand" href="#">Sistema</a>
+    <a id="brandSistema" class="navbar-brand" href="#">Sistema</a>
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a id="salir" class="nav-link" href="#">Salir</a>
@@ -64,9 +64,15 @@
     <script>
         rest = new ClienteRest();
         cw = new ControlWeb();
-   
         cw.comprobarSesion();
-       
+
+        // Al pulsar sobre 'Sistema' mostrar directamente el formulario de registro
+        $("#brandSistema").on("click", function(e){
+            e.preventDefault();
+            if (cw && typeof cw.mostrarRegistro === 'function'){
+                cw.mostrarRegistro();
+            }
+        });
 
                 $("#linkLogin").on("click", function(e){
                     e.preventDefault();

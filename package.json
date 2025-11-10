@@ -5,9 +5,11 @@
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "mongodb": "^4.17.2",
+    "nodemailer": "^7.0.10",
     "passport": "^0.5.3",
     "passport-google-oauth20": "^2.0.0",
-    "passport-google-one-tap": "^1.0.1"
+    "passport-google-one-tap": "^1.0.1",
+    "passport-local": "^1.0.0"
   },
   "scripts": {
     "start": "node index.js",
