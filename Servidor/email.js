@@ -1,21 +1,18 @@
-const correo=require("./email.js");
-
-
+// Email sender configured via environment variables
 const nodemailer = require('nodemailer');
-const url = "http://localhost:3000/"; 
-// const url = "https://tu-url-de-despliegue.com/";
+const url = (process.env.BASE_URL || process.env.APP_BASE_URL || 'http://localhost:3000') + '/';
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'edugonzal45@gmail.com', // 🔹 tu dirección Gmail
-    pass: 'kkoz gnap tvxz kyge' // 🔹 clave de aplicación (no tu contraseña normal)
+    user: process.env.MAIL_USER || process.env.SMTP_USER,
+    pass: process.env.MAIL_PASS || process.env.SMTP_PASS
   }
 });
 
 module.exports.enviarEmail = async function(direccion, key, men) {
   const result = await transporter.sendMail({
-    from: 'edugonzal45@gmail.com',
+  from: process.env.MAIL_USER || process.env.SMTP_USER,
     to: direccion,
     subject: men,
     text: 'Pulsa aquí para confirmar cuenta',

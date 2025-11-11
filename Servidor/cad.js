@@ -6,11 +6,14 @@ const ObjectId=require("mongodb").ObjectId;
 this.usuarios;
 this.conectar = async function(callback) {
   let cad = this;
-  let client = new mongo("mongodb+srv://Hola:Hola@clusterprocesos.13l0nhg.mongodb.net/?retryWrites=true&w=majority");
+  const uri = process.env.MONGODB_URI || "mongodb+srv://Hola:Hola@clusterprocesos.13l0nhg.mongodb.net/?retryWrites=true&w=majority";
+  let client = new mongo(uri);
   await client.connect();
 
-  const database = client.db("sistema");
-  cad.usuarios = database.collection("usuarios");
+  const dbName = process.env.MONGODB_DBNAME || "sistema";
+  const usersCol = process.env.MONGODB_USERS_COLLECTION || "usuarios";
+  const database = client.db(dbName);
+  cad.usuarios = database.collection(usersCol);
   callback(database);
 }
 

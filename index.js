@@ -1,5 +1,5 @@
-
-
+require('dotenv').config();
+ 
 const bodyParser=require("body-parser");
 const fs = require("fs");
 const passport=require("passport");
@@ -25,8 +25,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(cookieSession({
- name: 'Sistema',
- keys: ['key1', 'key2']
+ name: process.env.SESSION_NAME || 'Sistema',
+ keys: (process.env.SESSION_KEYS ? process.env.SESSION_KEYS.split(',') : ['key1','key2'])
 }));
 
 app.use(passport.initialize());
@@ -188,8 +188,9 @@ app.post('/oneTap/callback', (req, res) => {
         verifyRes.on('end', () => {
             try {
                 const tokenInfo = JSON.parse(data);
-                // Validate audience matches your client id
-                if (tokenInfo.aud !== '747124604783-2dbkftslri635jj8abl4jfvq05fcu59d.apps.googleusercontent.com') {
+                // Validate audience matches your configured client id
+                const expectedAud = process.env.GOOGLE_ONETAP_VERIFY_AUD || process.env.GOOGLE_ONETAP_CLIENT_ID || process.env.GOOGLE_CLIENT_ID;
+                if (expectedAud && tokenInfo.aud !== expectedAud) {
                     return res.status(401).send('Invalid audience');
                 }
                 const email = tokenInfo.email;
