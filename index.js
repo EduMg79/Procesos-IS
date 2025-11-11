@@ -25,6 +25,24 @@ app.use('/Cliente', express.static(path.join(__dirname, 'Cliente')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// Detrás de proxy (Cloud Run) para que req.secure y x-forwarded-proto funcionen
+app.set('trust proxy', 1);
+
+// Helper para setear cookie 'nick' con atributos adecuados (SameSite=None; Secure en HTTPS)
+function setNickCookie(req, res, value){
+    const forwardedProto = (req.headers && req.headers['x-forwarded-proto']) || '';
+    const baseUrl = process.env.BASE_URL || process.env.APP_BASE_URL || '';
+    const isHttpsEnv = baseUrl.startsWith('https://') || forwardedProto === 'https' || req.secure;
+    const opts = { path: '/' };
+    if (isHttpsEnv){
+        opts.sameSite = 'None';
+        opts.secure = true;
+    } else {
+        opts.sameSite = 'Lax';
+    }
+    try { res.cookie('nick', value, opts); } catch(e) {}
+}
+
 app.use(cookieSession({
  name: process.env.SESSION_NAME || 'Sistema',
  keys: (process.env.SESSION_KEYS ? process.env.SESSION_KEYS.split(',') : ['key1','key2'])
@@ -55,17 +73,11 @@ app.get('/google/callback',
  function(req, res) {
  res.redirect('/good');
 });
-// Ruta para One Tap, según práctica
-app.post('/oneTap/callback',
- passport.authenticate('google-one-tap', { failureRedirect: '/fallo' }),
- function(req, res) {
-     res.redirect('/good');
- }
-);
+// One Tap se maneja con verificación manual en la ruta POST /oneTap/callback (ver más abajo)
 app.get("/good", function(request,response){
  let email=request.user.emails[0].value;
  sistema.usuarioGoogle({"email":email},function(obj){
- response.cookie('nick',obj.email);
+setNickCookie(request, response, obj.email);
  // Marcar usuario activo también para flujo Google / One Tap
  sistema.agregarUsuario(obj.email);
  response.redirect('/');
@@ -118,7 +130,7 @@ let email=request.params.email;
 let key=request.params.key;
 sistema.confirmarUsuario({"email":email,"key":key},function(usr){
 if (usr.email!=-1){
-response.cookie('nick',usr.email);
+setNickCookie(request, response, usr.email);
 }
 response.redirect('/');
 });
@@ -160,7 +172,7 @@ app.post('/loginUsuario', function(req, res, next){
         req.login(user, function(err2){
             if (err2){ return res.status(500).send({ok:false,msg:'Error creando sesión'}); }
             // Establecer cookie 'nick' con el email
-            try { res.cookie('nick', user.email); } catch(e) {}
+            setNickCookie(req, res, user.email);
             return res.send({ok:true,nick:user.email});
         });
     })(req,res,next);
@@ -188,8 +200,12 @@ response.send(lista);
 
 // Endpoint to receive Google One Tap credential (id_token)
 app.post('/oneTap/callback', (req, res) => {
+    console.log('[oneTap] POST recibido');
     const id_token = req.body.credential;
-    if (!id_token) return res.status(400).send('credential missing');
+    if (!id_token){
+        console.log('[oneTap] credential ausente en body');
+        return res.status(400).send('credential missing');
+    }
     const verifyUrl = `https://oauth2.googleapis.com/tokeninfo?id_token=${id_token}`;
     https.get(verifyUrl, (verifyRes) => {
         let data = '';
@@ -200,45 +216,39 @@ app.post('/oneTap/callback', (req, res) => {
                 // Validate audience matches your configured client id
                 const expectedAud = process.env.GOOGLE_ONETAP_VERIFY_AUD || process.env.GOOGLE_ONETAP_CLIENT_ID || process.env.GOOGLE_CLIENT_ID;
                 if (expectedAud && tokenInfo.aud !== expectedAud) {
+                    console.log('[oneTap] Audiencia inválida. Esperada:', expectedAud, 'Recibida:', tokenInfo.aud);
                     return res.status(401).send('Invalid audience');
                 }
                 const email = tokenInfo.email;
-                if (!email) return res.status(400).send('No email in token');
+                if (!email){
+                    console.log('[oneTap] Token sin email');
+                    return res.status(400).send('No email in token');
+                }
                 // Register or update user in the system
                 if (sistema && typeof sistema.agregarUsuario === 'function'){
                     sistema.agregarUsuario(email);
                 }
-                res.cookie('nick', email);
-                return res.redirect('/');
+                setNickCookie(req, res, email);
+                console.log('[oneTap] Login OK para', email);
+                return res.send({ ok: true, nick: email });
             } catch (e) {
+                console.log('[oneTap] Error parseando token:', e);
                 return res.status(500).send('Token verification failed');
             }
         });
     }).on('error', (err) => {
+        console.log('[oneTap] Error en petición de verificación:', err);
         return res.status(500).send('Verification request failed');
     });
 });
 
-app.post('/oneTap/callback',
-passport.authenticate('google-one-tap', { failureRedirect: '/fallo' }),
-function(req, res) {
-// Successful authentication, redirect home.
-res.redirect('/good');
-});
+// (El flujo de One Tap se maneja en la ruta POST /oneTap/callback con verificación manual)
 
 // GET handler for /oneTap/callback to prevent 'Cannot GET' error
 app.get('/oneTap/callback', (req, res) => {
     res.redirect('/');
 });
 
-
-app.get("/good", function(request,response){
-let email=request.user.emails[0].value;
-sistema.usuarioGoogle({"email":email},function(obj){
-response.cookie('nick',obj.email);
-response.redirect('/');
-});
-});
 
 // Eliminado /good duplicado; el flujo se maneja en /google/callback
 
@@ -304,7 +314,7 @@ app.get("/cerrarSesion", haIniciado, function(request, response){
         if (nick){
             sistema.eliminarUsuario(nick);
         }
-        response.clearCookie('nick');
+        try { response.clearCookie('nick', { path: '/', sameSite: 'None', secure: true }); } catch(e) { response.clearCookie('nick'); }
         response.redirect('/');
     });
 });

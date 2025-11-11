@@ -89,9 +89,39 @@
 
         // ✅ --- GOOGLE ONE TAP INITIALIZATION (FedCM Compatible) ---
         window.onload = function() {
+            function handleCredentialResponse(response){
+                try {
+                    const cred = response && response.credential;
+                    if (!cred){
+                        console.log('[oneTap] Sin credential en callback');
+                        return;
+                    }
+                    // Enviar credential a nuestro backend desde el mismo origen (evita restricciones de cookies en local)
+                    fetch('/oneTap/callback', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ credential: cred })
+                    }).then(async (res) => {
+                        if (res.ok){
+                            const data = await res.json().catch(()=>({}));
+                            console.log('[oneTap] Respuesta backend:', data);
+                            // Recargar para que el front lea la cookie y actualice la UI
+                            window.location.reload();
+                        } else {
+                            const txt = await res.text();
+                            console.warn('[oneTap] Backend error:', res.status, txt);
+                            document.getElementById('msg')?.insertAdjacentHTML('afterbegin', `<div class="alert alert-danger">Error One Tap (${res.status}).</div>`);
+                        }
+                    }).catch((e)=>{
+                        console.error('[oneTap] Fetch error:', e);
+                        document.getElementById('msg')?.insertAdjacentHTML('afterbegin', `<div class="alert alert-danger">Error de red One Tap.</div>`);
+                    });
+                } catch(e){ console.error(e); }
+            }
+
             google.accounts.id.initialize({
                 client_id: "747124604783-2dbkftslri635jj8abl4jfvq05fcu59d.apps.googleusercontent.com",
-                login_uri: "http://localhost:3000/oneTap/callback",
+                callback: handleCredentialResponse,
                 use_fedcm_for_prompt: true // 👈 Activa FedCM (obligatorio desde 2025)
             });
 
