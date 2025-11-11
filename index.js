@@ -11,6 +11,7 @@ const express = require('express');
 const app = express();
 const https = require('https');
 const modelo = require("./Servidor/modelo.js");
+// Cloud Run proporciona PORT (normalmente 8080); fallback a 3000 en local
 const PORT = process.env.PORT || 3000;
 let sistema = new modelo.Sistema();
 app.use(bodyParser.urlencoded({extended:true}));
@@ -313,9 +314,8 @@ app.get('/favicon.ico', function(req, res){
     res.sendFile(path.join(__dirname, 'Cliente', 'img', 'android_dark_rd_ctn@2x.png'));
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`App está escuchando en el puerto ${PORT}`);
-    console.log('Ctrl+C para salir');
 });
 
 app.get("/", function(req, res) {
