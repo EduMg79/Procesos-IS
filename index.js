@@ -49,24 +49,32 @@ passport.use(new LocalStrategy({ usernameField: 'email', passwordField: 'passwor
 
 app.get("/auth/google",passport.authenticate('google', { scope: ['profile','email'] }));
 
-// Callback de Google OAuth: coincide con callbackURL en Servidor/passport-setup.js
 app.get('/google/callback',
-    passport.authenticate('google', { failureRedirect: '/fallo' }),
-    function(request, response) {
-        try {
-            const nick = (request.user && (request.user.emails && request.user.emails[0] && request.user.emails[0].value)) || '';
-            if (nick && sistema && typeof sistema.agregarUsuario === 'function'){
-                sistema.agregarUsuario(nick);
-            }
-            if (nick) {
-                response.cookie('nick', nick);
-            }
-        } catch (e) {
-            // continuar aunque falle el alta
-        }
-        response.redirect('/');
-    }
+ passport.authenticate('google', { failureRedirect: '/fallo' }),
+ function(req, res) {
+ res.redirect('/good');
+});
+// Ruta para One Tap, según práctica
+app.post('/oneTap/callback',
+ passport.authenticate('google-one-tap', { failureRedirect: '/fallo' }),
+ function(req, res) {
+     res.redirect('/good');
+ }
 );
+app.get("/good", function(request,response){
+ let email=request.user.emails[0].value;
+ sistema.usuarioGoogle({"email":email},function(obj){
+ response.cookie('nick',obj.email);
+ // Marcar usuario activo también para flujo Google / One Tap
+ sistema.agregarUsuario(obj.email);
+ response.redirect('/');
+});
+});
+app.get("/fallo",function(request,response){
+ // Unificar semántica de fallo: nick:-1 y status 401
+ response.status(401).json({nick:-1,error:"Credenciales inválidas, cuenta no confirmada o error en autenticación."});
+});
+
 
 this.registrarUsuario = function(email, password) {
   $.ajax({
@@ -127,7 +135,7 @@ this.loginUsuario = function(email, password) {
         console.log("Usuario " + data.nick + " ha sido registrado");
         $.cookie("nick", data.nick);
         cw.limpiar();
-        cw.mostrarMensaje("Bienvenido al sistema, " + data.nick);
+       
         // cw.mostrarLogin();
       } else {
         console.log("No se pudo iniciar sesión");
