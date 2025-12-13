@@ -1,4 +1,5 @@
 
+const gv = require('./gestorVariables.js');
 
 function CAD(){
 const mongo=require("mongodb").MongoClient;

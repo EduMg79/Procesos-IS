@@ -9,6 +9,12 @@ require("./Servidor/passport-setup.js");
 const path = require('path');
 const express = require('express');
 const app = express();
+const httpServer = require('http').Server(app);
+const { Server } = require('socket.io');
+const moduloWS = require("./Servidor/servidorWS.js");
+let ws = new moduloWS.ServidorWS();
+let io = new Server(httpServer);
+
 const https = require('https');
 const modelo = require("./Servidor/modelo.js");
 // Cloud Run proporciona PORT (normalmente 8080); fallback a 3000 en local
@@ -173,7 +179,7 @@ app.post('/loginUsuario', function(req, res, next){
             if (err2){ return res.status(500).send({ok:false,msg:'Error creando sesión'}); }
             // Establecer cookie 'nick' con el email
             setNickCookie(req, res, user.email);
-            return res.send({ok:true,nick:user.email});
+            return res.send({ok:true,nick:user.email,email:user.email});
         });
     })(req,res,next);
 });
@@ -324,10 +330,12 @@ app.get('/favicon.ico', function(req, res){
     res.sendFile(path.join(__dirname, 'Cliente', 'img', 'android_dark_rd_ctn@2x.png'));
 });
 
-app.listen(PORT, '0.0.0.0', () => {
-    console.log(`App está escuchando en el puerto ${PORT}`);
-});
-
 app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, 'Cliente', 'index.html'));
 });
+
+httpServer.listen(PORT, () => {
+console.log(`App está escuchando en el puerto ${PORT}`);
+console.log('Ctrl+C para salir');
+});
+ws.lanzarServidor(io, sistema);

@@ -6,9 +6,14 @@ const datos=require("./cad.js");
 const correo=require("./email.js");
 
 this.usuarios={};
+this.partidas={};
 this.cad=new datos.CAD();
+const esPrueba = process.env.NODE_ENV === 'test' || process.env.MODO === 'test';
 this.cad.conectar(function(db){
  console.log("Conectado a Mongo Atlas");
+ if (!esPrueba && correo && typeof correo.conectar === 'function'){
+   correo.conectar().catch(()=>{});
+ }
 });
 
 
@@ -79,6 +84,70 @@ callback(obj);
         }
         return res;
     }
+  this.obtenerCodigo=function(){
+    let codigo;
+    do {
+      codigo = Math.random().toString(36).substr(2,6);
+    } while (this.partidas[codigo]);
+    return codigo;
+  }
+
+  this.crearPartida=function(email){
+    const usr=this.usuarios[email];
+    if (!usr){
+      return {codigo:-1};
+    }
+    const codigo=this.obtenerCodigo();
+    const partida=new Partida(codigo);
+    partida.jugadores.push(usr);
+    this.partidas[codigo]=partida;
+    usr.partida=codigo;
+    return {codigo:codigo};
+  }
+
+  this.unirAPartida=function(email,codigo){
+    const usr=this.usuarios[email];
+    const partida=this.partidas[codigo];
+    if (!usr || !partida){
+      console.log("usuario o partida no existen");
+      return {codigo:-1};
+    }
+    if (usr.partida && usr.partida!==codigo){
+      console.log("el usuario ya está en otra partida");
+      return {codigo:usr.partida};
+    }
+    if (partida.jugadores.length>=partida.maxJug){
+      console.log("partida completa");
+      return {codigo:-1};
+    }
+    if (!partida.jugadores.includes(usr)){
+      partida.jugadores.push(usr);
+    }
+    usr.partida=codigo;
+    return {codigo:codigo};
+  }
+
+      this.obtenerPartidasDisponibles=function(){
+        const lista = [];
+        for(const codigo in this.partidas){
+            const partida = this.partidas[codigo];
+            if(!partida){
+                continue;
+            }
+          const hayHueco = partida.jugadores.length < partida.maxJug;
+            if(!hayHueco){
+                continue;
+            }
+
+            const creador = partida.jugadores[0];
+            lista.push({
+            codigo: partida.codigo,
+            email : creador ? (creador.email || creador.nick) : null
+            });
+        }
+        return lista;
+    };
+
 this.buscarUsuario=function(obj,callback){
     this.cad.buscarUsuario(obj,callback);
 }
@@ -164,5 +233,10 @@ callback({"email":-1});
 }
 function Usuario(nick){
  this.nick=nick;
+}
+function Partida(codigo){
+ this.codigo=codigo;
+ this.jugadores=[];
+ this.maxJug=2;
 }
 module.exports.Sistema = Sistema;

@@ -92,6 +92,9 @@ function ClienteRest() {
             success: function(data) {
                 if (data && data.ok && data.nick){
                     $.cookie('nick', data.nick);
+                    if (typeof ws !== 'undefined' && ws){
+                        ws.email = data.email || data.nick || email;
+                    }
                     if (typeof $("#msg").html === 'function'){
                         $("#msg").html('<div class="alert alert-success">Bienvenido al sistema, ' + data.nick + '</div>');
                     }
@@ -102,6 +105,9 @@ function ClienteRest() {
                     if (typeof $("#msg").html === 'function'){
                         $("#msg").html('<div class="alert alert-danger">No se pudo iniciar sesión.</div>');
                     }
+                    if (typeof cw !== 'undefined' && cw && typeof cw.mostrarModal === 'function'){
+                        cw.mostrarModal('No se ha podido iniciar sesión');
+                    }
                 }
             },
             error: function(xhr){
@@ -109,6 +115,9 @@ function ClienteRest() {
                 if (xhr && xhr.responseJSON && xhr.responseJSON.msg){ msg = xhr.responseJSON.msg; }
                 if (typeof $("#msg").html === 'function'){
                     $("#msg").html('<div class="alert alert-danger">'+msg+'</div>');
+                }
+                if (typeof cw !== 'undefined' && cw && typeof cw.mostrarModal === 'function'){
+                    cw.mostrarModal('No se ha podido iniciar sesión');
                 }
             }
         });

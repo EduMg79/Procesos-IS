@@ -247,6 +247,15 @@ function ControlWeb() {
         this.mostrarSalir();
     };
 
+       this.mostrarModal = function(m){
+        $('#msg').remove();
+        if (m){
+            const cadena = "<div id='msg'>"+m+"</div>";
+            $('#mBody').append(cadena);
+        }
+        $('#miModal').modal('show');
+    };
+
     // ----------------------------
     // Comprobar sesión
     // ----------------------------
@@ -256,23 +265,148 @@ function ControlWeb() {
         
         if (nick) {
             this.mostrarMensaje("Bienvenido al sistema, " + nick);
+            this.mostrarCrearPartida();
+            this.mostrarListaPartidas([]);
+            this.mostrarEliminarPartida();
         } else {
             this.mostrarAgregarUsuario();
             this.mostrarRegistro();
         }
     };
 
-  
+    // ----------------------------
+    // 6) Crear partida
+    // ----------------------------
+    this.mostrarCrearPartida = function() {
+        const html = `
+        <div class="form-group" id="cmp-crear-partida">
+            <h5><i class="fa fa-gamepad text-success"></i> Crear partida</h5>
+            <button id="btnCrearPartida" type="button" class="btn btn-success"><i class="fa fa-plus"></i> Crear partida</button>
+            <div id="resCrearPartida" class="mt-3"></div>
+        </div>`;
+        $(contenedorId).append(html);
+
+        $("#btnCrearPartida").on("click", () => {
+            $("#btnCrearPartida").prop('disabled', true);
+            $("#resCrearPartida").html('<div class="alert alert-info"><i class="fa fa-spinner fa-spin"></i> Esperando rival...</div>');
+            if (typeof ws !== 'undefined' && ws && typeof ws.crearPartida === 'function'){
+                ws.crearPartida();
+            }
+        });
+    };
 
     // ----------------------------
-    // Cerrar sesión
+    // 7) Lista de partidas disponibles
     // ----------------------------
-    
+    this.mostrarListaPartidas = function(lista) {
+        const html = lista && lista.length ? `
+        <div class="form-group" id="cmp-lista-partidas">
+            <h5><i class="fa fa-list text-primary"></i> Partidas disponibles</h5>
+            <table class="table table-hover table-sm">
+                <thead class="table-light">
+                    <tr>
+                        <th>Creador</th>
+                        <th>Código</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="listaPartidosBody">
+                </tbody>
+            </table>
+        </div>` : `
+        <div class="form-group" id="cmp-lista-partidas">
+            <h5><i class="fa fa-list text-primary"></i> Partidas disponibles</h5>
+            <div class="alert alert-info">No hay partidas disponibles</div>
+        </div>`;
+
+        // Si ya existe, reemplazar solo la tabla; si no, añadir
+        if ($("#cmp-lista-partidas").length) {
+            $("#cmp-lista-partidas").replaceWith(html);
+        } else {
+            $(contenedorId).append(html);
+        }
+
+        // Llenar tabla si hay partidas
+        if (lista && lista.length) {
+            lista.forEach(partida => {
+                const fila = `<tr>
+                    <td>${partida.email || 'Desconocido'}</td>
+                    <td><code>${partida.codigo}</code></td>
+                    <td>
+                        <button class="btn btn-sm btn-primary btn-unir" data-codigo="${partida.codigo}">
+                            <i class="fa fa-sign-in-alt"></i> Unirse
+                        </button>
+                    </td>
+                </tr>`;
+                $("#listaPartidosBody").append(fila);
+            });
+
+            // Manejador para botón "Unirse"
+            $(".btn-unir").on("click", function() {
+                const codigo = $(this).data('codigo');
+                if (typeof ws !== 'undefined' && ws && typeof ws.unirAPartida === 'function'){
+                    ws.unirAPartida(codigo);
+                }
+            });
+        }
+    };
 
     // ----------------------------
-    // Botón de salir
+    // 8) Mostrar esperando rival
     // ----------------------------
-    this.mostrarSalir = function() {
+    this.mostrarEsperandoRival = function() {
+        $("#btnCrearPartida").prop('disabled', true);
+        $("#resCrearPartida").html(`<div class="alert alert-warning"><i class="fa fa-spinner fa-spin"></i> Esperando rival (código: <code>${ws.codigo}</code>)...</div>`);
+    };
+
+    // ----------------------------
+    // 9) Mostrar jugador unido
+    // ----------------------------
+    this.mostrarJugadorUnido = function(datos) {
+        const mensaje = datos && datos.email ? `Se ha unido a la partida <b>${datos.email}</b>` : 'Un jugador se ha unido a la partida';
+        const html = `<div class="alert alert-success"><i class="fa fa-check-circle"></i> ${mensaje}</div>`;
+        $(contenedorId).find("#resCrearPartida").html(html);
+        // También podría mostrarse como modal o notificación flotante si lo prefieres
+    };
+    // ----------------------------
+    // 10) Eliminar partida
+    // ----------------------------
+    this.mostrarEliminarPartida = function() {
+        const html = `
+        <div class="form-group" id="cmp-eliminar-partida">
+            <h5><i class="fa fa-trash text-danger"></i> Eliminar partida</h5>
+            <input type="text" id="codigoEliminar" class="form-control mb-2" placeholder="Introduce el código de la partida" />
+            <button id="btnEliminarPartida" type="button" class="btn btn-danger"><i class="fa fa-trash"></i> Eliminar</button>
+            <div id="resEliminarPartida" class="mt-2"></div>
+        </div>`;
+        $(contenedorId).append(html);
+
+        $("#btnEliminarPartida").on("click", () => {
+            const codigo = $("#codigoEliminar").val().trim();
+            if (!codigo) {
+                return $("#resEliminarPartida").html('<div class="alert alert-warning">Introduce un código de partida.</div>');
+            }
+            if (typeof ws !== 'undefined' && ws && typeof ws.eliminarPartida === 'function'){
+                ws.eliminarPartida(codigo);
+            } else {
+                $("#resEliminarPartida").html('<div class="alert alert-danger">Error: no se pudo conectar al servidor.</div>');
+            }
+        });
+    };
+
+    // ----------------------------
+    // 11) Mostrar partida eliminada
+    // ----------------------------
+    this.mostrarPartidaEliminada = function(datos) {
+        const msg = datos && datos.ok ? 'Partida eliminada correctamente' : 'No se pudo eliminar la partida (código no existe)';
+        const tipo = datos && datos.ok ? 'success' : 'danger';
+        const icono = datos && datos.ok ? 'check-circle' : 'exclamation-circle';
+        const html = `<div class="alert alert-${tipo}"><i class="fa fa-${icono}"></i> ${msg}</div>`;
+        $("#resEliminarPartida").html(html);
+        if (datos && datos.ok) {
+            $("#codigoEliminar").val('');
+        }
+    };    this.mostrarSalir = function() {
         $("#salir").on("click", () => {
             this.salir();
         });
@@ -280,7 +414,11 @@ function ControlWeb() {
 
     this.mostrarRegistro = function() {
         $("#fmRegistro").remove();
-        $("#registro").load("./cliente/registro.html", function() {
+        $("#registro").load("/registro.html", function(response, status) {
+            if (status === 'error') {
+                console.error('No se pudo cargar registro.html');
+                return;
+            }
             $("#btnRegistro").on("click", function(e) {
                 e.preventDefault();
                 let email = $("#email").val();
@@ -299,13 +437,20 @@ function ControlWeb() {
                                 $("#msg").html(`<div class='alert alert-success'>${data.msg || 'Registro correcto, falta confirmación'}</div>`);
                                 cw.mostrarLogin();
                             } else {
-                                $("#msg").html(`<div class='alert alert-danger'>${data.msg || 'Error al registrar usuario.'}</div>`);
+                                const mensaje = data && data.msg ? data.msg : 'Error al registrar usuario.';
+                                $("#msg").html(`<div class='alert alert-danger'>${mensaje}</div>`);
+                                if (cw && typeof cw.mostrarModal === 'function') {
+                                    cw.mostrarModal('No se ha podido registrar el usuario');
+                                }
                             }
                         },
                         error: function(xhr) {
                             let errMsg = 'Error al registrar usuario.';
                             if (xhr.responseJSON && xhr.responseJSON.msg) errMsg = xhr.responseJSON.msg;
                             $("#msg").html(`<div class='alert alert-danger'>${errMsg}</div>`);
+                            if (cw && typeof cw.mostrarModal === 'function') {
+                                cw.mostrarModal('No se ha podido registrar el usuario');
+                            }
                         }
                     });
                 } else {
@@ -316,12 +461,12 @@ function ControlWeb() {
     }
 
  this.mostrarLogin = function() {
-  if ($.cookie('nick')) {
-    return true;
-  }
-
-  $("#fmLogin").remove();
-    $("#registro").load("./cliente/login.html", function() {
+    $("#fmLogin").remove();
+        $("#registro").load("/login.html", function(response, status) {
+            if (status === 'error') {
+                console.error('No se pudo cargar login.html');
+                return;
+            }
         $("#btnLogin").on("click", function(e) {
             e.preventDefault();
             let email = $("#email").val();
