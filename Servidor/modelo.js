@@ -142,7 +142,9 @@ callback(obj);
             const creador = partida.jugadores[0];
             lista.push({
             codigo: partida.codigo,
-            email : creador ? (creador.email || creador.nick) : null
+            email : creador ? (creador.email || creador.nick) : null,
+            numJugadores: Array.isArray(partida.jugadores) ? partida.jugadores.length : 0,
+            maxJug: partida.maxJug || 2
             });
         }
         return lista;

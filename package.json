@@ -20,6 +20,8 @@
     "test": "./node_modules/.bin/jasmine-node servidor"
   },
   "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.1",
     "jasmine-node": "^3.0.0"
   }
 }

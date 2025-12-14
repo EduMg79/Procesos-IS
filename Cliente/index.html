@@ -69,7 +69,7 @@
                     <li class="nav-item">
                         <a id="linkLogin" class="nav-link" href="#">Login</a>
                     </li>
-                <a class="nav-link" href="#">Link 3</a>
+                <a id="linkPartidas" class="nav-link" href="#">Partidas</a>
             </li>
         </ul>
     </nav>
@@ -84,15 +84,23 @@
     <script>
         rest = new ClienteRest();
         cw = new ControlWeb();
-        cw.comprobarSesion();
         ws=new ClienteWS();
 
-        // One Tap hace reload: copiar cookie 'nick' a ws.email al cargar
+        // Copiar cookie 'nick' a WS cuanto antes (para restaurar estado tras refresh)
         try {
             if (typeof $ !== 'undefined' && typeof $.cookie === 'function'){
-                ws.email = $.cookie('nick');
+                const nick = $.cookie('nick');
+                if (nick){
+                    if (typeof ws.setEmail === 'function'){
+                        ws.setEmail(nick);
+                    } else {
+                        ws.email = nick;
+                    }
+                }
             }
         } catch(e) {}
+
+        cw.comprobarSesion();
 
         // Al pulsar sobre 'Sistema' mostrar directamente el formulario de registro
         $("#brandSistema").on("click", function(e){
@@ -106,6 +114,13 @@
                     e.preventDefault();
                     if (cw && typeof cw.mostrarLogin === 'function') {
                         cw.mostrarLogin();
+                    }
+                });
+
+                $("#linkPartidas").on("click", function(e){
+                    e.preventDefault();
+                    if (cw && typeof cw.mostrarPartidas === 'function'){
+                        cw.mostrarPartidas();
                     }
                 });
 

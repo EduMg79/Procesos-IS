@@ -71,6 +71,16 @@ function ControlWeb() {
              .done((data) => {
                 if (data && data.ok) {
                     $.cookie("nick", nick)
+                    // Sincronizar WS con el nuevo usuario para que crear/unirse funcione sin recargar
+                    try {
+                        if (typeof ws !== 'undefined' && ws) {
+                            if (typeof ws.setEmail === 'function') {
+                                ws.setEmail(nick);
+                            } else {
+                                ws.email = nick;
+                            }
+                        }
+                    } catch (e) {}
                     $("#resAgregar").html(`<div class="alert alert-success">${data.msg}</div>`);
                     $("#msg").html(`<div class="alert alert-success">${data.msg}</div>`);
                     this.comprobarSesion(); // refresca la sesión
@@ -264,14 +274,57 @@ function ControlWeb() {
         //let nick = localStorage.getItem("nick");
         
         if (nick) {
+            // Mantener WS en sincronía con la sesión (imprescindible para crear/unirse a partidas)
+            try {
+                if (typeof ws !== 'undefined' && ws) {
+                    if (typeof ws.setEmail === 'function') {
+                        ws.setEmail(nick);
+                    } else {
+                        ws.email = nick;
+                    }
+                }
+            } catch (e) {}
+
             this.mostrarMensaje("Bienvenido al sistema, " + nick);
-            this.mostrarCrearPartida();
-            this.mostrarListaPartidas([]);
-            this.mostrarEliminarPartida();
         } else {
             this.mostrarAgregarUsuario();
             this.mostrarRegistro();
         }
+    };
+
+    // ----------------------------
+    // Partidas (se muestran al pulsar "Partidas")
+    // ----------------------------
+    this.mostrarPartidas = function(){
+        // Solo si hay sesión
+        const nick = $.cookie("nick");
+        if (!nick){
+            return this.mostrarModal('Inicia sesión para gestionar partidas');
+        }
+
+        // Sincronizar WS con la sesión
+        try {
+            if (typeof ws !== 'undefined' && ws) {
+                if (typeof ws.setEmail === 'function') {
+                    ws.setEmail(nick);
+                } else {
+                    ws.email = nick;
+                }
+            }
+        } catch(e) {}
+
+        // Limpiar contenedor principal y pintar controles de partidas
+        $(contenedorId).html('');
+        this.mostrarCrearPartida();
+        this.mostrarListaPartidas([]);
+        this.mostrarEliminarPartida();
+
+        // Pedir lista inicial de partidas
+        try {
+            if (typeof ws !== 'undefined' && ws && ws.socket) {
+                ws.socket.emit('obtenerPartidas');
+            }
+        } catch(e) {}
     };
 
     // ----------------------------
@@ -281,7 +334,7 @@ function ControlWeb() {
         const html = `
         <div class="form-group" id="cmp-crear-partida">
             <h5><i class="fa fa-gamepad text-success"></i> Crear partida</h5>
-            <button id="btnCrearPartida" type="button" class="btn btn-success"><i class="fa fa-plus"></i> Crear partida</button>
+            <button id="btnCrearPartida" type="button" class="btn btn-success">+ Crear partida</button>
             <div id="resCrearPartida" class="mt-3"></div>
         </div>`;
         $(contenedorId).append(html);
@@ -307,6 +360,7 @@ function ControlWeb() {
                     <tr>
                         <th>Creador</th>
                         <th>Código</th>
+                        <th>Jugadores</th>
                         <th>Acción</th>
                     </tr>
                 </thead>
@@ -329,9 +383,12 @@ function ControlWeb() {
         // Llenar tabla si hay partidas
         if (lista && lista.length) {
             lista.forEach(partida => {
+                const num = (partida && typeof partida.numJugadores === 'number') ? partida.numJugadores : (partida && Array.isArray(partida.jugadores) ? partida.jugadores.length : 0);
+                const max = (partida && typeof partida.maxJug === 'number') ? partida.maxJug : 2;
                 const fila = `<tr>
                     <td>${partida.email || 'Desconocido'}</td>
                     <td><code>${partida.codigo}</code></td>
+                    <td>${num}/${max}</td>
                     <td>
                         <button class="btn btn-sm btn-primary btn-unir" data-codigo="${partida.codigo}">
                             <i class="fa fa-sign-in-alt"></i> Unirse
@@ -356,7 +413,25 @@ function ControlWeb() {
     // ----------------------------
     this.mostrarEsperandoRival = function() {
         $("#btnCrearPartida").prop('disabled', true);
-        $("#resCrearPartida").html(`<div class="alert alert-warning"><i class="fa fa-spinner fa-spin"></i> Esperando rival (código: <code>${ws.codigo}</code>)...</div>`);
+        $("#resCrearPartida").html(`
+            <div class="alert alert-warning">
+                <div><i class="fa fa-spinner fa-spin"></i> Esperando rival (código: <code>${ws.codigo}</code>)...</div>
+                <div class="mt-2">
+                    <button id="btnCancelarPartida" type="button" class="btn btn-outline-danger btn-sm">
+                        <i class="fa fa-times"></i> Cancelar partida
+                    </button>
+                </div>
+            </div>
+        `);
+
+        // Cancelar la partida mientras está esperando
+        $("#btnCancelarPartida").off('click').on('click', function(){
+            try {
+                if (typeof ws !== 'undefined' && ws && typeof ws.eliminarPartida === 'function' && ws.codigo){
+                    ws.eliminarPartida(ws.codigo);
+                }
+            } catch(e) {}
+        });
     };
 
     // ----------------------------
@@ -375,8 +450,9 @@ function ControlWeb() {
         const html = `
         <div class="form-group" id="cmp-eliminar-partida">
             <h5><i class="fa fa-trash text-danger"></i> Eliminar partida</h5>
+            <label for="codigoEliminar">Introduce el código de la partida:</label>
             <input type="text" id="codigoEliminar" class="form-control mb-2" placeholder="Introduce el código de la partida" />
-            <button id="btnEliminarPartida" type="button" class="btn btn-danger"><i class="fa fa-trash"></i> Eliminar</button>
+            <button id="btnEliminarPartida" type="button" class="btn btn-danger">Eliminar</button>
             <div id="resEliminarPartida" class="mt-2"></div>
         </div>`;
         $(contenedorId).append(html);
@@ -406,6 +482,15 @@ function ControlWeb() {
         if (datos && datos.ok) {
             $("#codigoEliminar").val('');
         }
+
+        // Si acabamos de cancelar la partida que estábamos esperando, resetear UI
+        try {
+            if (datos && datos.ok && typeof ws !== 'undefined' && ws && ws.codigo && datos.codigo === ws.codigo){
+                ws.codigo = undefined;
+                $("#btnCrearPartida").prop('disabled', false);
+                $("#resCrearPartida").html('');
+            }
+        } catch(e) {}
     };    this.mostrarSalir = function() {
         $("#salir").on("click", () => {
             this.salir();
