@@ -81,17 +81,17 @@ callback(usr);
             return codigo;
         }
 
-        this.crearPartida=function(email){
+        this.crearPartida=function(email, tamano){
             const usr=this.usuarios[email];
             if (!usr){
                 return {codigo:-1};
             }
             const codigo=this.obtenerCodigo();
-            const partida=new Partida(codigo);
+            const partida=new Partida(codigo, tamano || 3);
             partida.jugadores.push(usr);
             this.partidas[codigo]=partida;
             usr.partida=codigo;
-            return {codigo:codigo};
+            return {codigo:codigo, tamano: partida.tamano};
         }
 
         this.unirAPartida=function(email,codigo){
@@ -114,7 +114,7 @@ callback(usr);
             }
             usr.partida=codigo;
             console.log("usuario " + email + " se ha unido a la partida " + codigo);
-            return {codigo:codigo};
+            return {codigo:codigo, tamano: partida.tamano};
         }
 
         this.obtenerPartidasDisponibles=function(){
@@ -227,9 +227,100 @@ function Usuario(nick){
  this.nick=nick;
 }
 
-function Partida(codigo){
+function Partida(codigo, tamano){
 this.codigo = codigo;
 this.jugadores = [];
 this.maxJug = 2;
+this.tamano=tamano || 3;
+this.tablero=[];
+this.turnoActual=null;
+this.ganador=null;
+this.simbolos={};
+this.estado='esperando'; // esperando, jugando, finalizada
+
+// Inicializar tablero vacío
+for(let i=0; i<this.tamano; i++){
+  this.tablero[i]=[];
+  for(let j=0; j<this.tamano; j++){
+    this.tablero[i][j]=null;
+  }
+}
+
+this.iniciarJuego=function(){
+  if (this.jugadores.length===2){
+    this.simbolos[this.jugadores[0].nick || this.jugadores[0].email]='X';
+    this.simbolos[this.jugadores[1].nick || this.jugadores[1].email]='O';
+    this.turnoActual=this.jugadores[0].nick || this.jugadores[0].email;
+    this.estado='jugando';
+  }
+}
+
+this.cambiarTurno=function(){
+  const email0=this.jugadores[0].nick || this.jugadores[0].email;
+  const email1=this.jugadores[1].nick || this.jugadores[1].email;
+  this.turnoActual = (this.turnoActual===email0) ? email1 : email0;
+}
+
+this.verificarGanador=function(){
+  // Verificar filas
+  for(let i=0; i<this.tamano; i++){
+    let simbolo=this.tablero[i][0];
+    if (simbolo && this.tablero[i].every(c=>c===simbolo)){
+      return true;
+    }
+  }
+  
+  // Verificar columnas
+  for(let j=0; j<this.tamano; j++){
+    let simbolo=this.tablero[0][j];
+    if (simbolo){
+      let gana=true;
+      for(let i=0; i<this.tamano; i++){
+        if (this.tablero[i][j]!==simbolo){
+          gana=false;
+          break;
+        }
+      }
+      if (gana) return true;
+    }
+  }
+  
+  // Verificar diagonal principal
+  let simboloDiag=this.tablero[0][0];
+  if (simboloDiag){
+    let gana=true;
+    for(let i=0; i<this.tamano; i++){
+      if (this.tablero[i][i]!==simboloDiag){
+        gana=false;
+        break;
+      }
+    }
+    if (gana) return true;
+  }
+  
+  // Verificar diagonal inversa
+  let simboloDiagInv=this.tablero[0][this.tamano-1];
+  if (simboloDiagInv){
+    let gana=true;
+    for(let i=0; i<this.tamano; i++){
+      if (this.tablero[i][this.tamano-1-i]!==simboloDiagInv){
+        gana=false;
+        break;
+      }
+    }
+    if (gana) return true;
+  }
+  
+  return false;
+}
+
+this.tableroLleno=function(){
+  for(let i=0; i<this.tamano; i++){
+    for(let j=0; j<this.tamano; j++){
+      if (this.tablero[i][j]===null) return false;
+    }
+  }
+  return true;
+}
 }
 // module.exports.Sistema = Sistema;

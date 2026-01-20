@@ -59,19 +59,45 @@
      </div>
      </div>
     </div>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <a id="brandSistema" class="navbar-brand" href="#">Sistema</a>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a id="salir" class="nav-link" href="#">Salir</a>
-            </li>
-            <li class="nav-item">
-                    <li class="nav-item">
-                        <a id="linkLogin" class="nav-link" href="#">Login</a>
-                    </li>
-                <a id="linkPartidas" class="nav-link" href="#">Partidas</a>
-            </li>
-        </ul>
+    <nav class="modern-navbar">
+        <div class="navbar-container">
+            <a id="brandSistema" class="navbar-brand-modern" href="#">
+                <span class="brand-text">Registro </span>
+            </a>
+            
+            <ul class="navbar-menu">
+                <li class="nav-item-modern">
+                    <a id="linkPartidas" class="nav-link-modern" href="#">
+                        <i class="fa fa-gamepad"></i>
+                        <span>Partidas</span>
+                    </a>
+                </li>
+                <li class="nav-item-modern">
+                    <a id="linkEstadisticas" class="nav-link-modern" href="#">
+                        <i class="fa fa-chart-line"></i>
+                        <span>Estadísticas</span>
+                    </a>
+                </li>
+                <li class="nav-item-modern">
+                    <a id="linkPerfil" class="nav-link-modern" href="#">
+                        <i class="fa fa-user-circle"></i>
+                        <span>Perfil</span>
+                    </a>
+                </li>
+                <li class="nav-item-modern">
+                    <a id="linkLogin" class="nav-link-modern" href="#">
+                        <i class="fa fa-sign-in-alt"></i>
+                        <span>Login</span>
+                    </a>
+                </li>
+                <li class="nav-item-modern">
+                    <a id="salir" class="nav-link-modern nav-link-danger" href="#">
+                        <i class="fa fa-sign-out-alt"></i>
+                        <span>Salir</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <div class="container">
@@ -114,6 +140,30 @@
                     e.preventDefault();
                     if (cw && typeof cw.mostrarLogin === 'function') {
                         cw.mostrarLogin();
+                    }
+                });
+
+                $("#linkEstadisticas").on("click", function(e){
+                    e.preventDefault();
+                    const nick = $.cookie("nick");
+                    if (!nick){
+                        alert('Debes iniciar sesión para ver tus estadísticas');
+                        return;
+                    }
+                    if (cw && typeof cw.mostrarPaginaEstadisticas === 'function'){
+                        cw.mostrarPaginaEstadisticas(nick);
+                    }
+                });
+
+                $("#linkPerfil").on("click", function(e){
+                    e.preventDefault();
+                    const nick = $.cookie("nick");
+                    if (!nick){
+                        alert('Debes iniciar sesión para ver tu perfil');
+                        return;
+                    }
+                    if (cw && typeof cw.mostrarPaginaPerfil === 'function'){
+                        cw.mostrarPaginaPerfil(nick);
                     }
                 });
 

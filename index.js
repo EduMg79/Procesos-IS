@@ -290,6 +290,38 @@ app.get("/numeroUsuarios", function(request, response) {
     response.send(res);
 });
 
+app.get("/obtenerEstadisticas/:email", function(request, response) {
+    let email = request.params.email;
+    sistema.obtenerEstadisticas(email, function(estadisticas){
+        response.json(estadisticas);
+    });
+});
+
+app.get("/obtenerPerfil/:email", function(request, response) {
+    let email = request.params.email;
+    sistema.obtenerPerfil(email, function(perfil){
+        response.json(perfil);
+    });
+});
+
+app.post("/actualizarPerfil", function(request, response) {
+    let email = request.body.email;
+    let datosNuevos = {
+        nick: request.body.nick,
+        fotoPerfil: request.body.fotoPerfil
+    };
+    sistema.actualizarPerfil(email, datosNuevos, function(resultado){
+        response.json(resultado);
+    });
+});
+
+app.get("/obtenerLogros/:email", function(request, response) {
+    let email = request.params.email;
+    sistema.verificarYOtorgarLogros(email, function(logros){
+        response.json({logros: logros});
+    });
+});
+
 app.get("/eliminarUsuario/:nick", function(request, response) {
     let nick = request.params.nick;
     let existed = sistema.usuarioActivo(nick);

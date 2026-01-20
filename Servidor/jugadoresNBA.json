@@ -1,0 +1,3322 @@
+[
+  {
+    "nombreCompleto": "LeBron James",
+    "apellido": "James",
+    "equipos": ["Cleveland Cavaliers", "Miami Heat", "Los Angeles Lakers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1984"
+  },
+  {
+    "nombreCompleto": "Michael Jordan",
+    "apellido": "Jordan",
+    "equipos": ["Chicago Bulls", "Washington Wizards"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1963"
+  },
+  {
+    "nombreCompleto": "Kobe Bryant",
+    "apellido": "Bryant",
+    "equipos": ["Los Angeles Lakers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "Stephen Curry",
+    "apellido": "Curry",
+    "equipos": ["Golden State Warriors"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Kevin Durant",
+    "apellido": "Durant",
+    "equipos": ["Seattle SuperSonics", "Oklahoma City Thunder", "Golden State Warriors", "Brooklyn Nets", "Phoenix Suns"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Shaquille O'Neal",
+    "apellido": "O'Neal",
+    "equipos": ["Orlando Magic", "Los Angeles Lakers", "Miami Heat", "Phoenix Suns", "Cleveland Cavaliers", "Boston Celtics"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1972"
+  },
+  {
+    "nombreCompleto": "Magic Johnson",
+    "apellido": "Johnson",
+    "equipos": ["Los Angeles Lakers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1959"
+  },
+  {
+    "nombreCompleto": "Larry Bird",
+    "apellido": "Bird",
+    "equipos": ["Boston Celtics"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1956"
+  },
+  {
+    "nombreCompleto": "Tim Duncan",
+    "apellido": "Duncan",
+    "equipos": ["San Antonio Spurs"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Kareem Abdul-Jabbar",
+    "apellido": "Abdul-Jabbar",
+    "equipos": ["Milwaukee Bucks", "Los Angeles Lakers"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1947"
+  },
+  {
+    "nombreCompleto": "Kawhi Leonard",
+    "apellido": "Leonard",
+    "equipos": ["San Antonio Spurs", "Toronto Raptors", "Los Angeles Clippers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Chris Paul",
+    "apellido": "Paul",
+    "equipos": ["New Orleans Hornets", "Los Angeles Clippers", "Houston Rockets", "Oklahoma City Thunder", "Phoenix Suns", "Golden State Warriors"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Dwyane Wade",
+    "apellido": "Wade",
+    "equipos": ["Miami Heat", "Chicago Bulls", "Cleveland Cavaliers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1982"
+  },
+  {
+    "nombreCompleto": "Dirk Nowitzki",
+    "apellido": "Nowitzki",
+    "equipos": ["Dallas Mavericks"],
+    "nacionalidad": "Germany",
+    "posicion": "Forward",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "Giannis Antetokounmpo",
+    "apellido": "Antetokounmpo",
+    "equipos": ["Milwaukee Bucks"],
+    "nacionalidad": "Greece",
+    "posicion": "Forward",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "James Harden",
+    "apellido": "Harden",
+    "equipos": ["Oklahoma City Thunder", "Houston Rockets", "Brooklyn Nets", "Philadelphia 76ers", "Los Angeles Clippers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Russell Westbrook",
+    "apellido": "Westbrook",
+    "equipos": ["Oklahoma City Thunder", "Houston Rockets", "Washington Wizards", "Los Angeles Lakers", "Los Angeles Clippers", "Denver Nuggets"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Carmelo Anthony",
+    "apellido": "Anthony",
+    "equipos": ["Denver Nuggets", "New York Knicks", "Oklahoma City Thunder", "Houston Rockets", "Portland Trail Blazers", "Los Angeles Lakers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1984"
+  },
+  {
+    "nombreCompleto": "Paul George",
+    "apellido": "George",
+    "equipos": ["Indiana Pacers", "Oklahoma City Thunder", "Los Angeles Clippers", "Philadelphia 76ers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Kyrie Irving",
+    "apellido": "Irving",
+    "equipos": ["Cleveland Cavaliers", "Boston Celtics", "Brooklyn Nets", "Dallas Mavericks"],
+    "nacionalidad": "Australia",
+    "posicion": "Guard",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Anthony Davis",
+    "apellido": "Davis",
+    "equipos": ["New Orleans Pelicans", "Los Angeles Lakers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Damian Lillard",
+    "apellido": "Lillard",
+    "equipos": ["Portland Trail Blazers", "Milwaukee Bucks"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Allen Iverson",
+    "apellido": "Iverson",
+    "equipos": ["Philadelphia 76ers", "Denver Nuggets", "Detroit Pistons", "Memphis Grizzlies"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1975"
+  },
+  {
+    "nombreCompleto": "Ray Allen",
+    "apellido": "Allen",
+    "equipos": ["Milwaukee Bucks", "Seattle SuperSonics", "Boston Celtics", "Miami Heat"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1975"
+  },
+  {
+    "nombreCompleto": "Paul Pierce",
+    "apellido": "Pierce",
+    "equipos": ["Boston Celtics", "Brooklyn Nets", "Washington Wizards", "Los Angeles Clippers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1977"
+  },
+  {
+    "nombreCompleto": "Kevin Garnett",
+    "apellido": "Garnett",
+    "equipos": ["Minnesota Timberwolves", "Boston Celtics", "Brooklyn Nets"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Vince Carter",
+    "apellido": "Carter",
+    "equipos": ["Toronto Raptors", "New Jersey Nets", "Orlando Magic", "Phoenix Suns", "Dallas Mavericks", "Memphis Grizzlies", "Sacramento Kings", "Atlanta Hawks"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1977"
+  },
+  {
+    "nombreCompleto": "Tracy McGrady",
+    "apellido": "McGrady",
+    "equipos": ["Toronto Raptors", "Orlando Magic", "Houston Rockets", "New York Knicks", "Detroit Pistons", "Atlanta Hawks", "San Antonio Spurs"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Dwight Howard",
+    "apellido": "Howard",
+    "equipos": ["Orlando Magic", "Los Angeles Lakers", "Houston Rockets", "Atlanta Hawks", "Charlotte Hornets", "Washington Wizards", "Philadelphia 76ers"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Steve Nash",
+    "apellido": "Nash",
+    "equipos": ["Phoenix Suns", "Dallas Mavericks", "Los Angeles Lakers"],
+    "nacionalidad": "Canada",
+    "posicion": "Guard",
+    "nacimiento": "1974"
+  },
+  {
+    "nombreCompleto": "Scottie Pippen",
+    "apellido": "Pippen",
+    "equipos": ["Chicago Bulls", "Houston Rockets", "Portland Trail Blazers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1965"
+  },
+  {
+    "nombreCompleto": "Dennis Rodman",
+    "apellido": "Rodman",
+    "equipos": ["Detroit Pistons", "San Antonio Spurs", "Chicago Bulls", "Los Angeles Lakers", "Dallas Mavericks"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1961"
+  },
+  {
+    "nombreCompleto": "Charles Barkley",
+    "apellido": "Barkley",
+    "equipos": ["Philadelphia 76ers", "Phoenix Suns", "Houston Rockets"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1963"
+  },
+  {
+    "nombreCompleto": "Hakeem Olajuwon",
+    "apellido": "Olajuwon",
+    "equipos": ["Houston Rockets", "Toronto Raptors"],
+    "nacionalidad": "Nigeria",
+    "posicion": "Center",
+    "nacimiento": "1963"
+  },
+  {
+    "nombreCompleto": "Patrick Ewing",
+    "apellido": "Ewing",
+    "equipos": ["New York Knicks", "Seattle SuperSonics", "Orlando Magic"],
+    "nacionalidad": "Jamaica",
+    "posicion": "Center",
+    "nacimiento": "1962"
+  },
+  {
+    "nombreCompleto": "Jason Kidd",
+    "apellido": "Kidd",
+    "equipos": ["Dallas Mavericks", "Phoenix Suns", "New Jersey Nets", "New York Knicks"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1973"
+  },
+  {
+    "nombreCompleto": "Gary Payton",
+    "apellido": "Payton",
+    "equipos": ["Seattle SuperSonics", "Milwaukee Bucks", "Los Angeles Lakers", "Boston Celtics", "Miami Heat"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1968"
+  },
+  {
+    "nombreCompleto": "Clyde Drexler",
+    "apellido": "Drexler",
+    "equipos": ["Portland Trail Blazers", "Houston Rockets"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1962"
+  },
+  {
+    "nombreCompleto": "Chris Bosh",
+    "apellido": "Bosh",
+    "equipos": ["Toronto Raptors", "Miami Heat"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "1984"
+  },
+  {
+    "nombreCompleto": "Pau Gasol",
+    "apellido": "Gasol",
+    "equipos": ["Memphis Grizzlies", "Los Angeles Lakers", "Chicago Bulls", "San Antonio Spurs", "Milwaukee Bucks"],
+    "nacionalidad": "Spain",
+    "posicion": "Forward-Center",
+    "nacimiento": "1980"
+  },
+  {
+    "nombreCompleto": "Marc Gasol",
+    "apellido": "Gasol",
+    "equipos": ["Memphis Grizzlies", "Toronto Raptors", "Los Angeles Lakers"],
+    "nacionalidad": "Spain",
+    "posicion": "Center",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Nikola Jokić",
+    "apellido": "Jokić",
+    "equipos": ["Denver Nuggets"],
+    "nacionalidad": "Serbia",
+    "posicion": "Center",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Luka Dončić",
+    "apellido": "Dončić",
+    "equipos": ["Dallas Mavericks"],
+    "nacionalidad": "Slovenia",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Joel Embiid",
+    "apellido": "Embiid",
+    "equipos": ["Philadelphia 76ers"],
+    "nacionalidad": "Cameroon",
+    "posicion": "Center",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Jayson Tatum",
+    "apellido": "Tatum",
+    "equipos": ["Boston Celtics"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Jaylen Brown",
+    "apellido": "Brown",
+    "equipos": ["Boston Celtics"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Klay Thompson",
+    "apellido": "Thompson",
+    "equipos": ["Golden State Warriors", "Dallas Mavericks"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Draymond Green",
+    "apellido": "Green",
+    "equipos": ["Golden State Warriors"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Jimmy Butler",
+    "apellido": "Butler",
+    "equipos": ["Chicago Bulls", "Minnesota Timberwolves", "Philadelphia 76ers", "Miami Heat"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Derrick Rose",
+    "apellido": "Rose",
+    "equipos": ["Chicago Bulls", "New York Knicks", "Cleveland Cavaliers", "Minnesota Timberwolves", "Detroit Pistons", "Memphis Grizzlies"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Blake Griffin",
+    "apellido": "Griffin",
+    "equipos": ["Los Angeles Clippers", "Detroit Pistons", "Brooklyn Nets", "Boston Celtics"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Rajon Rondo",
+    "apellido": "Rondo",
+    "equipos": ["Boston Celtics", "Dallas Mavericks", "Sacramento Kings", "Chicago Bulls", "New Orleans Pelicans", "Los Angeles Lakers", "Atlanta Hawks", "Los Angeles Clippers", "Cleveland Cavaliers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Tony Parker",
+    "apellido": "Parker",
+    "equipos": ["San Antonio Spurs", "Charlotte Hornets"],
+    "nacionalidad": "France",
+    "posicion": "Guard",
+    "nacimiento": "1982"
+  },
+  {
+    "nombreCompleto": "Manu Ginóbili",
+    "apellido": "Ginóbili",
+    "equipos": ["San Antonio Spurs"],
+    "nacionalidad": "Argentina",
+    "posicion": "Guard",
+    "nacimiento": "1977"
+  },
+  {
+    "nombreCompleto": "Yao Ming",
+    "apellido": "Ming",
+    "equipos": ["Houston Rockets"],
+    "nacionalidad": "China",
+    "posicion": "Center",
+    "nacimiento": "1980"
+  },
+  {
+    "nombreCompleto": "John Stockton",
+    "apellido": "Stockton",
+    "equipos": ["Utah Jazz"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1962"
+  },
+  {
+    "nombreCompleto": "Karl Malone",
+    "apellido": "Malone",
+    "equipos": ["Utah Jazz", "Los Angeles Lakers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1963"
+  },
+  {
+    "nombreCompleto": "John Wall",
+    "apellido": "Wall",
+    "equipos": ["Washington Wizards", "Houston Rockets", "Los Angeles Clippers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Bradley Beal",
+    "apellido": "Beal",
+    "equipos": ["Washington Wizards", "Phoenix Suns"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "DeMar DeRozan",
+    "apellido": "DeRozan",
+    "equipos": ["Toronto Raptors", "San Antonio Spurs", "Chicago Bulls", "Sacramento Kings"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Kyle Lowry",
+    "apellido": "Lowry",
+    "equipos": ["Memphis Grizzlies", "Houston Rockets", "Toronto Raptors", "Miami Heat", "Philadelphia 76ers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Ben Simmons",
+    "apellido": "Simmons",
+    "equipos": ["Philadelphia 76ers", "Brooklyn Nets"],
+    "nacionalidad": "Australia",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Tobias Harris",
+    "apellido": "Harris",
+    "equipos": ["Milwaukee Bucks", "Orlando Magic", "Los Angeles Clippers", "Detroit Pistons", "Philadelphia 76ers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Andre Iguodala",
+    "apellido": "Iguodala",
+    "equipos": ["Philadelphia 76ers", "Denver Nuggets", "Golden State Warriors", "Miami Heat"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1984"
+  },
+  {
+    "nombreCompleto": "DeAndre Jordan",
+    "apellido": "Jordan",
+    "equipos": ["Los Angeles Clippers", "Dallas Mavericks", "New York Knicks", "Brooklyn Nets", "Los Angeles Lakers", "Philadelphia 76ers", "Denver Nuggets"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Chauncey Billups",
+    "apellido": "Billups",
+    "equipos": ["Boston Celtics", "Toronto Raptors", "Denver Nuggets", "Minnesota Timberwolves", "Detroit Pistons", "New York Knicks", "Los Angeles Clippers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Rasheed Wallace",
+    "apellido": "Wallace",
+    "equipos": ["Washington Bullets", "Portland Trail Blazers", "Atlanta Hawks", "Detroit Pistons", "Boston Celtics", "New York Knicks"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "1974"
+  },
+  {
+    "nombreCompleto": "Amar'e Stoudemire",
+    "apellido": "Stoudemire",
+    "equipos": ["Phoenix Suns", "New York Knicks", "Dallas Mavericks", "Miami Heat"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "1982"
+  },
+  {
+    "nombreCompleto": "Zach Randolph",
+    "apellido": "Randolph",
+    "equipos": ["Portland Trail Blazers", "New York Knicks", "Los Angeles Clippers", "Memphis Grizzlies", "Sacramento Kings"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "Rudy Gay",
+    "apellido": "Gay",
+    "equipos": ["Memphis Grizzlies", "Toronto Raptors", "Sacramento Kings", "San Antonio Spurs", "Utah Jazz"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "DeMarcus Cousins",
+    "apellido": "Cousins",
+    "equipos": ["Sacramento Kings", "New Orleans Pelicans", "Golden State Warriors", "Los Angeles Lakers", "Houston Rockets", "Los Angeles Clippers", "Milwaukee Bucks", "Denver Nuggets"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Isaiah Thomas",
+    "apellido": "Thomas",
+    "equipos": ["Sacramento Kings", "Phoenix Suns", "Boston Celtics", "Cleveland Cavaliers", "Los Angeles Lakers", "Denver Nuggets", "Washington Wizards", "New Orleans Pelicans", "Charlotte Hornets", "Dallas Mavericks"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Trae Young",
+    "apellido": "Young",
+    "equipos": ["Atlanta Hawks"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Donovan Mitchell",
+    "apellido": "Mitchell",
+    "equipos": ["Utah Jazz", "Cleveland Cavaliers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Devin Booker",
+    "apellido": "Booker",
+    "equipos": ["Phoenix Suns"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Karl-Anthony Towns",
+    "apellido": "Towns",
+    "equipos": ["Minnesota Timberwolves", "New York Knicks"],
+    "nacionalidad": "Dominican Republic",
+    "posicion": "Center",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Kristaps Porziņģis",
+    "apellido": "Porziņģis",
+    "equipos": ["New York Knicks", "Dallas Mavericks", "Washington Wizards", "Boston Celtics"],
+    "nacionalidad": "Latvia",
+    "posicion": "Forward-Center",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Victor Oladipo",
+    "apellido": "Oladipo",
+    "equipos": ["Orlando Magic", "Oklahoma City Thunder", "Indiana Pacers", "Houston Rockets", "Miami Heat"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Nikola Vučević",
+    "apellido": "Vučević",
+    "equipos": ["Philadelphia 76ers", "Orlando Magic", "Chicago Bulls"],
+    "nacionalidad": "Montenegro",
+    "posicion": "Center",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Al Horford",
+    "apellido": "Horford",
+    "equipos": ["Atlanta Hawks", "Boston Celtics", "Philadelphia 76ers", "Oklahoma City Thunder"],
+    "nacionalidad": "Dominican Republic",
+    "posicion": "Center",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Kemba Walker",
+    "apellido": "Walker",
+    "equipos": ["Charlotte Hornets", "Boston Celtics", "New York Knicks", "Dallas Mavericks"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Gordon Hayward",
+    "apellido": "Hayward",
+    "equipos": ["Utah Jazz", "Boston Celtics", "Charlotte Hornets", "Oklahoma City Thunder"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Andrew Wiggins",
+    "apellido": "Wiggins",
+    "equipos": ["Minnesota Timberwolves", "Golden State Warriors"],
+    "nacionalidad": "Canada",
+    "posicion": "Forward",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Zion Williamson",
+    "apellido": "Williamson",
+    "equipos": ["New Orleans Pelicans"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Ja Morant",
+    "apellido": "Morant",
+    "equipos": ["Memphis Grizzlies"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "LaMelo Ball",
+    "apellido": "Ball",
+    "equipos": ["Charlotte Hornets"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2001"
+  },
+  {
+    "nombreCompleto": "Lonzo Ball",
+    "apellido": "Ball",
+    "equipos": ["Los Angeles Lakers", "New Orleans Pelicans", "Chicago Bulls"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Brandon Ingram",
+    "apellido": "Ingram",
+    "equipos": ["Los Angeles Lakers", "New Orleans Pelicans"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Shai Gilgeous-Alexander",
+    "apellido": "Gilgeous-Alexander",
+    "equipos": ["Los Angeles Clippers", "Oklahoma City Thunder"],
+    "nacionalidad": "Canada",
+    "posicion": "Guard",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Tyrese Haliburton",
+    "apellido": "Haliburton",
+    "equipos": ["Sacramento Kings", "Indiana Pacers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Domantas Sabonis",
+    "apellido": "Sabonis",
+    "equipos": ["Oklahoma City Thunder", "Indiana Pacers", "Sacramento Kings"],
+    "nacionalidad": "Lithuania",
+    "posicion": "Forward-Center",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Pascal Siakam",
+    "apellido": "Siakam",
+    "equipos": ["Toronto Raptors", "Indiana Pacers"],
+    "nacionalidad": "Cameroon",
+    "posicion": "Forward",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Fred VanVleet",
+    "apellido": "VanVleet",
+    "equipos": ["Toronto Raptors", "Houston Rockets"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "CJ McCollum",
+    "apellido": "McCollum",
+    "equipos": ["Portland Trail Blazers", "New Orleans Pelicans"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Jrue Holiday",
+    "apellido": "Holiday",
+    "equipos": ["Philadelphia 76ers", "New Orleans Pelicans", "Milwaukee Bucks", "Boston Celtics"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Khris Middleton",
+    "apellido": "Middleton",
+    "equipos": ["Detroit Pistons", "Milwaukee Bucks"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Brook Lopez",
+    "apellido": "Lopez",
+    "equipos": ["Brooklyn Nets", "Los Angeles Lakers", "Milwaukee Bucks"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Robin Lopez",
+    "apellido": "Lopez",
+    "equipos": ["Phoenix Suns", "New Orleans Hornets", "Portland Trail Blazers", "New York Knicks", "Chicago Bulls", "Milwaukee Bucks", "Washington Wizards", "Orlando Magic", "Cleveland Cavaliers"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Nikola Jović",
+    "apellido": "Jović",
+    "equipos": ["Miami Heat"],
+    "nacionalidad": "Serbia",
+    "posicion": "Forward",
+    "nacimiento": "2003"
+  },
+  {
+    "nombreCompleto": "Cade Cunningham",
+    "apellido": "Cunningham",
+    "equipos": ["Detroit Pistons"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2001"
+  },
+  {
+    "nombreCompleto": "Evan Mobley",
+    "apellido": "Mobley",
+    "equipos": ["Cleveland Cavaliers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "2001"
+  },
+  {
+    "nombreCompleto": "Scottie Barnes",
+    "apellido": "Barnes",
+    "equipos": ["Toronto Raptors"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "2001"
+  },
+  {
+    "nombreCompleto": "Bam Adebayo",
+    "apellido": "Adebayo",
+    "equipos": ["Miami Heat"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Tyler Herro",
+    "apellido": "Herro",
+    "equipos": ["Miami Heat"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Reggie Miller",
+    "apellido": "Miller",
+    "equipos": ["Indiana Pacers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1965"
+  },
+  {
+    "nombreCompleto": "Alonzo Mourning",
+    "apellido": "Mourning",
+    "equipos": ["Charlotte Hornets", "Miami Heat", "New Jersey Nets"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1970"
+  },
+  {
+    "nombreCompleto": "Dikembe Mutombo",
+    "apellido": "Mutombo",
+    "equipos": ["Denver Nuggets", "Atlanta Hawks", "Philadelphia 76ers", "New Jersey Nets", "New York Knicks", "Houston Rockets"],
+    "nacionalidad": "Congo",
+    "posicion": "Center",
+    "nacimiento": "1966"
+  },
+  {
+    "nombreCompleto": "Grant Hill",
+    "apellido": "Hill",
+    "equipos": ["Detroit Pistons", "Orlando Magic", "Phoenix Suns", "Los Angeles Clippers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1972"
+  },
+  {
+    "nombreCompleto": "Darius Garland",
+    "apellido": "Garland",
+    "equipos": ["Cleveland Cavaliers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Jarrett Allen",
+    "apellido": "Allen",
+    "equipos": ["Brooklyn Nets", "Cleveland Cavaliers"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Julius Randle",
+    "apellido": "Randle",
+    "equipos": ["Los Angeles Lakers", "New Orleans Pelicans", "New York Knicks", "Minnesota Timberwolves"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "RJ Barrett",
+    "apellido": "Barrett",
+    "equipos": ["New York Knicks", "Toronto Raptors"],
+    "nacionalidad": "Canada",
+    "posicion": "Guard-Forward",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Jalen Brunson",
+    "apellido": "Brunson",
+    "equipos": ["Dallas Mavericks", "New York Knicks"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Tyrese Maxey",
+    "apellido": "Maxey",
+    "equipos": ["Philadelphia 76ers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "De'Aaron Fox",
+    "apellido": "Fox",
+    "equipos": ["Sacramento Kings"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Lauri Markkanen",
+    "apellido": "Markkanen",
+    "equipos": ["Chicago Bulls", "Cleveland Cavaliers", "Dallas Mavericks", "Utah Jazz"],
+    "nacionalidad": "Finland",
+    "posicion": "Forward",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Jordan Poole",
+    "apellido": "Poole",
+    "equipos": ["Golden State Warriors", "Washington Wizards"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Jonathan Kuminga",
+    "apellido": "Kuminga",
+    "equipos": ["Golden State Warriors"],
+    "nacionalidad": "Congo",
+    "posicion": "Forward",
+    "nacimiento": "2002"
+  },
+  {
+    "nombreCompleto": "James Wiseman",
+    "apellido": "Wiseman",
+    "equipos": ["Golden State Warriors", "Detroit Pistons", "Indiana Pacers"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "2001"
+  },
+  {
+    "nombreCompleto": "Anfernee Simons",
+    "apellido": "Simons",
+    "equipos": ["Portland Trail Blazers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Jerami Grant",
+    "apellido": "Grant",
+    "equipos": ["Philadelphia 76ers", "Oklahoma City Thunder", "Denver Nuggets", "Detroit Pistons", "Portland Trail Blazers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "OG Anunoby",
+    "apellido": "Anunoby",
+    "equipos": ["Toronto Raptors", "New York Knicks"],
+    "nacionalidad": "England",
+    "posicion": "Forward",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Mikal Bridges",
+    "apellido": "Bridges",
+    "equipos": ["Philadelphia 76ers", "Phoenix Suns", "Brooklyn Nets", "New York Knicks"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Miles Bridges",
+    "apellido": "Bridges",
+    "equipos": ["Charlotte Hornets"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Jaren Jackson Jr.",
+    "apellido": "Jackson",
+    "equipos": ["Memphis Grizzlies"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Desmond Bane",
+    "apellido": "Bane",
+    "equipos": ["Memphis Grizzlies"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Anthony Edwards",
+    "apellido": "Edwards",
+    "equipos": ["Minnesota Timberwolves"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2001"
+  },
+  {
+    "nombreCompleto": "Jaden McDaniels",
+    "apellido": "McDaniels",
+    "equipos": ["Minnesota Timberwolves"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Paolo Banchero",
+    "apellido": "Banchero",
+    "equipos": ["Orlando Magic"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "2002"
+  },
+  {
+    "nombreCompleto": "Franz Wagner",
+    "apellido": "Wagner",
+    "equipos": ["Orlando Magic"],
+    "nacionalidad": "Germany",
+    "posicion": "Forward",
+    "nacimiento": "2001"
+  },
+  {
+    "nombreCompleto": "Markelle Fultz",
+    "apellido": "Fultz",
+    "equipos": ["Philadelphia 76ers", "Orlando Magic"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Wendell Carter Jr.",
+    "apellido": "Carter",
+    "equipos": ["Chicago Bulls", "Orlando Magic"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Cole Anthony",
+    "apellido": "Anthony",
+    "equipos": ["Orlando Magic"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Myles Turner",
+    "apellido": "Turner",
+    "equipos": ["Indiana Pacers"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Buddy Hield",
+    "apellido": "Hield",
+    "equipos": ["New Orleans Pelicans", "Sacramento Kings", "Indiana Pacers", "Philadelphia 76ers", "Golden State Warriors"],
+    "nacionalidad": "Bahamas",
+    "posicion": "Guard",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Dillon Brooks",
+    "apellido": "Brooks",
+    "equipos": ["Memphis Grizzlies", "Houston Rockets"],
+    "nacionalidad": "Canada",
+    "posicion": "Forward",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Jalen Green",
+    "apellido": "Green",
+    "equipos": ["Houston Rockets"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2002"
+  },
+  {
+    "nombreCompleto": "Alperen Şengün",
+    "apellido": "Şengün",
+    "equipos": ["Houston Rockets"],
+    "nacionalidad": "Turkey",
+    "posicion": "Center",
+    "nacimiento": "2002"
+  },
+  {
+    "nombreCompleto": "Jabari Smith Jr.",
+    "apellido": "Smith",
+    "equipos": ["Houston Rockets"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "2003"
+  },
+  {
+    "nombreCompleto": "Amen Thompson",
+    "apellido": "Thompson",
+    "equipos": ["Houston Rockets"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "2003"
+  },
+  {
+    "nombreCompleto": "Scoot Henderson",
+    "apellido": "Henderson",
+    "equipos": ["Portland Trail Blazers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2004"
+  },
+  {
+    "nombreCompleto": "Shaedon Sharpe",
+    "apellido": "Sharpe",
+    "equipos": ["Portland Trail Blazers"],
+    "nacionalidad": "Canada",
+    "posicion": "Guard",
+    "nacimiento": "2003"
+  },
+  {
+    "nombreCompleto": "Josh Giddey",
+    "apellido": "Giddey",
+    "equipos": ["Oklahoma City Thunder", "Chicago Bulls"],
+    "nacionalidad": "Australia",
+    "posicion": "Guard-Forward",
+    "nacimiento": "2002"
+  },
+  {
+    "nombreCompleto": "Chet Holmgren",
+    "apellido": "Holmgren",
+    "equipos": ["Oklahoma City Thunder"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "2002"
+  },
+  {
+    "nombreCompleto": "Jalen Williams",
+    "apellido": "Williams",
+    "equipos": ["Oklahoma City Thunder"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "2001"
+  },
+  {
+    "nombreCompleto": "Lu Dort",
+    "apellido": "Dort",
+    "equipos": ["Oklahoma City Thunder"],
+    "nacionalidad": "Canada",
+    "posicion": "Guard",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Jamal Murray",
+    "apellido": "Murray",
+    "equipos": ["Denver Nuggets"],
+    "nacionalidad": "Canada",
+    "posicion": "Guard",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Michael Porter Jr.",
+    "apellido": "Porter",
+    "equipos": ["Denver Nuggets"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Aaron Gordon",
+    "apellido": "Gordon",
+    "equipos": ["Orlando Magic", "Denver Nuggets"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Jusuf Nurkić",
+    "apellido": "Nurkić",
+    "equipos": ["Denver Nuggets", "Portland Trail Blazers", "Phoenix Suns"],
+    "nacionalidad": "Bosnia",
+    "posicion": "Center",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Bojan Bogdanović",
+    "apellido": "Bogdanović",
+    "equipos": ["Washington Wizards", "Brooklyn Nets", "Indiana Pacers", "Utah Jazz", "Detroit Pistons", "New York Knicks"],
+    "nacionalidad": "Croatia",
+    "posicion": "Forward",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Bogdan Bogdanović",
+    "apellido": "Bogdanović",
+    "equipos": ["Sacramento Kings", "Atlanta Hawks"],
+    "nacionalidad": "Serbia",
+    "posicion": "Guard",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Clint Capela",
+    "apellido": "Capela",
+    "equipos": ["Houston Rockets", "Atlanta Hawks"],
+    "nacionalidad": "Switzerland",
+    "posicion": "Center",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Dejounte Murray",
+    "apellido": "Murray",
+    "equipos": ["San Antonio Spurs", "Atlanta Hawks", "New Orleans Pelicans"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "John Collins",
+    "apellido": "Collins",
+    "equipos": ["Atlanta Hawks", "Utah Jazz"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Keldon Johnson",
+    "apellido": "Johnson",
+    "equipos": ["San Antonio Spurs"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Victor Wembanyama",
+    "apellido": "Wembanyama",
+    "equipos": ["San Antonio Spurs"],
+    "nacionalidad": "France",
+    "posicion": "Center",
+    "nacimiento": "2004"
+  },
+  {
+    "nombreCompleto": "Jeremy Sochan",
+    "apellido": "Sochan",
+    "equipos": ["San Antonio Spurs"],
+    "nacionalidad": "Poland",
+    "posicion": "Forward",
+    "nacimiento": "2003"
+  },
+  {
+    "nombreCompleto": "Devin Vassell",
+    "apellido": "Vassell",
+    "equipos": ["San Antonio Spurs"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Walker Kessler",
+    "apellido": "Kessler",
+    "equipos": ["Memphis Grizzlies", "Utah Jazz"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "2001"
+  },
+  {
+    "nombreCompleto": "Collin Sexton",
+    "apellido": "Sexton",
+    "equipos": ["Cleveland Cavaliers", "Utah Jazz"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Jordan Clarkson",
+    "apellido": "Clarkson",
+    "equipos": ["Los Angeles Lakers", "Cleveland Cavaliers", "Utah Jazz"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Rudy Gobert",
+    "apellido": "Gobert",
+    "equipos": ["Utah Jazz", "Minnesota Timberwolves"],
+    "nacionalidad": "France",
+    "posicion": "Center",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Mike Conley",
+    "apellido": "Conley",
+    "equipos": ["Memphis Grizzlies", "Utah Jazz", "Minnesota Timberwolves"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Zach LaVine",
+    "apellido": "LaVine",
+    "equipos": ["Minnesota Timberwolves", "Chicago Bulls"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Patrick Williams",
+    "apellido": "Williams",
+    "equipos": ["Chicago Bulls"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "2001"
+  },
+  {
+    "nombreCompleto": "Coby White",
+    "apellido": "White",
+    "equipos": ["Chicago Bulls"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Alex Caruso",
+    "apellido": "Caruso",
+    "equipos": ["Los Angeles Lakers", "Chicago Bulls", "Oklahoma City Thunder"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Ayo Dosunmu",
+    "apellido": "Dosunmu",
+    "equipos": ["Chicago Bulls"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Caris LeVert",
+    "apellido": "LeVert",
+    "equipos": ["Brooklyn Nets", "Indiana Pacers", "Cleveland Cavaliers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Spencer Dinwiddie",
+    "apellido": "Dinwiddie",
+    "equipos": ["Detroit Pistons", "Brooklyn Nets", "Washington Wizards", "Dallas Mavericks", "Los Angeles Lakers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Joe Harris",
+    "apellido": "Harris",
+    "equipos": ["Cleveland Cavaliers", "Brooklyn Nets", "Detroit Pistons"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Nic Claxton",
+    "apellido": "Claxton",
+    "equipos": ["Brooklyn Nets"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Cameron Johnson",
+    "apellido": "Johnson",
+    "equipos": ["Phoenix Suns", "Brooklyn Nets"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Dorian Finney-Smith",
+    "apellido": "Finney-Smith",
+    "equipos": ["Dallas Mavericks", "Brooklyn Nets", "Los Angeles Lakers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Royce O'Neale",
+    "apellido": "O'Neale",
+    "equipos": ["Utah Jazz", "Brooklyn Nets", "Phoenix Suns"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Dennis Schröder",
+    "apellido": "Schröder",
+    "equipos": ["Atlanta Hawks", "Oklahoma City Thunder", "Los Angeles Lakers", "Boston Celtics", "Houston Rockets", "Toronto Raptors", "Brooklyn Nets"],
+    "nacionalidad": "Germany",
+    "posicion": "Guard",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Daniel Theis",
+    "apellido": "Theis",
+    "equipos": ["Boston Celtics", "Chicago Bulls", "Houston Rockets", "Indiana Pacers", "Los Angeles Clippers"],
+    "nacionalidad": "Germany",
+    "posicion": "Center",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Derrick White",
+    "apellido": "White",
+    "equipos": ["San Antonio Spurs", "Boston Celtics"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Marcus Smart",
+    "apellido": "Smart",
+    "equipos": ["Boston Celtics", "Memphis Grizzlies"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Robert Williams III",
+    "apellido": "Williams",
+    "equipos": ["Boston Celtics", "Portland Trail Blazers"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Malcolm Brogdon",
+    "apellido": "Brogdon",
+    "equipos": ["Milwaukee Bucks", "Indiana Pacers", "Boston Celtics", "Portland Trail Blazers", "Washington Wizards"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Payton Pritchard",
+    "apellido": "Pritchard",
+    "equipos": ["Boston Celtics"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Josh Richardson",
+    "apellido": "Richardson",
+    "equipos": ["Miami Heat", "Philadelphia 76ers", "Dallas Mavericks", "Boston Celtics", "San Antonio Spurs", "New Orleans Pelicans"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Immanuel Quickley",
+    "apellido": "Quickley",
+    "equipos": ["New York Knicks", "Toronto Raptors"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Obi Toppin",
+    "apellido": "Toppin",
+    "equipos": ["New York Knicks", "Indiana Pacers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Mitchell Robinson",
+    "apellido": "Robinson",
+    "equipos": ["New York Knicks"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Josh Hart",
+    "apellido": "Hart",
+    "equipos": ["Los Angeles Lakers", "New Orleans Pelicans", "Portland Trail Blazers", "New York Knicks"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Donte DiVincenzo",
+    "apellido": "DiVincenzo",
+    "equipos": ["Milwaukee Bucks", "Sacramento Kings", "Golden State Warriors", "New York Knicks", "Minnesota Timberwolves"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Isaiah Hartenstein",
+    "apellido": "Hartenstein",
+    "equipos": ["Houston Rockets", "Denver Nuggets", "Cleveland Cavaliers", "Los Angeles Clippers", "New York Knicks", "Oklahoma City Thunder"],
+    "nacionalidad": "Germany",
+    "posicion": "Center",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Precious Achiuwa",
+    "apellido": "Achiuwa",
+    "equipos": ["Miami Heat", "Toronto Raptors", "New York Knicks"],
+    "nacionalidad": "Nigeria",
+    "posicion": "Forward",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Kelly Oubre Jr.",
+    "apellido": "Oubre",
+    "equipos": ["Washington Wizards", "Phoenix Suns", "Golden State Warriors", "Charlotte Hornets", "Philadelphia 76ers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Paul Reed",
+    "apellido": "Reed",
+    "equipos": ["Philadelphia 76ers", "Detroit Pistons"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Furkan Korkmaz",
+    "apellido": "Korkmaz",
+    "equipos": ["Philadelphia 76ers", "Indiana Pacers"],
+    "nacionalidad": "Turkey",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Shake Milton",
+    "apellido": "Milton",
+    "equipos": ["Philadelphia 76ers", "Minnesota Timberwolves", "Detroit Pistons", "Brooklyn Nets"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Matisse Thybulle",
+    "apellido": "Thybulle",
+    "equipos": ["Philadelphia 76ers", "Portland Trail Blazers"],
+    "nacionalidad": "Australia",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Grayson Allen",
+    "apellido": "Allen",
+    "equipos": ["Utah Jazz", "Memphis Grizzlies", "Milwaukee Bucks", "Phoenix Suns"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Pat Connaughton",
+    "apellido": "Connaughton",
+    "equipos": ["Portland Trail Blazers", "Milwaukee Bucks"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Bobby Portis",
+    "apellido": "Portis",
+    "equipos": ["Chicago Bulls", "Washington Wizards", "New York Knicks", "Milwaukee Bucks"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "MarJon Beauchamp",
+    "apellido": "Beauchamp",
+    "equipos": ["Milwaukee Bucks"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "AJ Green",
+    "apellido": "Green",
+    "equipos": ["Milwaukee Bucks"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Gary Trent Jr.",
+    "apellido": "Trent",
+    "equipos": ["Portland Trail Blazers", "Toronto Raptors", "Milwaukee Bucks"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Jakob Poeltl",
+    "apellido": "Poeltl",
+    "equipos": ["Toronto Raptors", "San Antonio Spurs"],
+    "nacionalidad": "Austria",
+    "posicion": "Center",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Chris Boucher",
+    "apellido": "Boucher",
+    "equipos": ["Golden State Warriors", "Toronto Raptors"],
+    "nacionalidad": "Canada",
+    "posicion": "Forward-Center",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Gradey Dick",
+    "apellido": "Dick",
+    "equipos": ["Toronto Raptors"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "2003"
+  },
+  {
+    "nombreCompleto": "Ochai Agbaji",
+    "apellido": "Agbaji",
+    "equipos": ["Cleveland Cavaliers", "Utah Jazz", "Toronto Raptors"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Isaac Okoro",
+    "apellido": "Okoro",
+    "equipos": ["Cleveland Cavaliers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "2001"
+  },
+  {
+    "nombreCompleto": "Dean Wade",
+    "apellido": "Wade",
+    "equipos": ["Cleveland Cavaliers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Max Strus",
+    "apellido": "Strus",
+    "equipos": ["Chicago Bulls", "Miami Heat", "Cleveland Cavaliers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Georges Niang",
+    "apellido": "Niang",
+    "equipos": ["Indiana Pacers", "Utah Jazz", "Philadelphia 76ers", "Cleveland Cavaliers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Jae Crowder",
+    "apellido": "Crowder",
+    "equipos": ["Dallas Mavericks", "Boston Celtics", "Cleveland Cavaliers", "Utah Jazz", "Memphis Grizzlies", "Miami Heat", "Phoenix Suns", "Milwaukee Bucks"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Josh Okogie",
+    "apellido": "Okogie",
+    "equipos": ["Minnesota Timberwolves", "Phoenix Suns"],
+    "nacionalidad": "Nigeria",
+    "posicion": "Guard",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Torrey Craig",
+    "apellido": "Craig",
+    "equipos": ["Denver Nuggets", "Milwaukee Bucks", "Phoenix Suns", "Indiana Pacers", "Chicago Bulls"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Eric Gordon",
+    "apellido": "Gordon",
+    "equipos": ["Los Angeles Clippers", "New Orleans Hornets", "Houston Rockets", "Phoenix Suns", "Philadelphia 76ers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Bol Bol",
+    "apellido": "Bol",
+    "equipos": ["Denver Nuggets", "Detroit Pistons", "Orlando Magic", "Phoenix Suns"],
+    "nacionalidad": "Sudan",
+    "posicion": "Center",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Ish Wainright",
+    "apellido": "Wainright",
+    "equipos": ["Toronto Raptors", "Phoenix Suns", "Portland Trail Blazers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Norman Powell",
+    "apellido": "Powell",
+    "equipos": ["Toronto Raptors", "Portland Trail Blazers", "Los Angeles Clippers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Marcus Morris Sr.",
+    "apellido": "Morris",
+    "equipos": ["Houston Rockets", "Phoenix Suns", "Detroit Pistons", "Boston Celtics", "New York Knicks", "Los Angeles Clippers", "Miami Heat", "Philadelphia 76ers", "Cleveland Cavaliers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Terance Mann",
+    "apellido": "Mann",
+    "equipos": ["Los Angeles Clippers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Nicolas Batum",
+    "apellido": "Batum",
+    "equipos": ["Portland Trail Blazers", "Charlotte Hornets", "Los Angeles Clippers", "Philadelphia 76ers"],
+    "nacionalidad": "France",
+    "posicion": "Forward",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Ivica Zubac",
+    "apellido": "Zubac",
+    "equipos": ["Los Angeles Lakers", "Los Angeles Clippers"],
+    "nacionalidad": "Croatia",
+    "posicion": "Center",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Robert Covington",
+    "apellido": "Covington",
+    "equipos": ["Houston Rockets", "Philadelphia 76ers", "Minnesota Timberwolves", "Portland Trail Blazers", "Los Angeles Clippers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Mason Plumlee",
+    "apellido": "Plumlee",
+    "equipos": ["Brooklyn Nets", "Portland Trail Blazers", "Denver Nuggets", "Detroit Pistons", "Charlotte Hornets", "Los Angeles Clippers"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Bones Hyland",
+    "apellido": "Hyland",
+    "equipos": ["Denver Nuggets", "Los Angeles Clippers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Austin Reaves",
+    "apellido": "Reaves",
+    "equipos": ["Los Angeles Lakers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Rui Hachimura",
+    "apellido": "Hachimura",
+    "equipos": ["Washington Wizards", "Los Angeles Lakers"],
+    "nacionalidad": "Japan",
+    "posicion": "Forward",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "D'Angelo Russell",
+    "apellido": "Russell",
+    "equipos": ["Los Angeles Lakers", "Brooklyn Nets", "Golden State Warriors", "Minnesota Timberwolves"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Malik Monk",
+    "apellido": "Monk",
+    "equipos": ["Charlotte Hornets", "Los Angeles Lakers", "Sacramento Kings"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Taurean Prince",
+    "apellido": "Prince",
+    "equipos": ["Atlanta Hawks", "Brooklyn Nets", "Cleveland Cavaliers", "Minnesota Timberwolves", "Los Angeles Lakers", "Milwaukee Bucks"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Jarred Vanderbilt",
+    "apellido": "Vanderbilt",
+    "equipos": ["Denver Nuggets", "Minnesota Timberwolves", "Utah Jazz", "Los Angeles Lakers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Trey Murphy III",
+    "apellido": "Murphy",
+    "equipos": ["New Orleans Pelicans"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Jose Alvarado",
+    "apellido": "Alvarado",
+    "equipos": ["New Orleans Pelicans"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Herbert Jones",
+    "apellido": "Jones",
+    "equipos": ["New Orleans Pelicans"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Jonas Valančiūnas",
+    "apellido": "Valančiūnas",
+    "equipos": ["Toronto Raptors", "Memphis Grizzlies", "New Orleans Pelicans", "Washington Wizards"],
+    "nacionalidad": "Lithuania",
+    "posicion": "Center",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Steven Adams",
+    "apellido": "Adams",
+    "equipos": ["Oklahoma City Thunder", "New Orleans Pelicans", "Memphis Grizzlies", "Houston Rockets"],
+    "nacionalidad": "New Zealand",
+    "posicion": "Center",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Larry Nance Jr.",
+    "apellido": "Nance",
+    "equipos": ["Los Angeles Lakers", "Cleveland Cavaliers", "Portland Trail Blazers", "New Orleans Pelicans", "Atlanta Hawks"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Terry Rozier",
+    "apellido": "Rozier",
+    "equipos": ["Boston Celtics", "Charlotte Hornets", "Miami Heat"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "P.J. Washington",
+    "apellido": "Washington",
+    "equipos": ["Charlotte Hornets", "Dallas Mavericks"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Nick Richards",
+    "apellido": "Richards",
+    "equipos": ["Charlotte Hornets"],
+    "nacionalidad": "Jamaica",
+    "posicion": "Center",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Vasilije Micić",
+    "apellido": "Micić",
+    "equipos": ["Oklahoma City Thunder", "Charlotte Hornets"],
+    "nacionalidad": "Serbia",
+    "posicion": "Guard",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Cody Martin",
+    "apellido": "Martin",
+    "equipos": ["Charlotte Hornets"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Duncan Robinson",
+    "apellido": "Robinson",
+    "equipos": ["Miami Heat"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Caleb Martin",
+    "apellido": "Martin",
+    "equipos": ["Charlotte Hornets", "Miami Heat", "Philadelphia 76ers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Haywood Highsmith",
+    "apellido": "Highsmith",
+    "equipos": ["Philadelphia 76ers", "Miami Heat"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Kevin Love",
+    "apellido": "Love",
+    "equipos": ["Minnesota Timberwolves", "Cleveland Cavaliers", "Miami Heat"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Goran Dragić",
+    "apellido": "Dragić",
+    "equipos": ["Phoenix Suns", "Houston Rockets", "Miami Heat", "Toronto Raptors", "Brooklyn Nets", "Chicago Bulls", "Milwaukee Bucks"],
+    "nacionalidad": "Slovenia",
+    "posicion": "Guard",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Andre Drummond",
+    "apellido": "Drummond",
+    "equipos": ["Detroit Pistons", "Cleveland Cavaliers", "Los Angeles Lakers", "Philadelphia 76ers", "Brooklyn Nets", "Chicago Bulls"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Jaden Ivey",
+    "apellido": "Ivey",
+    "equipos": ["Detroit Pistons"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2002"
+  },
+  {
+    "nombreCompleto": "Ausar Thompson",
+    "apellido": "Thompson",
+    "equipos": ["Detroit Pistons"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "2003"
+  },
+  {
+    "nombreCompleto": "Isaiah Stewart",
+    "apellido": "Stewart",
+    "equipos": ["Detroit Pistons"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "2001"
+  },
+  {
+    "nombreCompleto": "Killian Hayes",
+    "apellido": "Hayes",
+    "equipos": ["Detroit Pistons", "Brooklyn Nets"],
+    "nacionalidad": "France",
+    "posicion": "Guard",
+    "nacimiento": "2001"
+  },
+  {
+    "nombreCompleto": "Saddiq Bey",
+    "apellido": "Bey",
+    "equipos": ["Detroit Pistons", "Atlanta Hawks"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Bennedict Mathurin",
+    "apellido": "Mathurin",
+    "equipos": ["Indiana Pacers"],
+    "nacionalidad": "Canada",
+    "posicion": "Guard-Forward",
+    "nacimiento": "2002"
+  },
+  {
+    "nombreCompleto": "Aaron Nesmith",
+    "apellido": "Nesmith",
+    "equipos": ["Boston Celtics", "Indiana Pacers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "T.J. McConnell",
+    "apellido": "McConnell",
+    "equipos": ["Philadelphia 76ers", "Indiana Pacers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Keegan Murray",
+    "apellido": "Murray",
+    "equipos": ["Sacramento Kings"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Davion Mitchell",
+    "apellido": "Mitchell",
+    "equipos": ["Sacramento Kings", "Toronto Raptors"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Harrison Barnes",
+    "apellido": "Barnes",
+    "equipos": ["Golden State Warriors", "Dallas Mavericks", "Sacramento Kings", "San Antonio Spurs"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Richaun Holmes",
+    "apellido": "Holmes",
+    "equipos": ["Philadelphia 76ers", "Phoenix Suns", "Sacramento Kings", "Dallas Mavericks", "Washington Wizards"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Keon Ellis",
+    "apellido": "Ellis",
+    "equipos": ["Sacramento Kings"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Amar'e Stoudemire",
+    "apellido": "Stoudemire",
+    "equipos": ["Phoenix Suns", "New York Knicks", "Dallas Mavericks", "Miami Heat"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "1982"
+  },
+  {
+    "nombreCompleto": "Tracy McGrady",
+    "apellido": "McGrady",
+    "equipos": ["Toronto Raptors", "Orlando Magic", "Houston Rockets", "New York Knicks", "Detroit Pistons", "Atlanta Hawks", "San Antonio Spurs"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Allen Iverson",
+    "apellido": "Iverson",
+    "equipos": ["Philadelphia 76ers", "Denver Nuggets", "Detroit Pistons", "Memphis Grizzlies"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1975"
+  },
+  {
+    "nombreCompleto": "Steve Nash",
+    "apellido": "Nash",
+    "equipos": ["Phoenix Suns", "Dallas Mavericks", "Los Angeles Lakers"],
+    "nacionalidad": "Canada",
+    "posicion": "Guard",
+    "nacimiento": "1974"
+  },
+  {
+    "nombreCompleto": "Ray Allen",
+    "apellido": "Allen",
+    "equipos": ["Milwaukee Bucks", "Seattle SuperSonics", "Boston Celtics", "Miami Heat"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1975"
+  },
+  {
+    "nombreCompleto": "Paul Pierce",
+    "apellido": "Pierce",
+    "equipos": ["Boston Celtics", "Brooklyn Nets", "Washington Wizards", "Los Angeles Clippers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1977"
+  },
+  {
+    "nombreCompleto": "Kevin Garnett",
+    "apellido": "Garnett",
+    "equipos": ["Minnesota Timberwolves", "Boston Celtics", "Brooklyn Nets"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Vince Carter",
+    "apellido": "Carter",
+    "equipos": ["Toronto Raptors", "New Jersey Nets", "Orlando Magic", "Phoenix Suns", "Dallas Mavericks", "Memphis Grizzlies", "Sacramento Kings", "Atlanta Hawks"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1977"
+  },
+  {
+    "nombreCompleto": "Yao Ming",
+    "apellido": "Ming",
+    "equipos": ["Houston Rockets"],
+    "nacionalidad": "China",
+    "posicion": "Center",
+    "nacimiento": "1980"
+  },
+  {
+    "nombreCompleto": "Pau Gasol",
+    "apellido": "Gasol",
+    "equipos": ["Memphis Grizzlies", "Los Angeles Lakers", "Chicago Bulls", "San Antonio Spurs", "Milwaukee Bucks"],
+    "nacionalidad": "Spain",
+    "posicion": "Forward-Center",
+    "nacimiento": "1980"
+  },
+  {
+    "nombreCompleto": "Marc Gasol",
+    "apellido": "Gasol",
+    "equipos": ["Memphis Grizzlies", "Toronto Raptors", "Los Angeles Lakers"],
+    "nacionalidad": "Spain",
+    "posicion": "Center",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Manu Ginobili",
+    "apellido": "Ginobili",
+    "equipos": ["San Antonio Spurs"],
+    "nacionalidad": "Argentina",
+    "posicion": "Guard",
+    "nacimiento": "1977"
+  },
+  {
+    "nombreCompleto": "Tony Parker",
+    "apellido": "Parker",
+    "equipos": ["San Antonio Spurs", "Charlotte Hornets"],
+    "nacionalidad": "France",
+    "posicion": "Guard",
+    "nacimiento": "1982"
+  },
+  {
+    "nombreCompleto": "Chauncey Billups",
+    "apellido": "Billups",
+    "equipos": ["Boston Celtics", "Toronto Raptors", "Denver Nuggets", "Minnesota Timberwolves", "Detroit Pistons", "New York Knicks", "Los Angeles Clippers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Ben Wallace",
+    "apellido": "Wallace",
+    "equipos": ["Washington Wizards", "Orlando Magic", "Detroit Pistons", "Chicago Bulls", "Cleveland Cavaliers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "1974"
+  },
+  {
+    "nombreCompleto": "Rasheed Wallace",
+    "apellido": "Wallace",
+    "equipos": ["Washington Wizards", "Portland Trail Blazers", "Atlanta Hawks", "Detroit Pistons", "Boston Celtics", "New York Knicks"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "1974"
+  },
+  {
+    "nombreCompleto": "Jason Kidd",
+    "apellido": "Kidd",
+    "equipos": ["Dallas Mavericks", "Phoenix Suns", "New Jersey Nets", "New York Knicks"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1973"
+  },
+  {
+    "nombreCompleto": "Gary Payton",
+    "apellido": "Payton",
+    "equipos": ["Seattle SuperSonics", "Milwaukee Bucks", "Los Angeles Lakers", "Boston Celtics", "Miami Heat"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1968"
+  },
+  {
+    "nombreCompleto": "Reggie Miller",
+    "apellido": "Miller",
+    "equipos": ["Indiana Pacers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1965"
+  },
+  {
+    "nombreCompleto": "Alonzo Mourning",
+    "apellido": "Mourning",
+    "equipos": ["Charlotte Hornets", "Miami Heat", "New Jersey Nets"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1970"
+  },
+  {
+    "nombreCompleto": "Dikembe Mutombo",
+    "apellido": "Mutombo",
+    "equipos": ["Denver Nuggets", "Atlanta Hawks", "Philadelphia 76ers", "New Jersey Nets", "New York Knicks", "Houston Rockets"],
+    "nacionalidad": "Congo",
+    "posicion": "Center",
+    "nacimiento": "1966"
+  },
+  {
+    "nombreCompleto": "Chris Webber",
+    "apellido": "Webber",
+    "equipos": ["Golden State Warriors", "Washington Wizards", "Sacramento Kings", "Philadelphia 76ers", "Detroit Pistons"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "1973"
+  },
+  {
+    "nombreCompleto": "Stephon Marbury",
+    "apellido": "Marbury",
+    "equipos": ["Minnesota Timberwolves", "New Jersey Nets", "Phoenix Suns", "New York Knicks", "Boston Celtics"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1977"
+  },
+  {
+    "nombreCompleto": "Baron Davis",
+    "apellido": "Davis",
+    "equipos": ["Charlotte Hornets", "New Orleans Pelicans", "Golden State Warriors", "Los Angeles Clippers", "Cleveland Cavaliers", "New York Knicks"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Gilbert Arenas",
+    "apellido": "Arenas",
+    "equipos": ["Golden State Warriors", "Washington Wizards", "Orlando Magic", "Memphis Grizzlies"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1982"
+  },
+  {
+    "nombreCompleto": "Elton Brand",
+    "apellido": "Brand",
+    "equipos": ["Chicago Bulls", "Los Angeles Clippers", "Philadelphia 76ers", "Dallas Mavericks", "Atlanta Hawks"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Antawn Jamison",
+    "apellido": "Jamison",
+    "equipos": ["Golden State Warriors", "Dallas Mavericks", "Washington Wizards", "Cleveland Cavaliers", "Los Angeles Lakers", "Los Angeles Clippers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Jermaine O'Neal",
+    "apellido": "O'Neal",
+    "equipos": ["Portland Trail Blazers", "Indiana Pacers", "Toronto Raptors", "Miami Heat", "Boston Celtics", "Phoenix Suns", "Golden State Warriors"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "Shawn Marion",
+    "apellido": "Marion",
+    "equipos": ["Phoenix Suns", "Miami Heat", "Toronto Raptors", "Dallas Mavericks", "Cleveland Cavaliers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "Richard Hamilton",
+    "apellido": "Hamilton",
+    "equipos": ["Washington Wizards", "Detroit Pistons", "Chicago Bulls"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "Latrell Sprewell",
+    "apellido": "Sprewell",
+    "equipos": ["Golden State Warriors", "New York Knicks", "Minnesota Timberwolves"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1970"
+  },
+  {
+    "nombreCompleto": "Jamal Crawford",
+    "apellido": "Crawford",
+    "equipos": ["Chicago Bulls", "New York Knicks", "Golden State Warriors", "Atlanta Hawks", "Portland Trail Blazers", "Los Angeles Clippers", "Minnesota Timberwolves", "Phoenix Suns", "Brooklyn Nets"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1980"
+  },
+  {
+    "nombreCompleto": "Joe Johnson",
+    "apellido": "Johnson",
+    "equipos": ["Boston Celtics", "Phoenix Suns", "Atlanta Hawks", "Brooklyn Nets", "Miami Heat", "Utah Jazz", "Houston Rockets", "Detroit Pistons"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "Michael Redd",
+    "apellido": "Redd",
+    "equipos": ["Milwaukee Bucks", "Phoenix Suns"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Luol Deng",
+    "apellido": "Deng",
+    "equipos": ["Chicago Bulls", "Cleveland Cavaliers", "Miami Heat", "Los Angeles Lakers", "Minnesota Timberwolves"],
+    "nacionalidad": "South Sudan",
+    "posicion": "Forward",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Shane Battier",
+    "apellido": "Battier",
+    "equipos": ["Memphis Grizzlies", "Houston Rockets", "Miami Heat"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "Andre Iguodala",
+    "apellido": "Iguodala",
+    "equipos": ["Philadelphia 76ers", "Denver Nuggets", "Golden State Warriors", "Miami Heat"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1984"
+  },
+  {
+    "nombreCompleto": "Josh Smith",
+    "apellido": "Smith",
+    "equipos": ["Atlanta Hawks", "Detroit Pistons", "Houston Rockets", "Los Angeles Clippers", "New Orleans Pelicans"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Rudy Gay",
+    "apellido": "Gay",
+    "equipos": ["Memphis Grizzlies", "Toronto Raptors", "Sacramento Kings", "San Antonio Spurs", "Utah Jazz"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Danny Granger",
+    "apellido": "Granger",
+    "equipos": ["Indiana Pacers", "Philadelphia 76ers", "Los Angeles Clippers", "Miami Heat", "Detroit Pistons", "Phoenix Suns"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1983"
+  },
+  {
+    "nombreCompleto": "Al Jefferson",
+    "apellido": "Jefferson",
+    "equipos": ["Boston Celtics", "Minnesota Timberwolves", "Utah Jazz", "Charlotte Hornets", "Indiana Pacers"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "David West",
+    "apellido": "West",
+    "equipos": ["New Orleans Pelicans", "Indiana Pacers", "San Antonio Spurs", "Golden State Warriors"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "1980"
+  },
+  {
+    "nombreCompleto": "Josh Howard",
+    "apellido": "Howard",
+    "equipos": ["Dallas Mavericks", "Washington Wizards", "Utah Jazz"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1980"
+  },
+  {
+    "nombreCompleto": "Caron Butler",
+    "apellido": "Butler",
+    "equipos": ["Miami Heat", "Los Angeles Lakers", "Washington Wizards", "Dallas Mavericks", "Los Angeles Clippers", "Milwaukee Bucks", "Oklahoma City Thunder", "Detroit Pistons", "Sacramento Kings"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1980"
+  },
+  {
+    "nombreCompleto": "Corey Maggette",
+    "apellido": "Maggette",
+    "equipos": ["Orlando Magic", "Los Angeles Clippers", "Golden State Warriors", "Milwaukee Bucks", "Charlotte Hornets", "Detroit Pistons"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Richard Jefferson",
+    "apellido": "Jefferson",
+    "equipos": ["New Jersey Nets", "Milwaukee Bucks", "San Antonio Spurs", "Golden State Warriors", "Utah Jazz", "Dallas Mavericks", "Cleveland Cavaliers", "Denver Nuggets"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1980"
+  },
+  {
+    "nombreCompleto": "Rashard Lewis",
+    "apellido": "Lewis",
+    "equipos": ["Seattle SuperSonics", "Orlando Magic", "Washington Wizards", "Miami Heat"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Hedo Turkoglu",
+    "apellido": "Turkoglu",
+    "equipos": ["Sacramento Kings", "San Antonio Spurs", "Orlando Magic", "Toronto Raptors", "Phoenix Suns", "Los Angeles Clippers"],
+    "nacionalidad": "Turkey",
+    "posicion": "Forward",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Mehmet Okur",
+    "apellido": "Okur",
+    "equipos": ["Detroit Pistons", "Utah Jazz", "New Jersey Nets"],
+    "nacionalidad": "Turkey",
+    "posicion": "Center",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Andrei Kirilenko",
+    "apellido": "Kirilenko",
+    "equipos": ["Utah Jazz", "Minnesota Timberwolves", "Brooklyn Nets"],
+    "nacionalidad": "Russia",
+    "posicion": "Forward",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "Peja Stojakovic",
+    "apellido": "Stojakovic",
+    "equipos": ["Sacramento Kings", "Indiana Pacers", "New Orleans Pelicans", "Toronto Raptors", "Dallas Mavericks"],
+    "nacionalidad": "Serbia",
+    "posicion": "Forward",
+    "nacimiento": "1977"
+  },
+  {
+    "nombreCompleto": "Zydrunas Ilgauskas",
+    "apellido": "Ilgauskas",
+    "equipos": ["Cleveland Cavaliers", "Miami Heat"],
+    "nacionalidad": "Lithuania",
+    "posicion": "Center",
+    "nacimiento": "1975"
+  },
+  {
+    "nombreCompleto": "Brad Miller",
+    "apellido": "Miller",
+    "equipos": ["Charlotte Hornets", "Chicago Bulls", "Indiana Pacers", "Sacramento Kings", "Houston Rockets", "Minnesota Timberwolves"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Samuel Dalembert",
+    "apellido": "Dalembert",
+    "equipos": ["Philadelphia 76ers", "Sacramento Kings", "Houston Rockets", "Milwaukee Bucks", "Dallas Mavericks", "New York Knicks"],
+    "nacionalidad": "Haiti",
+    "posicion": "Center",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "Emeka Okafor",
+    "apellido": "Okafor",
+    "equipos": ["Charlotte Hornets", "New Orleans Pelicans", "Washington Wizards", "Phoenix Suns"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "1982"
+  },
+  {
+    "nombreCompleto": "Carlos Boozer",
+    "apellido": "Boozer",
+    "equipos": ["Cleveland Cavaliers", "Utah Jazz", "Chicago Bulls", "Los Angeles Lakers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "Mehdi Okur",
+    "apellido": "Okur",
+    "equipos": ["Detroit Pistons", "Utah Jazz", "New Jersey Nets"],
+    "nacionalidad": "Turkey",
+    "posicion": "Center",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Andrew Bogut",
+    "apellido": "Bogut",
+    "equipos": ["Milwaukee Bucks", "Golden State Warriors", "Dallas Mavericks", "Cleveland Cavaliers", "Los Angeles Lakers"],
+    "nacionalidad": "Australia",
+    "posicion": "Center",
+    "nacimiento": "1984"
+  },
+  {
+    "nombreCompleto": "Andrew Bynum",
+    "apellido": "Bynum",
+    "equipos": ["Los Angeles Lakers", "Philadelphia 76ers", "Cleveland Cavaliers", "Indiana Pacers"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Tyson Chandler",
+    "apellido": "Chandler",
+    "equipos": ["Chicago Bulls", "New Orleans Pelicans", "Charlotte Hornets", "Dallas Mavericks", "New York Knicks", "Phoenix Suns", "Los Angeles Lakers", "Houston Rockets"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1982"
+  },
+  {
+    "nombreCompleto": "Joakim Noah",
+    "apellido": "Noah",
+    "equipos": ["Chicago Bulls", "New York Knicks", "Memphis Grizzlies", "Los Angeles Clippers"],
+    "nacionalidad": "France",
+    "posicion": "Center",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Lamar Odom",
+    "apellido": "Odom",
+    "equipos": ["Los Angeles Clippers", "Miami Heat", "Los Angeles Lakers", "Dallas Mavericks"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Ron Artest",
+    "apellido": "Artest",
+    "equipos": ["Chicago Bulls", "Indiana Pacers", "Sacramento Kings", "Houston Rockets", "Los Angeles Lakers", "New York Knicks"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Stephen Jackson",
+    "apellido": "Jackson",
+    "equipos": ["New Jersey Nets", "San Antonio Spurs", "Atlanta Hawks", "Indiana Pacers", "Golden State Warriors", "Charlotte Hornets", "Milwaukee Bucks", "Los Angeles Clippers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "Josh Childress",
+    "apellido": "Childress",
+    "equipos": ["Atlanta Hawks", "Phoenix Suns", "Brooklyn Nets", "Washington Wizards", "New Orleans Pelicans"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1983"
+  },
+  {
+    "nombreCompleto": "Devin Harris",
+    "apellido": "Harris",
+    "equipos": ["Dallas Mavericks", "New Jersey Nets", "Utah Jazz", "Atlanta Hawks", "Denver Nuggets"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1983"
+  },
+  {
+    "nombreCompleto": "Monta Ellis",
+    "apellido": "Ellis",
+    "equipos": ["Golden State Warriors", "Milwaukee Bucks", "Dallas Mavericks", "Indiana Pacers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "O.J. Mayo",
+    "apellido": "Mayo",
+    "equipos": ["Memphis Grizzlies", "Dallas Mavericks", "Milwaukee Bucks"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Greg Oden",
+    "apellido": "Oden",
+    "equipos": ["Portland Trail Blazers", "Miami Heat"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Adam Morrison",
+    "apellido": "Morrison",
+    "equipos": ["Charlotte Hornets", "Los Angeles Lakers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1984"
+  },
+  {
+    "nombreCompleto": "Andrea Bargnani",
+    "apellido": "Bargnani",
+    "equipos": ["Toronto Raptors", "New York Knicks", "Brooklyn Nets"],
+    "nacionalidad": "Italy",
+    "posicion": "Forward-Center",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "LaMarcus Aldridge",
+    "apellido": "Aldridge",
+    "equipos": ["Portland Trail Blazers", "San Antonio Spurs", "Brooklyn Nets"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Brandon Roy",
+    "apellido": "Roy",
+    "equipos": ["Portland Trail Blazers", "Minnesota Timberwolves"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1984"
+  },
+  {
+    "nombreCompleto": "Derrick Rose",
+    "apellido": "Rose",
+    "equipos": ["Chicago Bulls", "New York Knicks", "Cleveland Cavaliers", "Minnesota Timberwolves", "Detroit Pistons", "Memphis Grizzlies"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Rajon Rondo",
+    "apellido": "Rondo",
+    "equipos": ["Boston Celtics", "Dallas Mavericks", "Sacramento Kings", "Chicago Bulls", "New Orleans Pelicans", "Los Angeles Lakers", "Atlanta Hawks", "Los Angeles Clippers", "Memphis Grizzlies", "Cleveland Cavaliers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Jeff Green",
+    "apellido": "Green",
+    "equipos": ["Seattle SuperSonics", "Oklahoma City Thunder", "Boston Celtics", "Memphis Grizzlies", "Los Angeles Clippers", "Orlando Magic", "Cleveland Cavaliers", "Washington Wizards", "Utah Jazz", "Houston Rockets", "Brooklyn Nets", "Denver Nuggets"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Brook Lopez",
+    "apellido": "Lopez",
+    "equipos": ["Brooklyn Nets", "Los Angeles Lakers", "Milwaukee Bucks"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Robin Lopez",
+    "apellido": "Lopez",
+    "equipos": ["Phoenix Suns", "New Orleans Pelicans", "Portland Trail Blazers", "New York Knicks", "Chicago Bulls", "Milwaukee Bucks", "Washington Wizards", "Orlando Magic", "Cleveland Cavaliers"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Roy Hibbert",
+    "apellido": "Hibbert",
+    "equipos": ["Indiana Pacers", "Los Angeles Lakers", "Charlotte Hornets", "Denver Nuggets"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Eric Gordon",
+    "apellido": "Gordon",
+    "equipos": ["Los Angeles Clippers", "New Orleans Pelicans", "Houston Rockets", "Phoenix Suns"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Danilo Gallinari",
+    "apellido": "Gallinari",
+    "equipos": ["New York Knicks", "Denver Nuggets", "Los Angeles Clippers", "Oklahoma City Thunder", "Atlanta Hawks", "Washington Wizards", "Boston Celtics", "Detroit Pistons", "Milwaukee Bucks"],
+    "nacionalidad": "Italy",
+    "posicion": "Forward",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Wilson Chandler",
+    "apellido": "Chandler",
+    "equipos": ["New York Knicks", "Denver Nuggets", "Philadelphia 76ers", "Los Angeles Clippers", "Brooklyn Nets"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Thaddeus Young",
+    "apellido": "Young",
+    "equipos": ["Philadelphia 76ers", "Minnesota Timberwolves", "Brooklyn Nets", "Indiana Pacers", "Chicago Bulls", "San Antonio Spurs", "Toronto Raptors", "Phoenix Suns"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Serge Ibaka",
+    "apellido": "Ibaka",
+    "equipos": ["Seattle SuperSonics", "Oklahoma City Thunder", "Orlando Magic", "Toronto Raptors", "Los Angeles Clippers", "Milwaukee Bucks"],
+    "nacionalidad": "Congo",
+    "posicion": "Forward-Center",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Nicolas Batum",
+    "apellido": "Batum",
+    "equipos": ["Portland Trail Blazers", "Charlotte Hornets", "Los Angeles Clippers", "Philadelphia 76ers"],
+    "nacionalidad": "France",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "DeMar DeRozan",
+    "apellido": "DeRozan",
+    "equipos": ["Toronto Raptors", "San Antonio Spurs", "Chicago Bulls"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Ricky Rubio",
+    "apellido": "Rubio",
+    "equipos": ["Minnesota Timberwolves", "Utah Jazz", "Phoenix Suns", "Oklahoma City Thunder", "Cleveland Cavaliers", "Indiana Pacers"],
+    "nacionalidad": "Spain",
+    "posicion": "Guard",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Jonas Valanciunas",
+    "apellido": "Valanciunas",
+    "equipos": ["Toronto Raptors", "Memphis Grizzlies", "New Orleans Pelicans"],
+    "nacionalidad": "Lithuania",
+    "posicion": "Center",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Kemba Walker",
+    "apellido": "Walker",
+    "equipos": ["Charlotte Hornets", "Boston Celtics", "New York Knicks", "Dallas Mavericks"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Tobias Harris",
+    "apellido": "Harris",
+    "equipos": ["Milwaukee Bucks", "Orlando Magic", "Detroit Pistons", "Los Angeles Clippers", "Philadelphia 76ers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Tristan Thompson",
+    "apellido": "Thompson",
+    "equipos": ["Cleveland Cavaliers", "Boston Celtics", "Sacramento Kings", "Indiana Pacers", "Chicago Bulls", "Los Angeles Lakers"],
+    "nacionalidad": "Canada",
+    "posicion": "Forward-Center",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Enes Kanter",
+    "apellido": "Kanter",
+    "equipos": ["Utah Jazz", "Oklahoma City Thunder", "New York Knicks", "Portland Trail Blazers", "Boston Celtics"],
+    "nacionalidad": "Turkey",
+    "posicion": "Center",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Nikola Vucevic",
+    "apellido": "Vucevic",
+    "equipos": ["Philadelphia 76ers", "Orlando Magic", "Chicago Bulls"],
+    "nacionalidad": "Montenegro",
+    "posicion": "Center",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Andre Drummond",
+    "apellido": "Drummond",
+    "equipos": ["Detroit Pistons", "Cleveland Cavaliers", "Los Angeles Lakers", "Philadelphia 76ers", "Brooklyn Nets", "Chicago Bulls"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Harrison Barnes",
+    "apellido": "Barnes",
+    "equipos": ["Golden State Warriors", "Dallas Mavericks", "Sacramento Kings", "San Antonio Spurs"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Draymond Green",
+    "apellido": "Green",
+    "equipos": ["Golden State Warriors"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Kelly Oubre Jr.",
+    "apellido": "Oubre Jr.",
+    "equipos": ["Washington Wizards", "Phoenix Suns", "Golden State Warriors", "Charlotte Hornets", "Philadelphia 76ers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "D'Angelo Russell",
+    "apellido": "Russell",
+    "equipos": ["Los Angeles Lakers", "Brooklyn Nets", "Golden State Warriors", "Minnesota Timberwolves"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Kristaps Porzingis",
+    "apellido": "Porzingis",
+    "equipos": ["New York Knicks", "Dallas Mavericks", "Washington Wizards", "Boston Celtics"],
+    "nacionalidad": "Latvia",
+    "posicion": "Forward-Center",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Dennis Schroder",
+    "apellido": "Schroder",
+    "equipos": ["Atlanta Hawks", "Oklahoma City Thunder", "Los Angeles Lakers", "Boston Celtics", "Houston Rockets", "Toronto Raptors", "Brooklyn Nets"],
+    "nacionalidad": "Germany",
+    "posicion": "Guard",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Julius Randle",
+    "apellido": "Randle",
+    "equipos": ["Los Angeles Lakers", "New Orleans Pelicans", "New York Knicks", "Minnesota Timberwolves"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Clint Capela",
+    "apellido": "Capela",
+    "equipos": ["Houston Rockets", "Atlanta Hawks"],
+    "nacionalidad": "Switzerland",
+    "posicion": "Center",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Myles Turner",
+    "apellido": "Turner",
+    "equipos": ["Indiana Pacers"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Devin Booker",
+    "apellido": "Booker",
+    "equipos": ["Phoenix Suns"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Karl-Anthony Towns",
+    "apellido": "Towns",
+    "equipos": ["Minnesota Timberwolves", "New York Knicks"],
+    "nacionalidad": "Dominican Republic",
+    "posicion": "Center",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Brandon Ingram",
+    "apellido": "Ingram",
+    "equipos": ["Los Angeles Lakers", "New Orleans Pelicans"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Jaylen Brown",
+    "apellido": "Brown",
+    "equipos": ["Boston Celtics"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Buddy Hield",
+    "apellido": "Hield",
+    "equipos": ["New Orleans Pelicans", "Sacramento Kings", "Indiana Pacers", "Philadelphia 76ers"],
+    "nacionalidad": "Bahamas",
+    "posicion": "Guard",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Pascal Siakam",
+    "apellido": "Siakam",
+    "equipos": ["Toronto Raptors", "Indiana Pacers"],
+    "nacionalidad": "Cameroon",
+    "posicion": "Forward",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Domantas Sabonis",
+    "apellido": "Sabonis",
+    "equipos": ["Oklahoma City Thunder", "Indiana Pacers", "Sacramento Kings"],
+    "nacionalidad": "Lithuania",
+    "posicion": "Forward-Center",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Lauri Markkanen",
+    "apellido": "Markkanen",
+    "equipos": ["Chicago Bulls", "Cleveland Cavaliers", "Utah Jazz"],
+    "nacionalidad": "Finland",
+    "posicion": "Forward",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Lonzo Ball",
+    "apellido": "Ball",
+    "equipos": ["Los Angeles Lakers", "New Orleans Pelicans", "Chicago Bulls"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "De'Aaron Fox",
+    "apellido": "Fox",
+    "equipos": ["Sacramento Kings"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Collin Sexton",
+    "apellido": "Sexton",
+    "equipos": ["Cleveland Cavaliers", "Utah Jazz"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Shai Gilgeous-Alexander",
+    "apellido": "Gilgeous-Alexander",
+    "equipos": ["Los Angeles Clippers", "Oklahoma City Thunder"],
+    "nacionalidad": "Canada",
+    "posicion": "Guard",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Mikal Bridges",
+    "apellido": "Bridges",
+    "equipos": ["Philadelphia 76ers", "Phoenix Suns", "Brooklyn Nets", "New York Knicks"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Miles Bridges",
+    "apellido": "Bridges",
+    "equipos": ["Charlotte Hornets"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Jaren Jackson Jr.",
+    "apellido": "Jackson Jr.",
+    "equipos": ["Memphis Grizzlies"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Michael Porter Jr.",
+    "apellido": "Porter Jr.",
+    "equipos": ["Denver Nuggets"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Kevin Porter Jr.",
+    "apellido": "Porter Jr.",
+    "equipos": ["Cleveland Cavaliers", "Houston Rockets", "Oklahoma City Thunder"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "RJ Barrett",
+    "apellido": "Barrett",
+    "equipos": ["New York Knicks", "Toronto Raptors"],
+    "nacionalidad": "Canada",
+    "posicion": "Guard-Forward",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Coby White",
+    "apellido": "White",
+    "equipos": ["Chicago Bulls"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Darius Garland",
+    "apellido": "Garland",
+    "equipos": ["Cleveland Cavaliers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Tyler Herro",
+    "apellido": "Herro",
+    "equipos": ["Miami Heat"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Rui Hachimura",
+    "apellido": "Hachimura",
+    "equipos": ["Washington Wizards", "Los Angeles Lakers"],
+    "nacionalidad": "Japan",
+    "posicion": "Forward",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Jaxson Hayes",
+    "apellido": "Hayes",
+    "equipos": ["New Orleans Pelicans", "Los Angeles Lakers"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Nickeil Alexander-Walker",
+    "apellido": "Alexander-Walker",
+    "equipos": ["New Orleans Pelicans", "Portland Trail Blazers", "Utah Jazz", "Minnesota Timberwolves"],
+    "nacionalidad": "Canada",
+    "posicion": "Guard",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Matisse Thybulle",
+    "apellido": "Thybulle",
+    "equipos": ["Philadelphia 76ers", "Portland Trail Blazers"],
+    "nacionalidad": "Australia",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Jordan Poole",
+    "apellido": "Poole",
+    "equipos": ["Golden State Warriors", "Washington Wizards"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Jarrett Culver",
+    "apellido": "Culver",
+    "equipos": ["Minnesota Timberwolves", "Memphis Grizzlies", "Atlanta Hawks"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Cameron Johnson",
+    "apellido": "Johnson",
+    "equipos": ["Phoenix Suns", "Brooklyn Nets"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "P.J. Washington",
+    "apellido": "Washington",
+    "equipos": ["Charlotte Hornets", "Dallas Mavericks"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Keldon Johnson",
+    "apellido": "Johnson",
+    "equipos": ["San Antonio Spurs"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Kendrick Nunn",
+    "apellido": "Nunn",
+    "equipos": ["Miami Heat", "Los Angeles Lakers", "Washington Wizards"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Terance Mann",
+    "apellido": "Mann",
+    "equipos": ["Los Angeles Clippers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Daniel Gafford",
+    "apellido": "Gafford",
+    "equipos": ["Chicago Bulls", "Washington Wizards", "Dallas Mavericks"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Jalen Brunson",
+    "apellido": "Brunson",
+    "equipos": ["Dallas Mavericks", "New York Knicks"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Mitchell Robinson",
+    "apellido": "Robinson",
+    "equipos": ["New York Knicks"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Donte DiVincenzo",
+    "apellido": "DiVincenzo",
+    "equipos": ["Milwaukee Bucks", "Sacramento Kings", "Golden State Warriors", "New York Knicks", "Minnesota Timberwolves"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Josh Okogie",
+    "apellido": "Okogie",
+    "equipos": ["Minnesota Timberwolves", "Phoenix Suns"],
+    "nacionalidad": "Nigeria",
+    "posicion": "Guard",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Shake Milton",
+    "apellido": "Milton",
+    "equipos": ["Philadelphia 76ers", "Minnesota Timberwolves", "Detroit Pistons", "New York Knicks", "Brooklyn Nets"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Precious Achiuwa",
+    "apellido": "Achiuwa",
+    "equipos": ["Miami Heat", "Toronto Raptors", "New York Knicks"],
+    "nacionalidad": "Nigeria",
+    "posicion": "Forward",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Isaiah Stewart",
+    "apellido": "Stewart",
+    "equipos": ["Detroit Pistons"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "2001"
+  },
+  {
+    "nombreCompleto": "Saddiq Bey",
+    "apellido": "Bey",
+    "equipos": ["Detroit Pistons", "Atlanta Hawks"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Immanuel Quickley",
+    "apellido": "Quickley",
+    "equipos": ["New York Knicks", "Toronto Raptors"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Desmond Bane",
+    "apellido": "Bane",
+    "equipos": ["Memphis Grizzlies"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Cole Anthony",
+    "apellido": "Anthony",
+    "equipos": ["Orlando Magic"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Tyrese Maxey",
+    "apellido": "Maxey",
+    "equipos": ["Philadelphia 76ers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Isaac Okoro",
+    "apellido": "Okoro",
+    "equipos": ["Cleveland Cavaliers"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "2001"
+  },
+  {
+    "nombreCompleto": "Aleksej Pokusevski",
+    "apellido": "Pokusevski",
+    "equipos": ["Oklahoma City Thunder", "Charlotte Hornets"],
+    "nacionalidad": "Serbia",
+    "posicion": "Forward",
+    "nacimiento": "2001"
+  },
+  {
+    "nombreCompleto": "Jalen Smith",
+    "apellido": "Smith",
+    "equipos": ["Phoenix Suns", "Indiana Pacers", "Chicago Bulls"],
+    "nacionalidad": "USA",
+    "posicion": "Forward-Center",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Tyrese Haliburton",
+    "apellido": "Haliburton",
+    "equipos": ["Sacramento Kings", "Indiana Pacers"],
+    "nacionalidad": "USA",
+    "posicion": "Guard",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Onyeka Okongwu",
+    "apellido": "Okongwu",
+    "equipos": ["Atlanta Hawks"],
+    "nacionalidad": "USA",
+    "posicion": "Center",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Devin Vassell",
+    "apellido": "Vassell",
+    "equipos": ["San Antonio Spurs"],
+    "nacionalidad": "USA",
+    "posicion": "Guard-Forward",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Patrick Williams",
+    "apellido": "Williams",
+    "equipos": ["Chicago Bulls"],
+    "nacionalidad": "USA",
+    "posicion": "Forward",
+    "nacimiento": "2001"
+  }
+]

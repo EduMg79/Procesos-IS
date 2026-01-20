@@ -1,0 +1,3668 @@
+[
+  {
+    "nombreCompleto": "Lionel Messi",
+    "apellido": "Messi",
+    "equipos": ["FC Barcelona", "PSG", "Inter Miami"],
+    "nacionalidad": "Argentina",
+    "posicion": "Forward",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Cristiano Ronaldo",
+    "apellido": "Ronaldo",
+    "equipos": ["Manchester United", "Real Madrid", "Juventus", "Al Nassr"],
+    "nacionalidad": "Portugal",
+    "posicion": "Forward",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Neymar Jr",
+    "apellido": "Neymar",
+    "equipos": ["Santos", "FC Barcelona", "PSG", "Al Hilal"],
+    "nacionalidad": "Brazil",
+    "posicion": "Forward",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Kylian Mbappé",
+    "apellido": "Mbappé",
+    "equipos": ["Monaco", "PSG"],
+    "nacionalidad": "France",
+    "posicion": "Forward",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Erling Haaland",
+    "apellido": "Haaland",
+    "equipos": ["Borussia Dortmund", "Manchester City"],
+    "nacionalidad": "Norway",
+    "posicion": "Forward",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Kevin De Bruyne",
+    "apellido": "De Bruyne",
+    "equipos": ["Chelsea", "VfL Wolfsburg", "Manchester City"],
+    "nacionalidad": "Belgium",
+    "posicion": "Midfielder",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Robert Lewandowski",
+    "apellido": "Lewandowski",
+    "equipos": ["Borussia Dortmund", "Bayern Munich", "FC Barcelona"],
+    "nacionalidad": "Poland",
+    "posicion": "Forward",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Luka Modrić",
+    "apellido": "Modrić",
+    "equipos": ["Dinamo Zagreb", "Tottenham", "Real Madrid"],
+    "nacionalidad": "Croatia",
+    "posicion": "Midfielder",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Mohamed Salah",
+    "apellido": "Salah",
+    "equipos": ["Chelsea", "Fiorentina", "Roma", "Liverpool"],
+    "nacionalidad": "Egypt",
+    "posicion": "Forward",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Sergio Ramos",
+    "apellido": "Ramos",
+    "equipos": ["Sevilla", "Real Madrid", "PSG"],
+    "nacionalidad": "Spain",
+    "posicion": "Defender",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Virgil van Dijk",
+    "apellido": "van Dijk",
+    "equipos": ["Celtic", "Southampton", "Liverpool"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Defender",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Karim Benzema",
+    "apellido": "Benzema",
+    "equipos": ["Lyon", "Real Madrid", "Al Ittihad"],
+    "nacionalidad": "France",
+    "posicion": "Forward",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Luis Suárez",
+    "apellido": "Suárez",
+    "equipos": ["Ajax", "Liverpool", "FC Barcelona", "Atletico Madrid", "Inter Miami"],
+    "nacionalidad": "Uruguay",
+    "posicion": "Forward",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Eden Hazard",
+    "apellido": "Hazard",
+    "equipos": ["Lille", "Chelsea", "Real Madrid"],
+    "nacionalidad": "Belgium",
+    "posicion": "Forward",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Toni Kroos",
+    "apellido": "Kroos",
+    "equipos": ["Bayern Munich", "Real Madrid"],
+    "nacionalidad": "Germany",
+    "posicion": "Midfielder",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Harry Kane",
+    "apellido": "Kane",
+    "equipos": ["Tottenham", "Bayern Munich"],
+    "nacionalidad": "England",
+    "posicion": "Forward",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Paul Pogba",
+    "apellido": "Pogba",
+    "equipos": ["Manchester United", "Juventus"],
+    "nacionalidad": "France",
+    "posicion": "Midfielder",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Raheem Sterling",
+    "apellido": "Sterling",
+    "equipos": ["Liverpool", "Manchester City", "Chelsea"],
+    "nacionalidad": "England",
+    "posicion": "Forward",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Antoine Griezmann",
+    "apellido": "Griezmann",
+    "equipos": ["Real Sociedad", "Atletico Madrid", "FC Barcelona"],
+    "nacionalidad": "France",
+    "posicion": "Forward",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Sadio Mané",
+    "apellido": "Mané",
+    "equipos": ["Southampton", "Liverpool", "Bayern Munich", "Al Nassr"],
+    "nacionalidad": "Senegal",
+    "posicion": "Forward",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Andrés Iniesta",
+    "apellido": "Iniesta",
+    "equipos": ["FC Barcelona", "Vissel Kobe"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "1984"
+  },
+  {
+    "nombreCompleto": "Xavi Hernández",
+    "apellido": "Xavi",
+    "equipos": ["FC Barcelona", "Al Sadd"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "1980"
+  },
+  {
+    "nombreCompleto": "Thierry Henry",
+    "apellido": "Henry",
+    "equipos": ["Monaco", "Juventus", "Arsenal", "FC Barcelona"],
+    "nacionalidad": "France",
+    "posicion": "Forward",
+    "nacimiento": "1977"
+  },
+  {
+    "nombreCompleto": "Zlatan Ibrahimović",
+    "apellido": "Ibrahimović",
+    "equipos": ["Ajax", "Juventus", "Inter Milan", "FC Barcelona", "AC Milan", "PSG", "Manchester United"],
+    "nacionalidad": "Sweden",
+    "posicion": "Forward",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "Sergio Busquets",
+    "apellido": "Busquets",
+    "equipos": ["FC Barcelona", "Inter Miami"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Gerard Piqué",
+    "apellido": "Piqué",
+    "equipos": ["Manchester United", "FC Barcelona"],
+    "nacionalidad": "Spain",
+    "posicion": "Defender",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Gareth Bale",
+    "apellido": "Bale",
+    "equipos": ["Tottenham", "Real Madrid"],
+    "nacionalidad": "Wales",
+    "posicion": "Forward",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Lautaro Martínez",
+    "apellido": "Martínez",
+    "equipos": ["Racing Club", "Inter Milan"],
+    "nacionalidad": "Argentina",
+    "posicion": "Forward",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Ángel Di María",
+    "apellido": "Di María",
+    "equipos": ["Real Madrid", "Manchester United", "PSG", "Juventus"],
+    "nacionalidad": "Argentina",
+    "posicion": "Midfielder",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Manuel Neuer",
+    "apellido": "Neuer",
+    "equipos": ["Schalke 04", "Bayern Munich"],
+    "nacionalidad": "Germany",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Thibaut Courtois",
+    "apellido": "Courtois",
+    "equipos": ["Chelsea", "Atletico Madrid", "Real Madrid"],
+    "nacionalidad": "Belgium",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Casemiro",
+    "apellido": "Casemiro",
+    "equipos": ["Real Madrid", "Manchester United"],
+    "nacionalidad": "Brazil",
+    "posicion": "Midfielder",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Bruno Fernandes",
+    "apellido": "Fernandes",
+    "equipos": ["Sporting CP", "Manchester United"],
+    "nacionalidad": "Portugal",
+    "posicion": "Midfielder",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Marcus Rashford",
+    "apellido": "Rashford",
+    "equipos": ["Manchester United"],
+    "nacionalidad": "England",
+    "posicion": "Forward",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Phil Foden",
+    "apellido": "Foden",
+    "equipos": ["Manchester City"],
+    "nacionalidad": "England",
+    "posicion": "Midfielder",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "João Félix",
+    "apellido": "Félix",
+    "equipos": ["Benfica", "Atletico Madrid", "Chelsea", "FC Barcelona"],
+    "nacionalidad": "Portugal",
+    "posicion": "Forward",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Vinícius Jr",
+    "apellido": "Vinícius",
+    "equipos": ["Flamengo", "Real Madrid"],
+    "nacionalidad": "Brazil",
+    "posicion": "Forward",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Jude Bellingham",
+    "apellido": "Bellingham",
+    "equipos": ["Birmingham City", "Borussia Dortmund", "Real Madrid"],
+    "nacionalidad": "England",
+    "posicion": "Midfielder",
+    "nacimiento": "2003"
+  },
+  {
+    "nombreCompleto": "Pedri",
+    "apellido": "Pedri",
+    "equipos": ["FC Barcelona"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "2002"
+  },
+  {
+    "nombreCompleto": "Gavi",
+    "apellido": "Gavi",
+    "equipos": ["FC Barcelona"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "2004"
+  },
+  {
+    "nombreCompleto": "Ronaldinho Gaúcho",
+    "apellido": "Ronaldinho",
+    "equipos": ["Grêmio", "PSG", "FC Barcelona", "AC Milan", "Flamengo", "Atlético Mineiro"],
+    "nacionalidad": "Brazil",
+    "posicion": "Forward",
+    "nacimiento": "1980"
+  },
+  {
+    "nombreCompleto": "Iker Casillas",
+    "apellido": "Casillas",
+    "equipos": ["Real Madrid", "Porto"],
+    "nacionalidad": "Spain",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "Steven Gerrard",
+    "apellido": "Gerrard",
+    "equipos": ["Liverpool", "LA Galaxy"],
+    "nacionalidad": "England",
+    "posicion": "Midfielder",
+    "nacimiento": "1980"
+  },
+  {
+    "nombreCompleto": "Frank Lampard",
+    "apellido": "Lampard",
+    "equipos": ["West Ham", "Chelsea", "Manchester City", "New York City"],
+    "nacionalidad": "England",
+    "posicion": "Midfielder",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "David Beckham",
+    "apellido": "Beckham",
+    "equipos": ["Manchester United", "Real Madrid", "LA Galaxy", "AC Milan", "PSG"],
+    "nacionalidad": "England",
+    "posicion": "Midfielder",
+    "nacimiento": "1975"
+  },
+  {
+    "nombreCompleto": "Wayne Rooney",
+    "apellido": "Rooney",
+    "equipos": ["Everton", "Manchester United", "DC United", "Derby County"],
+    "nacionalidad": "England",
+    "posicion": "Forward",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Sergio Agüero",
+    "apellido": "Agüero",
+    "equipos": ["Independiente", "Atletico Madrid", "Manchester City", "FC Barcelona"],
+    "nacionalidad": "Argentina",
+    "posicion": "Forward",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "David Silva",
+    "apellido": "Silva",
+    "equipos": ["Valencia", "Eibar", "Celta Vigo", "Manchester City", "Real Sociedad"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Carles Puyol",
+    "apellido": "Puyol",
+    "equipos": ["FC Barcelona"],
+    "nacionalidad": "Spain",
+    "posicion": "Defender",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "Samuel Eto'o",
+    "apellido": "Eto'o",
+    "equipos": ["Real Madrid", "Mallorca", "FC Barcelona", "Inter Milan", "Chelsea", "Everton", "Sampdoria"],
+    "nacionalidad": "Cameroon",
+    "posicion": "Forward",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "Mesut Özil",
+    "apellido": "Özil",
+    "equipos": ["Schalke 04", "Werder Bremen", "Real Madrid", "Arsenal", "Fenerbahçe"],
+    "nacionalidad": "Germany",
+    "posicion": "Midfielder",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Cesc Fàbregas",
+    "apellido": "Fàbregas",
+    "equipos": ["Arsenal", "FC Barcelona", "Chelsea", "Monaco", "Como"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Robin van Persie",
+    "apellido": "van Persie",
+    "equipos": ["Feyenoord", "Arsenal", "Manchester United", "Fenerbahçe"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Forward",
+    "nacimiento": "1983"
+  },
+  {
+    "nombreCompleto": "Rio Ferdinand",
+    "apellido": "Ferdinand",
+    "equipos": ["West Ham", "Leeds United", "Manchester United", "QPR"],
+    "nacionalidad": "England",
+    "posicion": "Defender",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "John Terry",
+    "apellido": "Terry",
+    "equipos": ["Chelsea", "Aston Villa"],
+    "nacionalidad": "England",
+    "posicion": "Defender",
+    "nacimiento": "1980"
+  },
+  {
+    "nombreCompleto": "Didier Drogba",
+    "apellido": "Drogba",
+    "equipos": ["Le Mans", "Guingamp", "Marseille", "Chelsea", "Galatasaray", "Montreal Impact"],
+    "nacionalidad": "Ivory Coast",
+    "posicion": "Forward",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "Gianluigi Buffon",
+    "apellido": "Buffon",
+    "equipos": ["Parma", "Juventus", "PSG"],
+    "nacionalidad": "Italy",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "Andrea Pirlo",
+    "apellido": "Pirlo",
+    "equipos": ["Brescia", "Inter Milan", "Reggina", "AC Milan", "Juventus", "New York City"],
+    "nacionalidad": "Italy",
+    "posicion": "Midfielder",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Paolo Maldini",
+    "apellido": "Maldini",
+    "equipos": ["AC Milan"],
+    "nacionalidad": "Italy",
+    "posicion": "Defender",
+    "nacimiento": "1968"
+  },
+  {
+    "nombreCompleto": "Roberto Carlos",
+    "apellido": "Carlos",
+    "equipos": ["Palmeiras", "Inter Milan", "Real Madrid", "Fenerbahçe"],
+    "nacionalidad": "Brazil",
+    "posicion": "Defender",
+    "nacimiento": "1973"
+  },
+  {
+    "nombreCompleto": "Ronaldo Nazário",
+    "apellido": "Ronaldo",
+    "equipos": ["Cruzeiro", "PSV Eindhoven", "FC Barcelona", "Inter Milan", "Real Madrid", "AC Milan", "Corinthians"],
+    "nacionalidad": "Brazil",
+    "posicion": "Forward",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Kaká",
+    "apellido": "Kaká",
+    "equipos": ["São Paulo", "AC Milan", "Real Madrid", "Orlando City"],
+    "nacionalidad": "Brazil",
+    "posicion": "Midfielder",
+    "nacimiento": "1982"
+  },
+  {
+    "nombreCompleto": "Son Heung-min",
+    "apellido": "Son",
+    "equipos": ["Hamburger SV", "Bayer Leverkusen", "Tottenham"],
+    "nacionalidad": "South Korea",
+    "posicion": "Forward",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Rodri Hernández",
+    "apellido": "Rodri",
+    "equipos": ["Villarreal", "Atletico Madrid", "Manchester City"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Bernardo Silva",
+    "apellido": "Silva",
+    "equipos": ["Benfica", "Monaco", "Manchester City"],
+    "nacionalidad": "Portugal",
+    "posicion": "Midfielder",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Bukayo Saka",
+    "apellido": "Saka",
+    "equipos": ["Arsenal"],
+    "nacionalidad": "England",
+    "posicion": "Forward",
+    "nacimiento": "2001"
+  },
+  {
+    "nombreCompleto": "Martin Ødegaard",
+    "apellido": "Ødegaard",
+    "equipos": ["Real Madrid", "Heerenveen", "Vitesse", "Real Sociedad", "Arsenal"],
+    "nacionalidad": "Norway",
+    "posicion": "Midfielder",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Declan Rice",
+    "apellido": "Rice",
+    "equipos": ["West Ham", "Arsenal"],
+    "nacionalidad": "England",
+    "posicion": "Midfielder",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Jan Oblak",
+    "apellido": "Oblak",
+    "equipos": ["Benfica", "Atletico Madrid"],
+    "nacionalidad": "Slovenia",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Frenkie de Jong",
+    "apellido": "de Jong",
+    "equipos": ["Ajax", "FC Barcelona"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Midfielder",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "İlkay Gündoğan",
+    "apellido": "Gündoğan",
+    "equipos": ["Nuremberg", "Borussia Dortmund", "Manchester City", "FC Barcelona"],
+    "nacionalidad": "Germany",
+    "posicion": "Midfielder",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Marc-André ter Stegen",
+    "apellido": "ter Stegen",
+    "equipos": ["Borussia Mönchengladbach", "FC Barcelona"],
+    "nacionalidad": "Germany",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Enzo Fernández",
+    "apellido": "Fernández",
+    "equipos": ["River Plate", "Benfica", "Chelsea"],
+    "nacionalidad": "Argentina",
+    "posicion": "Midfielder",
+    "nacimiento": "2001"
+  },
+  {
+    "nombreCompleto": "Alexis Mac Allister",
+    "apellido": "Mac Allister",
+    "equipos": ["Argentinos Juniors", "Boca Juniors", "Brighton", "Liverpool"],
+    "nacionalidad": "Argentina",
+    "posicion": "Midfielder",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Julián Álvarez",
+    "apellido": "Álvarez",
+    "equipos": ["River Plate", "Manchester City", "Atletico Madrid"],
+    "nacionalidad": "Argentina",
+    "posicion": "Forward",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Darwin Núñez",
+    "apellido": "Núñez",
+    "equipos": ["Peñarol", "Almería", "Benfica", "Liverpool"],
+    "nacionalidad": "Uruguay",
+    "posicion": "Forward",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Luis Díaz",
+    "apellido": "Díaz",
+    "equipos": ["Junior Barranquilla", "Porto", "Liverpool"],
+    "nacionalidad": "Colombia",
+    "posicion": "Forward",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "James Rodríguez",
+    "apellido": "Rodríguez",
+    "equipos": ["Porto", "Monaco", "Real Madrid", "Bayern Munich", "Everton", "Sao Paulo", "Rayo Vallecano"],
+    "nacionalidad": "Colombia",
+    "posicion": "Midfielder",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Radamel Falcao",
+    "apellido": "Falcao",
+    "equipos": ["River Plate", "Porto", "Atletico Madrid", "Monaco", "Manchester United", "Chelsea", "Galatasaray", "Rayo Vallecano"],
+    "nacionalidad": "Colombia",
+    "posicion": "Forward",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Keylor Navas",
+    "apellido": "Navas",
+    "equipos": ["Saprissa", "Albacete", "Levante", "Real Madrid", "PSG", "Nottingham Forest"],
+    "nacionalidad": "Costa Rica",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Alphonso Davies",
+    "apellido": "Davies",
+    "equipos": ["Vancouver Whitecaps", "Bayern Munich"],
+    "nacionalidad": "Canada",
+    "posicion": "Defender",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Joshua Kimmich",
+    "apellido": "Kimmich",
+    "equipos": ["RB Leipzig", "Bayern Munich"],
+    "nacionalidad": "Germany",
+    "posicion": "Midfielder",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Jamal Musiala",
+    "apellido": "Musiala",
+    "equipos": ["Bayern Munich"],
+    "nacionalidad": "Germany",
+    "posicion": "Midfielder",
+    "nacimiento": "2003"
+  },
+  {
+    "nombreCompleto": "Florian Wirtz",
+    "apellido": "Wirtz",
+    "equipos": ["Bayer Leverkusen"],
+    "nacionalidad": "Germany",
+    "posicion": "Midfielder",
+    "nacimiento": "2003"
+  },
+  {
+    "nombreCompleto": "Leroy Sané",
+    "apellido": "Sané",
+    "equipos": ["Schalke 04", "Manchester City", "Bayern Munich"],
+    "nacionalidad": "Germany",
+    "posicion": "Forward",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Thomas Müller",
+    "apellido": "Müller",
+    "equipos": ["Bayern Munich"],
+    "nacionalidad": "Germany",
+    "posicion": "Forward",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Marco Reus",
+    "apellido": "Reus",
+    "equipos": ["Rot Weiss Ahlen", "Borussia Mönchengladbach", "Borussia Dortmund", "LA Galaxy"],
+    "nacionalidad": "Germany",
+    "posicion": "Midfielder",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Mats Hummels",
+    "apellido": "Hummels",
+    "equipos": ["Bayern Munich", "Borussia Dortmund", "AS Roma"],
+    "nacionalidad": "Germany",
+    "posicion": "Defender",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Victor Osimhen",
+    "apellido": "Osimhen",
+    "equipos": ["Wolfsburg", "Charleroi", "Lille", "Napoli", "Galatasaray"],
+    "nacionalidad": "Nigeria",
+    "posicion": "Forward",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Khvicha Kvaratskhelia",
+    "apellido": "Kvaratskhelia",
+    "equipos": ["Dinamo Batumi", "Napoli"],
+    "nacionalidad": "Georgia",
+    "posicion": "Forward",
+    "nacimiento": "2001"
+  },
+  {
+    "nombreCompleto": "Rafael Leão",
+    "apellido": "Leão",
+    "equipos": ["Sporting CP", "Lille", "AC Milan"],
+    "nacionalidad": "Portugal",
+    "posicion": "Forward",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Theo Hernández",
+    "apellido": "Hernández",
+    "equipos": ["Atletico Madrid", "Alavés", "Real Madrid", "Real Sociedad", "AC Milan"],
+    "nacionalidad": "France",
+    "posicion": "Defender",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Mike Maignan",
+    "apellido": "Maignan",
+    "equipos": ["Lille", "AC Milan"],
+    "nacionalidad": "France",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Nicolò Barella",
+    "apellido": "Barella",
+    "equipos": ["Cagliari", "Inter Milan"],
+    "nacionalidad": "Italy",
+    "posicion": "Midfielder",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Federico Chiesa",
+    "apellido": "Chiesa",
+    "equipos": ["Fiorentina", "Juventus", "Liverpool"],
+    "nacionalidad": "Italy",
+    "posicion": "Forward",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Dušan Vlahović",
+    "apellido": "Vlahović",
+    "equipos": ["Partizan", "Fiorentina", "Juventus"],
+    "nacionalidad": "Serbia",
+    "posicion": "Forward",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "Paulo Dybala",
+    "apellido": "Dybala",
+    "equipos": ["Instituto", "Palermo", "Juventus", "AS Roma"],
+    "nacionalidad": "Argentina",
+    "posicion": "Forward",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Romelu Lukaku",
+    "apellido": "Lukaku",
+    "equipos": ["Anderlecht", "Chelsea", "West Brom", "Everton", "Manchester United", "Inter Milan", "AS Roma", "Napoli"],
+    "nacionalidad": "Belgium",
+    "posicion": "Forward",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Achraf Hakimi",
+    "apellido": "Hakimi",
+    "equipos": ["Real Madrid", "Borussia Dortmund", "Inter Milan", "PSG"],
+    "nacionalidad": "Morocco",
+    "posicion": "Defender",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Marquinhos",
+    "apellido": "Marquinhos",
+    "equipos": ["Corinthians", "AS Roma", "PSG"],
+    "nacionalidad": "Brazil",
+    "posicion": "Defender",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Ousmane Dembélé",
+    "apellido": "Dembélé",
+    "equipos": ["Rennes", "Borussia Dortmund", "FC Barcelona", "PSG"],
+    "nacionalidad": "France",
+    "posicion": "Forward",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Ronald Araújo",
+    "apellido": "Araújo",
+    "equipos": ["Boston River", "FC Barcelona"],
+    "nacionalidad": "Uruguay",
+    "posicion": "Defender",
+    "nacimiento": "1999"
+  },
+  {
+    "nombreCompleto": "Lamine Yamal",
+    "apellido": "Yamal",
+    "equipos": ["FC Barcelona"],
+    "nacionalidad": "Spain",
+    "posicion": "Forward",
+    "nacimiento": "2007"
+  },
+  {
+    "nombreCompleto": "Fede Valverde",
+    "apellido": "Valverde",
+    "equipos": ["Peñarol", "Real Madrid", "Deportivo La Coruña"],
+    "nacionalidad": "Uruguay",
+    "posicion": "Midfielder",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Eduardo Camavinga",
+    "apellido": "Camavinga",
+    "equipos": ["Rennes", "Real Madrid"],
+    "nacionalidad": "France",
+    "posicion": "Midfielder",
+    "nacimiento": "2002"
+  },
+  {
+    "nombreCompleto": "Aurélien Tchouaméni",
+    "apellido": "Tchouaméni",
+    "equipos": ["Bordeaux", "Monaco", "Real Madrid"],
+    "nacionalidad": "France",
+    "posicion": "Midfielder",
+    "nacimiento": "2000"
+  },
+  {
+    "nombreCompleto": "David Alaba",
+    "apellido": "Alaba",
+    "equipos": ["Bayern Munich", "Hoffenheim", "Real Madrid"],
+    "nacionalidad": "Austria",
+    "posicion": "Defender",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Antonio Rüdiger",
+    "apellido": "Rüdiger",
+    "equipos": ["Stuttgart", "AS Roma", "Chelsea", "Real Madrid"],
+    "nacionalidad": "Germany",
+    "posicion": "Defender",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Jan Oblak",
+    "apellido": "Oblak",
+    "equipos": ["Benfica", "Atletico Madrid"],
+    "nacionalidad": "Slovenia",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Iñaki Williams",
+    "apellido": "Williams",
+    "equipos": ["Athletic Club"],
+    "nacionalidad": "Ghana",
+    "posicion": "Forward",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Nico Williams",
+    "apellido": "Williams",
+    "equipos": ["Athletic Club"],
+    "nacionalidad": "Spain",
+    "posicion": "Forward",
+    "nacimiento": "2002"
+  },
+  {
+    "nombreCompleto": "Dani Carvajal",
+    "apellido": "Carvajal",
+    "equipos": ["Real Madrid", "Bayer Leverkusen"],
+    "nacionalidad": "Spain",
+    "posicion": "Defender",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Bernardo Silva",
+    "apellido": "Silva",
+    "equipos": ["Benfica", "Monaco", "Manchester City"],
+    "nacionalidad": "Portugal",
+    "posicion": "Midfielder",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Bruno Guimarães",
+    "apellido": "Guimarães",
+    "equipos": ["Athletico Paranaense", "Lyon", "Newcastle"],
+    "nacionalidad": "Brazil",
+    "posicion": "Midfielder",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Gabriel Jesus",
+    "apellido": "Jesus",
+    "equipos": ["Palmeiras", "Manchester City", "Arsenal"],
+    "nacionalidad": "Brazil",
+    "posicion": "Forward",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Alisson Becker",
+    "apellido": "Becker",
+    "equipos": ["Internacional", "AS Roma", "Liverpool"],
+    "nacionalidad": "Brazil",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Ederson Moraes",
+    "apellido": "Moraes",
+    "equipos": ["Rio Ave", "Benfica", "Manchester City"],
+    "nacionalidad": "Brazil",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Diego Forlán",
+    "apellido": "Forlán",
+    "equipos": ["Independiente", "Manchester United", "Villarreal", "Atletico Madrid", "Inter Milan"],
+    "nacionalidad": "Uruguay",
+    "posicion": "Forward",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Rivaldo",
+    "apellido": "Rivaldo",
+    "equipos": ["Palmeiras", "Deportivo La Coruña", "FC Barcelona", "AC Milan"],
+    "nacionalidad": "Brazil",
+    "posicion": "Forward",
+    "nacimiento": "1972"
+  },
+  {
+    "nombreCompleto": "Miroslav Klose",
+    "apellido": "Klose",
+    "equipos": ["Kaiserslautern", "Werder Bremen", "Bayern Munich", "Lazio"],
+    "nacionalidad": "Germany",
+    "posicion": "Forward",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "Francesco Totti",
+    "apellido": "Totti",
+    "equipos": ["AS Roma"],
+    "nacionalidad": "Italy",
+    "posicion": "Forward",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Alessandro Del Piero",
+    "apellido": "Del Piero",
+    "equipos": ["Padova", "Juventus", "Sydney FC"],
+    "nacionalidad": "Italy",
+    "posicion": "Forward",
+    "nacimiento": "1974"
+  },
+  {
+    "nombreCompleto": "Patrick Vieira",
+    "apellido": "Vieira",
+    "equipos": ["Cannes", "AC Milan", "Arsenal", "Juventus", "Inter Milan", "Manchester City"],
+    "nacionalidad": "France",
+    "posicion": "Midfielder",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Eric Cantona",
+    "apellido": "Cantona",
+    "equipos": ["Auxerre", "Marseille", "Leeds United", "Manchester United"],
+    "nacionalidad": "France",
+    "posicion": "Forward",
+    "nacimiento": "1966"
+  },
+  {
+    "nombreCompleto": "Ryan Giggs",
+    "apellido": "Giggs",
+    "equipos": ["Manchester United"],
+    "nacionalidad": "Wales",
+    "posicion": "Midfielder",
+    "nacimiento": "1973"
+  },
+  {
+    "nombreCompleto": "Paul Scholes",
+    "apellido": "Scholes",
+    "equipos": ["Manchester United"],
+    "nacionalidad": "England",
+    "posicion": "Midfielder",
+    "nacimiento": "1974"
+  },
+  {
+    "nombreCompleto": "Dennis Bergkamp",
+    "apellido": "Bergkamp",
+    "equipos": ["Ajax", "Inter Milan", "Arsenal"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Forward",
+    "nacimiento": "1969"
+  },
+  {
+    "nombreCompleto": "Alan Shearer",
+    "apellido": "Shearer",
+    "equipos": ["Southampton", "Blackburn Rovers", "Newcastle"],
+    "nacionalidad": "England",
+    "posicion": "Forward",
+    "nacimiento": "1970"
+  },
+  {
+    "nombreCompleto": "Ruud van Nistelrooy",
+    "apellido": "van Nistelrooy",
+    "equipos": ["PSV Eindhoven", "Manchester United", "Real Madrid", "Hamburg", "Malaga"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Forward",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Clarence Seedorf",
+    "apellido": "Seedorf",
+    "equipos": ["Ajax", "Sampdoria", "Real Madrid", "Inter Milan", "AC Milan", "Botafogo"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Midfielder",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Cafu",
+    "apellido": "Cafu",
+    "equipos": ["Sao Paulo", "Zaragoza", "Palmeiras", "AS Roma", "AC Milan"],
+    "nacionalidad": "Brazil",
+    "posicion": "Defender",
+    "nacimiento": "1970"
+  },
+  {
+    "nombreCompleto": "Javier Zanetti",
+    "apellido": "Zanetti",
+    "equipos": ["Banfield", "Inter Milan"],
+    "nacionalidad": "Argentina",
+    "posicion": "Defender",
+  "nacimiento": "1973"
+},
+{
+  "nombreCompleto": "Peter Schmeichel",
+    "apellido": "Schmeichel",
+    "equipos": ["Brøndby", "Manchester United", "Sporting CP", "Aston Villa", "Manchester City"],
+    "nacionalidad": "Denmark",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1963"
+  },
+  {
+    "nombreCompleto": "Edwin van der Sar",
+    "apellido": "van der Sar",
+    "equipos": ["Ajax", "Juventus", "Fulham", "Manchester United"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1970"
+  },
+  {
+    "nombreCompleto": "Petr Čech",
+    "apellido": "Čech",
+    "equipos": ["Rennes", "Chelsea", "Arsenal"],
+    "nacionalidad": "Czech Republic",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1982"
+  },
+  {
+    "nombreCompleto": "Pepe",
+    "apellido": "Pepe",
+    "equipos": ["Marítimo", "Porto", "Real Madrid", "Besiktas"],
+    "nacionalidad": "Portugal",
+    "posicion": "Defender",
+    "nacimiento": "1983"
+  },
+  {
+    "nombreCompleto": "Marcelo Vieira",
+    "apellido": "Marcelo",
+    "equipos": ["Fluminense", "Real Madrid", "Olympiacos"],
+    "nacionalidad": "Brazil",
+    "posicion": "Defender",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Dani Alves",
+    "apellido": "Alves",
+    "equipos": ["Bahia", "Sevilla", "FC Barcelona", "Juventus", "PSG", "Sao Paulo", "Pumas UNAM"],
+    "nacionalidad": "Brazil",
+    "posicion": "Defender",
+    "nacimiento": "1983"
+  },
+  {
+    "nombreCompleto": "Gonzalo Higuaín",
+    "apellido": "Higuaín",
+    "equipos": ["River Plate", "Real Madrid", "Napoli", "Juventus", "AC Milan", "Chelsea", "Inter Miami"],
+    "nacionalidad": "Argentina",
+    "posicion": "Forward",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Edinson Cavani",
+    "apellido": "Cavani",
+    "equipos": ["Danubio", "Palermo", "Napoli", "PSG", "Manchester United", "Valencia", "Boca Juniors"],
+    "nacionalidad": "Uruguay",
+    "posicion": "Forward",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Diego Godín",
+    "apellido": "Godín",
+    "equipos": ["Cerro", "Nacional", "Villarreal", "Atletico Madrid", "Inter Milan", "Cagliari", "Velez Sarsfield"],
+    "nacionalidad": "Uruguay",
+    "posicion": "Defender",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Xabi Alonso",
+    "apellido": "Alonso",
+    "equipos": ["Real Sociedad", "Eibar", "Liverpool", "Real Madrid", "Bayern Munich"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "David Villa",
+    "apellido": "Villa",
+    "equipos": ["Sporting Gijón", "Zaragoza", "Valencia", "FC Barcelona", "Atletico Madrid", "Melbourne City", "New York City", "Vissel Kobe"],
+    "nacionalidad": "Spain",
+    "posicion": "Forward",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "Raúl González",
+    "apellido": "Raúl",
+    "equipos": ["Real Madrid", "Schalke 04", "Al Sadd", "New York Cosmos"],
+    "nacionalidad": "Spain",
+    "posicion": "Forward",
+    "nacimiento": "1977"
+  },
+  {
+    "nombreCompleto": "Fernando Hierro",
+    "apellido": "Hierro",
+    "equipos": ["Valladolid", "Real Madrid", "Al Rayyan", "Bolton Wanderers"],
+    "nacionalidad": "Spain",
+    "posicion": "Defender",
+    "nacimiento": "1968"
+  },
+  {
+    "nombreCompleto": "Guti Hernández",
+    "apellido": "Guti",
+    "equipos": ["Real Madrid", "Besiktas"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Edgar Davids",
+    "apellido": "Davids",
+    "equipos": ["Ajax", "AC Milan", "Juventus", "FC Barcelona", "Inter Milan", "Tottenham"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Midfielder",
+    "nacimiento": "1973"
+  },
+  {
+    "nombreCompleto": "Javier Mascherano",
+    "apellido": "Mascherano",
+    "equipos": ["River Plate", "Corinthians", "West Ham", "Liverpool", "FC Barcelona", "Hebei Fortune", "Estudiantes"],
+    "nacionalidad": "Argentina",
+    "posicion": "Defender",
+    "nacimiento": "1984"
+  },
+  {
+    "nombreCompleto": "Deco",
+    "apellido": "Deco",
+    "equipos": ["Alverca", "Salgueiros", "Porto", "FC Barcelona", "Chelsea", "Fluminense"],
+    "nacionalidad": "Portugal",
+    "posicion": "Midfielder",
+    "nacimiento": "1977"
+  },
+  {
+    "nombreCompleto": "Ricardo Carvalho",
+    "apellido": "Carvalho",
+    "equipos": ["Porto", "Chelsea", "Real Madrid", "Monaco"],
+    "nacionalidad": "Portugal",
+    "posicion": "Defender",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "Nani",
+    "apellido": "Nani",
+    "equipos": ["Sporting CP", "Manchester United", "Fenerbahçe", "Valencia", "Lazio", "Orlando City", "Venezia", "Adana Demirspor"],
+    "nacionalidad": "Portugal",
+    "posicion": "Forward",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Patrice Evra",
+    "apellido": "Evra",
+    "equipos": ["Monaco", "Manchester United", "Juventus", "Marseille", "West Ham"],
+    "nacionalidad": "France",
+    "posicion": "Defender",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "Nemanja Vidić",
+    "apellido": "Vidić",
+    "equipos": ["Red Star Belgrade", "Spartak Moscow", "Manchester United", "Inter Milan"],
+    "nacionalidad": "Serbia",
+    "posicion": "Defender",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "Jaap Stam",
+    "apellido": "Stam",
+    "equipos": ["PSV Eindhoven", "Manchester United", "Lazio", "AC Milan", "Ajax"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Defender",
+    "nacimiento": "1972"
+  },
+  {
+    "nombreCompleto": "Ruud Gullit",
+    "apellido": "Gullit",
+    "equipos": ["Feyenoord", "PSV Eindhoven", "AC Milan", "Sampdoria", "Chelsea"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Midfielder",
+    "nacimiento": "1962"
+  },
+  {
+    "nombreCompleto": "Marco van Basten",
+    "apellido": "van Basten",
+    "equipos": ["Ajax", "AC Milan"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Forward",
+    "nacimiento": "1964"
+  },
+  {
+    "nombreCompleto": "Frank Rijkaard",
+    "apellido": "Rijkaard",
+    "equipos": ["Ajax", "Sporting CP", "Zaragoza", "AC Milan"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Midfielder",
+    "nacimiento": "1962"
+  },
+  {
+    "nombreCompleto": "Lothar Matthäus",
+    "apellido": "Matthäus",
+    "equipos": ["Borussia Mönchengladbach", "Bayern Munich", "Inter Milan", "MetroStars"],
+    "nacionalidad": "Germany",
+    "posicion": "Midfielder",
+    "nacimiento": "1961"
+  },
+  {
+    "nombreCompleto": "Oliver Kahn",
+    "apellido": "Kahn",
+    "equipos": ["Karlsruher SC", "Bayern Munich"],
+    "nacionalidad": "Germany",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1969"
+  },
+  {
+    "nombreCompleto": "Philipp Lahm",
+    "apellido": "Lahm",
+    "equipos": ["Bayern Munich", "Stuttgart"],
+    "nacionalidad": "Germany",
+    "posicion": "Defender",
+    "nacimiento": "1983"
+  },
+  {
+    "nombreCompleto": "Bastian Schweinsteiger",
+    "apellido": "Schweinsteiger",
+    "equipos": ["Bayern Munich", "Manchester United", "Chicago Fire"],
+    "nacionalidad": "Germany",
+    "posicion": "Midfielder",
+    "nacimiento": "1984"
+  },
+  {
+    "nombreCompleto": "Arjen Robben",
+    "apellido": "Robben",
+    "equipos": ["Groningen", "PSV Eindhoven", "Chelsea", "Real Madrid", "Bayern Munich"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Forward",
+    "nacimiento": "1984"
+  },
+  {
+    "nombreCompleto": "Franck Ribéry",
+    "apellido": "Ribéry",
+    "equipos": ["Metz", "Galatasaray", "Marseille", "Bayern Munich", "Fiorentina", "Salernitana"],
+    "nacionalidad": "France",
+    "posicion": "Forward",
+    "nacimiento": "1983"
+  },
+  {
+    "nombreCompleto": "Wesley Sneijder",
+    "apellido": "Sneijder",
+    "equipos": ["Ajax", "Real Madrid", "Inter Milan", "Galatasaray", "Nice"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Midfielder",
+    "nacimiento": "1984"
+  },
+  {
+    "nombreCompleto": "Rafael van der Vaart",
+    "apellido": "van der Vaart",
+    "equipos": ["Ajax", "Hamburg", "Real Madrid", "Tottenham", "Real Betis"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Midfielder",
+    "nacimiento": "1983"
+  },
+  {
+    "nombreCompleto": "Gabriel Batistuta",
+    "apellido": "Batistuta",
+    "equipos": ["Newell's Old Boys", "River Plate", "Boca Juniors", "Fiorentina", "AS Roma", "Inter Milan"],
+    "nacionalidad": "Argentina",
+    "posicion": "Forward",
+    "nacimiento": "1969"
+  },
+  {
+    "nombreCompleto": "Juan Román Riquelme",
+    "apellido": "Riquelme",
+    "equipos": ["Boca Juniors", "FC Barcelona", "Villarreal"],
+    "nacionalidad": "Argentina",
+    "posicion": "Midfielder",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "Pablo Aimar",
+    "apellido": "Aimar",
+    "equipos": ["River Plate", "Valencia", "Real Zaragoza", "Benfica"],
+    "nacionalidad": "Argentina",
+    "posicion": "Midfielder",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Esteban Cambiasso",
+    "apellido": "Cambiasso",
+    "equipos": ["Independiente", "River Plate", "Real Madrid", "Inter Milan", "Leicester City", "Olympiacos"],
+    "nacionalidad": "Argentina",
+    "posicion": "Midfielder",
+    "nacimiento": "1980"
+  },
+  {
+    "nombreCompleto": "Walter Samuel",
+    "apellido": "Samuel",
+    "equipos": ["Newell's Old Boys", "Boca Juniors", "AS Roma", "Real Madrid", "Inter Milan", "Basel"],
+    "nacionalidad": "Argentina",
+    "posicion": "Defender",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "Diego Simeone",
+    "apellido": "Simeone",
+    "equipos": ["Velez Sarsfield", "Pisa", "Sevilla", "Atletico Madrid", "Inter Milan", "Lazio", "Racing Club"],
+    "nacionalidad": "Argentina",
+    "posicion": "Midfielder",
+    "nacimiento": "1970"
+  },
+  {
+    "nombreCompleto": "Juan Sebastián Verón",
+    "apellido": "Verón",
+    "equipos": ["Estudiantes", "Boca Juniors", "Sampdoria", "Parma", "Lazio", "Manchester United", "Chelsea", "Inter Milan"],
+    "nacionalidad": "Argentina",
+    "posicion": "Midfielder",
+    "nacimiento": "1975"
+  },
+  {
+    "nombreCompleto": "Luís Figo",
+    "apellido": "Figo",
+    "equipos": ["Sporting CP", "FC Barcelona", "Real Madrid", "Inter Milan"],
+    "nacionalidad": "Portugal",
+    "posicion": "Midfielder",
+    "nacimiento": "1972"
+  },
+  {
+    "nombreCompleto": "Rui Costa",
+    "apellido": "Costa",
+    "equipos": ["Benfica", "Fiorentina", "AC Milan"],
+    "nacionalidad": "Portugal",
+    "posicion": "Midfielder",
+    "nacimiento": "1972"
+  },
+  {
+    "nombreCompleto": "Michael Owen",
+    "apellido": "Owen",
+    "equipos": ["Liverpool", "Real Madrid", "Newcastle", "Manchester United", "Stoke City"],
+    "nacionalidad": "England",
+    "posicion": "Forward",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Jamie Carragher",
+    "apellido": "Carragher",
+    "equipos": ["Liverpool"],
+    "nacionalidad": "England",
+    "posicion": "Defender",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "Robbie Fowler",
+    "apellido": "Fowler",
+    "equipos": ["Liverpool", "Leeds United", "Manchester City", "Cardiff City"],
+    "nacionalidad": "England",
+    "posicion": "Forward",
+    "nacimiento": "1975"
+  },
+  {
+    "nombreCompleto": "Sol Campbell",
+    "apellido": "Campbell",
+    "equipos": ["Tottenham", "Arsenal", "Portsmouth", "Newcastle"],
+    "nacionalidad": "England",
+    "posicion": "Defender",
+    "nacimiento": "1974"
+  },
+  {
+    "nombreCompleto": "Robert Pires",
+    "apellido": "Pires",
+    "equipos": ["Metz", "Marseille", "Arsenal", "Villarreal", "Aston Villa"],
+    "nacionalidad": "France",
+    "posicion": "Midfielder",
+    "nacimiento": "1973"
+  },
+  {
+    "nombreCompleto": "Freddie Ljungberg",
+    "apellido": "Ljungberg",
+    "equipos": ["Halmstads BK", "Arsenal", "West Ham", "Seattle Sounders", "Celtic"],
+    "nacionalidad": "Sweden",
+    "posicion": "Midfielder",
+    "nacimiento": "1977"
+  },
+  {
+    "nombreCompleto": "Emmanuel Adebayor",
+    "apellido": "Adebayor",
+    "equipos": ["Metz", "Monaco", "Arsenal", "Manchester City", "Real Madrid", "Tottenham", "Crystal Palace"],
+    "nacionalidad": "Togo",
+    "posicion": "Forward",
+    "nacimiento": "1984"
+  },
+  {
+    "nombreCompleto": "Kolo Touré",
+    "apellido": "Touré",
+    "equipos": ["Arsenal", "Manchester City", "Liverpool", "Celtic"],
+    "nacionalidad": "Ivory Coast",
+    "posicion": "Defender",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "Yaya Touré",
+    "apellido": "Touré",
+    "equipos": ["Olympiacos", "Monaco", "FC Barcelona", "Manchester City"],
+    "nacionalidad": "Ivory Coast",
+    "posicion": "Midfielder",
+    "nacimiento": "1983"
+  },
+  {
+    "nombreCompleto": "David Luiz",
+    "apellido": "Luiz",
+    "equipos": ["Vitória", "Benfica", "Chelsea", "PSG", "Arsenal", "Flamengo"],
+    "nacionalidad": "Brazil",
+    "posicion": "Defender",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Willian Borges",
+    "apellido": "Willian",
+    "equipos": ["Corinthians", "Shakhtar Donetsk", "Anzhi Makhachkala", "Chelsea", "Arsenal", "Fulham"],
+    "nacionalidad": "Brazil",
+    "posicion": "Forward",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Nicolas Anelka",
+    "apellido": "Anelka",
+    "equipos": ["PSG", "Arsenal", "Real Madrid", "Liverpool", "Manchester City", "Fenerbahçe", "Chelsea", "Juventus"],
+    "nacionalidad": "France",
+    "posicion": "Forward",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Alexis Sánchez",
+    "apellido": "Sánchez",
+    "equipos": ["Cobreloa", "Colo-Colo", "River Plate", "Udinese", "FC Barcelona", "Arsenal", "Manchester United", "Inter Milan", "Marseille"],
+    "nacionalidad": "Chile",
+    "posicion": "Forward",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Arturo Vidal",
+    "apellido": "Vidal",
+    "equipos": ["Colo-Colo", "Bayer Leverkusen", "Juventus", "Bayern Munich", "FC Barcelona", "Inter Milan", "Flamengo", "Athletico Paranaense"],
+    "nacionalidad": "Chile",
+    "posicion": "Midfielder",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Joao Cancelo",
+    "apellido": "Cancelo",
+    "equipos": ["Benfica", "Valencia", "Inter Milan", "Juventus", "Manchester City", "Bayern Munich", "FC Barcelona", "Al Hilal"],
+    "nacionalidad": "Portugal",
+    "posicion": "Defender",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Pierre-Emerick Aubameyang",
+    "apellido": "Aubameyang",
+    "equipos": ["AC Milan", "Saint-Étienne", "Borussia Dortmund", "Arsenal", "FC Barcelona", "Chelsea", "Marseille", "Al Qadsiah"],
+    "nacionalidad": "Gabon",
+    "posicion": "Forward",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Mateo Kovacic",
+    "apellido": "Kovacic",
+    "equipos": ["Dinamo Zagreb", "Inter Milan", "Real Madrid", "Chelsea", "Manchester City"],
+    "nacionalidad": "Croatia",
+    "posicion": "Midfielder",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Mario Balotelli",
+    "apellido": "Balotelli",
+    "equipos": ["Inter Milan", "Manchester City", "AC Milan", "Liverpool", "Nice", "Marseille", "Brescia", "Monza", "Adana Demirspor"],
+    "nacionalidad": "Italy",
+    "posicion": "Forward",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Edin Džeko",
+    "apellido": "Džeko",
+    "equipos": ["Wolfsburg", "Manchester City", "AS Roma", "Inter Milan", "Fenerbahçe"],
+    "nacionalidad": "Bosnia and Herzegovina",
+    "posicion": "Forward",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Christian Eriksen",
+    "apellido": "Eriksen",
+    "equipos": ["Ajax", "Tottenham", "Inter Milan", "Brentford", "Manchester United"],
+    "nacionalidad": "Denmark",
+    "posicion": "Midfielder",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Juan Cuadrado",
+    "apellido": "Cuadrado",
+    "equipos": ["Independiente Medellín", "Udinese", "Fiorentina", "Chelsea", "Juventus", "Inter Milan", "Atalanta"],
+    "nacionalidad": "Colombia",
+    "posicion": "Midfielder",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Henrikh Mkhitaryan",
+    "apellido": "Mkhitaryan",
+    "equipos": ["Shakhtar Donetsk", "Borussia Dortmund", "Manchester United", "Arsenal", "AS Roma", "Inter Milan"],
+    "nacionalidad": "Armenia",
+    "posicion": "Midfielder",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Álvaro Recoba",
+    "apellido": "Recoba",
+    "equipos": ["Danubio", "Nacional", "Inter Milan", "Venezia", "Torino", "Panionios"],
+    "nacionalidad": "Uruguay",
+    "posicion": "Forward",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Mario Mandžukić",
+    "apellido": "Mandžukić",
+    "equipos": ["Dinamo Zagreb", "Wolfsburg", "Bayern Munich", "Atletico Madrid", "Juventus", "Al-Duhail", "AC Milan"],
+    "nacionalidad": "Croatia",
+    "posicion": "Forward",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Miroslav Klose",
+    "apellido": "Klose",
+    "equipos": ["Kaiserslautern", "Werder Bremen", "Bayern Munich", "Lazio"],
+    "nacionalidad": "Germany",
+    "posicion": "Forward",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "Gabriel Jesus",
+    "apellido": "Jesus",
+    "equipos": ["Palmeiras", "Manchester City", "Arsenal"],
+    "nacionalidad": "Brazil",
+    "posicion": "Forward",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Oleksandr Zinchenko",
+    "apellido": "Zinchenko",
+    "equipos": ["Ufa", "Manchester City", "PSV Eindhoven", "Arsenal"],
+    "nacionalidad": "Ukraine",
+    "posicion": "Defender",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Jorginho Frello",
+    "apellido": "Jorginho",
+    "equipos": ["Hellas Verona", "Napoli", "Chelsea", "Arsenal"],
+    "nacionalidad": "Italy",
+    "posicion": "Midfielder",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "David Luiz",
+    "apellido": "Luiz",
+    "equipos": ["Vitória", "Benfica", "Chelsea", "PSG", "Arsenal", "Flamengo"],
+    "nacionalidad": "Brazil",
+    "posicion": "Defender",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Willian Borges",
+    "apellido": "Willian",
+    "equipos": ["Corinthians", "Shakhtar Donetsk", "Anzhi Makhachkala", "Chelsea", "Arsenal", "Fulham", "Olympiacos"],
+    "nacionalidad": "Brazil",
+    "posicion": "Forward",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Dani Parejo",
+    "apellido": "Parejo",
+    "equipos": ["Real Madrid", "QPR", "Getafe", "Valencia", "Villarreal"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Raúl Albiol",
+    "apellido": "Albiol",
+    "equipos": ["Valencia", "Getafe", "Real Madrid", "Napoli", "Villarreal"],
+    "nacionalidad": "Spain",
+    "posicion": "Defender",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Pepe Reina",
+    "apellido": "Reina",
+    "equipos": ["FC Barcelona", "Villarreal", "Liverpool", "Napoli", "Bayern Munich", "AC Milan", "Aston Villa", "Lazio", "Como"],
+    "nacionalidad": "Spain",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1982"
+  },
+  {
+    "nombreCompleto": "Gerard Deulofeu",
+    "apellido": "Deulofeu",
+    "equipos": ["FC Barcelona", "Everton", "Sevilla", "AC Milan", "Watford", "Udinese"],
+    "nacionalidad": "Spain",
+    "posicion": "Forward",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Lucas Digne",
+    "apellido": "Digne",
+    "equipos": ["Lille", "PSG", "AS Roma", "FC Barcelona", "Everton", "Aston Villa"],
+    "nacionalidad": "France",
+    "posicion": "Defender",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Arthur Melo",
+    "apellido": "Melo",
+    "equipos": ["Grêmio", "FC Barcelona", "Juventus", "Liverpool", "Fiorentina"],
+    "nacionalidad": "Brazil",
+    "posicion": "Midfielder",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Miralem Pjanić",
+    "apellido": "Pjanić",
+    "equipos": ["Metz", "Lyon", "AS Roma", "Juventus", "FC Barcelona", "Besiktas", "Sharjah", "CSKA Moscow"],
+    "nacionalidad": "Bosnia and Herzegovina",
+    "posicion": "Midfielder",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Samuel Umtiti",
+    "apellido": "Umtiti",
+    "equipos": ["Lyon", "FC Barcelona", "Lecce", "Lille"],
+    "nacionalidad": "France",
+    "posicion": "Defender",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Rafinha Alcántara",
+    "apellido": "Rafinha",
+    "equipos": ["FC Barcelona", "Celta Vigo", "Inter Milan", "PSG", "Real Sociedad", "Al-Arabi"],
+    "nacionalidad": "Brazil",
+    "posicion": "Midfielder",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Thiago Alcántara",
+    "apellido": "Thiago",
+    "equipos": ["FC Barcelona", "Bayern Munich", "Liverpool"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Xherdan Shaqiri",
+    "apellido": "Shaqiri",
+    "equipos": ["Basel", "Bayern Munich", "Inter Milan", "Stoke City", "Liverpool", "Lyon", "Chicago Fire", "Basel"],
+    "nacionalidad": "Switzerland",
+    "posicion": "Forward",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Granit Xhaka",
+    "apellido": "Xhaka",
+    "equipos": ["Basel", "Borussia Mönchengladbach", "Arsenal", "Bayer Leverkusen"],
+    "nacionalidad": "Switzerland",
+    "posicion": "Midfielder",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Yann Sommer",
+    "apellido": "Sommer",
+    "equipos": ["Basel", "Borussia Mönchengladbach", "Bayern Munich", "Inter Milan"],
+    "nacionalidad": "Switzerland",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Stephan Lichtsteiner",
+    "apellido": "Lichtsteiner",
+    "equipos": ["Lille", "Lazio", "Juventus", "Arsenal", "Augsburg"],
+    "nacionalidad": "Switzerland",
+    "posicion": "Defender",
+    "nacimiento": "1984"
+  },
+  {
+    "nombreCompleto": "Ricardo Rodriguez",
+    "apellido": "Rodriguez",
+    "equipos": ["Zurich", "Wolfsburg", "AC Milan", "PSV Eindhoven", "Torino", "Real Betis"],
+    "nacionalidad": "Switzerland",
+    "posicion": "Defender",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Ivan Perišić",
+    "apellido": "Perišić",
+    "equipos": ["Club Brugge", "Borussia Dortmund", "Wolfsburg", "Inter Milan", "Bayern Munich", "Tottenham", "Hajduk Split", "PSV Eindhoven"],
+    "nacionalidad": "Croatia",
+    "posicion": "Forward",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Marcelo Brozović",
+    "apellido": "Brozović",
+    "equipos": ["Dinamo Zagreb", "Inter Milan", "Al Nassr"],
+    "nacionalidad": "Croatia",
+    "posicion": "Midfielder",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Samir Handanovič",
+    "apellido": "Handanovič",
+    "equipos": ["Domžale", "Udinese", "Treviso", "Lazio", "Rimini", "Inter Milan"],
+    "nacionalidad": "Slovenia",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1984"
+  },
+  {
+    "nombreCompleto": "Dejan Lovren",
+    "apellido": "Lovren",
+    "equipos": ["Dinamo Zagreb", "Lyon", "Southampton", "Liverpool", "Zenit", "Lyon", "PAOK"],
+    "nacionalidad": "Croatia",
+    "posicion": "Defender",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Klaas-Jan Huntelaar",
+    "apellido": "Huntelaar",
+    "equipos": ["PSV Eindhoven", "Heerenveen", "Ajax", "Real Madrid", "AC Milan", "Schalke 04", "Ajax"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Forward",
+    "nacimiento": "1983"
+  },
+  {
+    "nombreCompleto": "Kevin-Prince Boateng",
+    "apellido": "Boateng",
+    "equipos": ["Hertha Berlin", "Tottenham", "Borussia Dortmund", "Portsmouth", "AC Milan", "Schalke 04", "Las Palmas", "Eintracht Frankfurt", "Sassuolo", "FC Barcelona", "Fiorentina", "Monza"],
+    "nacionalidad": "Ghana",
+    "posicion": "Midfielder",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Jérôme Boateng",
+    "apellido": "Boateng",
+    "equipos": ["Hertha Berlin", "Hamburg", "Manchester City", "Bayern Munich", "Lyon", "Salernitana", "LASK"],
+    "nacionalidad": "Germany",
+    "posicion": "Defender",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Leroy Sané",
+    "apellido": "Sané",
+    "equipos": ["Schalke 04", "Manchester City", "Bayern Munich"],
+    "nacionalidad": "Germany",
+    "posicion": "Forward",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Serge Gnabry",
+    "apellido": "Gnabry",
+    "equipos": ["Arsenal", "West Brom", "Werder Bremen", "Hoffenheim", "Bayern Munich"],
+    "nacionalidad": "Germany",
+    "posicion": "Forward",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Emre Can",
+    "apellido": "Can",
+    "equipos": ["Bayern Munich", "Bayer Leverkusen", "Liverpool", "Juventus", "Borussia Dortmund"],
+    "nacionalidad": "Germany",
+    "posicion": "Midfielder",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Sami Khedira",
+    "apellido": "Khedira",
+    "equipos": ["Stuttgart", "Real Madrid", "Juventus", "Hertha Berlin"],
+    "nacionalidad": "Germany",
+    "posicion": "Midfielder",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Mario Gómez",
+    "apellido": "Gómez",
+    "equipos": ["Stuttgart", "Bayern Munich", "Fiorentina", "Besiktas", "Wolfsburg", "Stuttgart"],
+    "nacionalidad": "Germany",
+    "posicion": "Forward",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Julian Draxler",
+    "apellido": "Draxler",
+    "equipos": ["Schalke 04", "Wolfsburg", "PSG", "Benfica", "Al-Ahli"],
+    "nacionalidad": "Germany",
+    "posicion": "Midfielder",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Lukas Podolski",
+    "apellido": "Podolski",
+    "equipos": ["FC Köln", "Bayern Munich", "Arsenal", "Inter Milan", "Galatasaray", "Vissel Kobe", "Antalyaspor", "Górnik Zabrze"],
+    "nacionalidad": "Germany",
+    "posicion": "Forward",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Hulk (Givanildo Vieira)",
+    "apellido": "Hulk",
+    "equipos": ["Vitória", "Kawasaki Frontale", "Porto", "Zenit", "Shanghai SIPG", "Atlético Mineiro"],
+    "nacionalidad": "Brazil",
+    "posicion": "Forward",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Oscar Emboaba",
+    "apellido": "Oscar",
+    "equipos": ["Sao Paulo", "Internacional", "Chelsea", "Shanghai Port"],
+    "nacionalidad": "Brazil",
+    "posicion": "Midfielder",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Ramires Santos",
+    "apellido": "Ramires",
+    "equipos": ["Cruzeiro", "Benfica", "Chelsea", "Jiangsu Suning", "Palmeiras"],
+    "nacionalidad": "Brazil",
+    "posicion": "Midfielder",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Douglas Costa",
+    "apellido": "Costa",
+    "equipos": ["Grêmio", "Shakhtar Donetsk", "Bayern Munich", "Juventus", "LA Galaxy", "Fluminense", "Sydney FC"],
+    "nacionalidad": "Brazil",
+    "posicion": "Forward",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Alex Sandro",
+    "apellido": "Sandro",
+    "equipos": ["Athletico Paranaense", "Santos", "Porto", "Juventus", "Flamengo"],
+    "nacionalidad": "Brazil",
+    "posicion": "Defender",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Danilo Luiz da Silva",
+    "apellido": "Danilo",
+    "equipos": ["America Mineiro", "Santos", "Porto", "Real Madrid", "Manchester City", "Juventus"],
+    "nacionalidad": "Brazil",
+    "posicion": "Defender",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Eder Militão",
+    "apellido": "Militão",
+    "equipos": ["Sao Paulo", "Porto", "Real Madrid"],
+    "nacionalidad": "Brazil",
+    "posicion": "Defender",
+    "nacimiento": "1998"
+  },
+  {
+    "nombreCompleto": "Rodrygo Goes",
+    "apellido": "Rodrygo",
+    "equipos": ["Santos", "Real Madrid"],
+    "nacionalidad": "Brazil",
+    "posicion": "Forward",
+    "nacimiento": "2001"
+  },
+  {
+    "nombreCompleto": "Endrick Felipe",
+    "apellido": "Endrick",
+    "equipos": ["Palmeiras", "Real Madrid"],
+    "nacionalidad": "Brazil",
+    "posicion": "Forward",
+    "nacimiento": "2006"
+  },
+  {
+    "nombreCompleto": "Dusan Tadic",
+    "apellido": "Tadic",
+    "equipos": ["Vojvodina", "Groningen", "Twente", "Southampton", "Ajax", "Fenerbahçe"],
+    "nacionalidad": "Serbia",
+    "posicion": "Forward",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Aleksandar Mitrović",
+    "apellido": "Mitrović",
+    "equipos": ["Partizan", "Anderlecht", "Newcastle", "Fulham", "Al Hilal"],
+    "nacionalidad": "Serbia",
+    "posicion": "Forward",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Sergej Milinković-Savić",
+    "apellido": "Milinković-Savić",
+    "equipos": ["Vojvodina", "Genk", "Lazio", "Al Hilal"],
+    "nacionalidad": "Serbia",
+    "posicion": "Midfielder",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Riyad Mahrez",
+    "apellido": "Mahrez",
+    "equipos": ["Le Havre", "Leicester City", "Manchester City", "Al Ahli"],
+    "nacionalidad": "Algeria",
+    "posicion": "Forward",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Hakim Ziyech",
+    "apellido": "Ziyech",
+    "equipos": ["Heerenveen", "Twente", "Ajax", "Chelsea", "Galatasaray"],
+    "nacionalidad": "Morocco",
+    "posicion": "Midfielder",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Yassine Bounou (Bono)",
+    "apellido": "Bono",
+    "equipos": ["Wydad Casablanca", "Atletico Madrid", "Zaragoza", "Girona", "Sevilla", "Al Hilal"],
+    "nacionalidad": "Morocco",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Sofyan Amrabat",
+    "apellido": "Amrabat",
+    "equipos": ["Utrecht", "Feyenoord", "Club Brugge", "Hellas Verona", "Fiorentina", "Manchester United", "Fenerbahçe"],
+    "nacionalidad": "Morocco",
+    "posicion": "Midfielder",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Youssef En-Nesyri",
+    "apellido": "En-Nesyri",
+    "equipos": ["Malaga", "Leganes", "Sevilla", "Fenerbahçe"],
+    "nacionalidad": "Morocco",
+    "posicion": "Forward",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Victor Valdés",
+    "apellido": "Valdés",
+    "equipos": ["FC Barcelona", "Manchester United", "Standard Liège", "Middlesbrough"],
+    "nacionalidad": "Spain",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1982"
+  },
+  {
+    "nombreCompleto": "Eric Abidal",
+    "apellido": "Abidal",
+    "equipos": ["Monaco", "Lille", "Lyon", "FC Barcelona", "Monaco", "Olympiacos"],
+    "nacionalidad": "France",
+    "posicion": "Defender",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Seydou Keita",
+    "apellido": "Keita",
+    "equipos": ["Marseille", "Lorient", "Lens", "Sevilla", "FC Barcelona", "Dalian Aerbin", "Valencia", "AS Roma"],
+    "nacionalidad": "Mali",
+    "posicion": "Midfielder",
+    "nacimiento": "1980"
+  },
+  {
+    "nombreCompleto": "Ludovic Giuly",
+    "apellido": "Giuly",
+    "equipos": ["Lyon", "Monaco", "FC Barcelona", "AS Roma", "PSG"],
+    "nacionalidad": "France",
+    "posicion": "Forward",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Rafael Márquez",
+    "apellido": "Márquez",
+    "equipos": ["Atlas", "Monaco", "FC Barcelona", "New York Red Bulls", "León", "Hellas Verona"],
+    "nacionalidad": "Mexico",
+    "posicion": "Defender",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Giovani dos Santos",
+    "apellido": "dos Santos",
+    "equipos": ["FC Barcelona", "Tottenham", "Ipswich Town", "Galatasaray", "Racing Santander", "Mallorca", "Villarreal", "LA Galaxy", "Club América"],
+    "nacionalidad": "Mexico",
+    "posicion": "Forward",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Javier 'Chicharito' Hernández",
+    "apellido": "Hernández",
+    "equipos": ["Chivas", "Manchester United", "Real Madrid", "Bayer Leverkusen", "West Ham", "Sevilla", "LA Galaxy"],
+    "nacionalidad": "Mexico",
+    "posicion": "Forward",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Carlos Vela",
+    "apellido": "Vela",
+    "equipos": ["Arsenal", "Celta Vigo", "Salamanca", "Osasuna", "West Brom", "Real Sociedad", "LAFC"],
+    "nacionalidad": "Mexico",
+    "posicion": "Forward",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Hugo Sánchez",
+    "apellido": "Sánchez",
+    "equipos": ["Pumas UNAM", "Atletico Madrid", "Real Madrid", "Club América", "Rayo Vallecano"],
+    "nacionalidad": "Mexico",
+    "posicion": "Forward",
+    "nacimiento": "1958"
+  },
+  {
+    "nombreCompleto": "Hirving Lozano",
+    "apellido": "Lozano",
+    "equipos": ["Pachuca", "PSV Eindhoven", "Napoli", "San Diego FC"],
+    "nacionalidad": "Mexico",
+    "posicion": "Forward",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Diego Forlán",
+    "apellido": "Forlán",
+    "equipos": ["Independiente", "Manchester United", "Villarreal", "Atletico Madrid", "Inter Milan", "Internacional", "Cerezo Osaka", "Peñarol"],
+    "nacionalidad": "Uruguay",
+    "posicion": "Forward",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Álvaro Recoba",
+    "apellido": "Recoba",
+    "equipos": ["Danubio", "Nacional", "Inter Milan", "Venezia", "Torino", "Panionios"],
+    "nacionalidad": "Uruguay",
+    "posicion": "Forward",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Ezequiel Lavezzi",
+    "apellido": "Lavezzi",
+    "equipos": ["Estudiantes BA", "San Lorenzo", "Napoli", "PSG", "Hebei Fortune"],
+    "nacionalidad": "Argentina",
+    "posicion": "Forward",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Hernán Crespo",
+    "apellido": "Crespo",
+    "equipos": ["River Plate", "Parma", "Lazio", "Inter Milan", "Chelsea", "AC Milan", "Genoa"],
+    "nacionalidad": "Argentina",
+    "posicion": "Forward",
+    "nacimiento": "1975"
+  },
+  {
+    "nombreCompleto": "Gabriel Milito",
+    "apellido": "Milito",
+    "equipos": ["Independiente", "Zaragoza", "FC Barcelona"],
+    "nacionalidad": "Argentina",
+    "posicion": "Defender",
+    "nacimiento": "1980"
+  },
+  {
+    "nombreCompleto": "Diego Milito",
+    "apellido": "Milito",
+    "equipos": ["Racing Club", "Genoa", "Zaragoza", "Inter Milan"],
+    "nacionalidad": "Argentina",
+    "posicion": "Forward",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Wálter Samuel",
+    "apellido": "Samuel",
+    "equipos": ["Newell's", "Boca Juniors", "AS Roma", "Real Madrid", "Inter Milan", "Basel"],
+    "nacionalidad": "Argentina",
+    "posicion": "Defender",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "Mauro Icardi",
+    "apellido": "Icardi",
+    "equipos": ["Sampdoria", "Inter Milan", "PSG", "Galatasaray"],
+    "nacionalidad": "Argentina",
+    "posicion": "Forward",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Claudio Caniggia",
+    "apellido": "Caniggia",
+    "equipos": ["River Plate", "Hellas Verona", "Atalanta", "AS Roma", "Benfica", "Boca Juniors", "Dundee", "Rangers"],
+    "nacionalidad": "Argentina",
+    "posicion": "Forward",
+    "nacimiento": "1967"
+  },
+  {
+    "nombreCompleto": "Juan Sebastián Verón",
+    "apellido": "Verón",
+    "equipos": ["Estudiantes", "Boca Juniors", "Sampdoria", "Parma", "Lazio", "Manchester United", "Chelsea", "Inter Milan"],
+    "nacionalidad": "Argentina",
+    "posicion": "Midfielder",
+    "nacimiento": "1975"
+  },
+  {
+    "nombreCompleto": "Pablo Zabaleta",
+    "apellido": "Zabaleta",
+    "equipos": ["San Lorenzo", "Espanyol", "Manchester City", "West Ham"],
+    "nacionalidad": "Argentina",
+    "posicion": "Defender",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Carlos Tevez",
+    "apellido": "Tevez",
+    "equipos": ["Boca Juniors", "Corinthians", "West Ham", "Manchester United", "Manchester City", "Juventus", "Shanghai Shenhua"],
+    "nacionalidad": "Argentina",
+    "posicion": "Forward",
+    "nacimiento": "1984"
+  },
+  {
+    "nombreCompleto": "Fernando Redondo",
+    "apellido": "Redondo",
+    "equipos": ["Argentinos Juniors", "Tenerife", "Real Madrid", "AC Milan"],
+    "nacionalidad": "Argentina",
+    "posicion": "Midfielder",
+    "nacimiento": "1969"
+  },
+  {
+    "nombreCompleto": "Claudio Bravo",
+    "apellido": "Bravo",
+    "equipos": ["Colo-Colo", "Real Sociedad", "FC Barcelona", "Manchester City", "Real Betis"],
+    "nacionalidad": "Chile",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1983"
+  },
+  {
+    "nombreCompleto": "Marcelo Salas",
+    "apellido": "Salas",
+    "equipos": ["U de Chile", "River Plate", "Lazio", "Juventus"],
+    "nacionalidad": "Chile",
+    "posicion": "Forward",
+    "nacimiento": "1974"
+  },
+  {
+    "nombreCompleto": "Iván Zamorano",
+    "apellido": "Zamorano",
+    "equipos": ["Cobresal", "St. Gallen", "Sevilla", "Real Madrid", "Inter Milan", "Club América", "Colo-Colo"],
+    "nacionalidad": "Chile",
+    "posicion": "Forward",
+    "nacimiento": "1967"
+  },
+  {
+    "nombreCompleto": "Gary Medel",
+    "apellido": "Medel",
+    "equipos": ["Universidad Católica", "Boca Juniors", "Sevilla", "Cardiff City", "Inter Milan", "Besiktas", "Bologna", "Vasco da Gama"],
+    "nacionalidad": "Chile",
+    "posicion": "Midfielder",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Enzo Scifo",
+    "apellido": "Scifo",
+    "equipos": ["Anderlecht", "Inter Milan", "Bordeaux", "Auxerre", "Torino", "Monaco"],
+    "nacionalidad": "Belgium",
+    "posicion": "Midfielder",
+    "nacimiento": "1966"
+  },
+  {
+    "nombreCompleto": "Thomas Vermaelen",
+    "apellido": "Vermaelen",
+    "equipos": ["Ajax", "Arsenal", "FC Barcelona", "AS Roma", "Vissel Kobe"],
+    "nacionalidad": "Belgium",
+    "posicion": "Defender",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Christian Benteke",
+    "apellido": "Benteke",
+    "equipos": ["Genk", "Aston Villa", "Liverpool", "Crystal Palace", "DC United"],
+    "nacionalidad": "Belgium",
+    "posicion": "Forward",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Marouane Fellaini",
+    "apellido": "Fellaini",
+    "equipos": ["Standard Liège", "Everton", "Manchester United", "Shandong Taishan"],
+    "nacionalidad": "Belgium",
+    "posicion": "Midfielder",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Axel Witsel",
+    "apellido": "Witsel",
+    "equipos": ["Standard Liège", "Benfica", "Zenit", "Tianjin Quanjian", "Borussia Dortmund", "Atletico Madrid"],
+    "nacionalidad": "Belgium",
+    "posicion": "Midfielder",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Michy Batshuayi",
+    "apellido": "Batshuayi",
+    "equipos": ["Standard Liège", "Marseille", "Chelsea", "Dortmund", "Valencia", "Crystal Palace", "Besiktas", "Fenerbahçe", "Galatasaray"],
+    "nacionalidad": "Belgium",
+    "posicion": "Forward",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Youri Tielemans",
+    "apellido": "Tielemans",
+    "equipos": ["Anderlecht", "Monaco", "Leicester City", "Aston Villa"],
+    "nacionalidad": "Belgium",
+    "posicion": "Midfielder",
+    "nacimiento": "1997"
+  },
+
+
+  {
+    "nombreCompleto": "Luis Enrique Martínez",
+    "apellido": "Luis Enrique",
+    "equipos": ["Real Madrid", "FC Barcelona"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "1970"
+  },
+  {
+    "nombreCompleto": "Javier Saviola",
+    "apellido": "Saviola",
+    "equipos": ["FC Barcelona", "Monaco", "Real Madrid", "Benfica", "Malaga", "Olympiacos"],
+    "nacionalidad": "Argentina",
+    "posicion": "Forward",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "William Gallas",
+    "apellido": "Gallas",
+    "equipos": ["Chelsea", "Arsenal", "Tottenham"],
+    "nacionalidad": "France",
+    "posicion": "Defender",
+    "nacimiento": "1977"
+  },
+  {
+    "nombreCompleto": "Mark van Bommel",
+    "apellido": "van Bommel",
+    "equipos": ["PSV Eindhoven", "FC Barcelona", "Bayern Munich", "AC Milan"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Midfielder",
+    "nacimiento": "1977"
+  },
+  {
+    "nombreCompleto": "Gianluca Zambrotta",
+    "apellido": "Zambrotta",
+    "equipos": ["Bari", "Juventus", "FC Barcelona", "AC Milan"],
+    "nacionalidad": "Italy",
+    "posicion": "Defender",
+    "nacimiento": "1977"
+  },
+  {
+    "nombreCompleto": "Christian Vieri",
+    "apellido": "Vieri",
+    "equipos": ["Juventus", "Atletico Madrid", "Lazio", "Inter Milan", "AC Milan", "Monaco"],
+    "nacionalidad": "Italy",
+    "posicion": "Forward",
+    "nacimiento": "1973"
+  },
+  {
+    "nombreCompleto": "Fabio Cannavaro",
+    "apellido": "Cannavaro",
+    "equipos": ["Napoli", "Parma", "Inter Milan", "Juventus", "Real Madrid"],
+    "nacionalidad": "Italy",
+    "posicion": "Defender",
+    "nacimiento": "1973"
+  },
+  {
+    "nombreCompleto": "Emerson Ferreira",
+    "apellido": "Emerson",
+    "equipos": ["Bayer Leverkusen", "AS Roma", "Juventus", "Real Madrid", "AC Milan"],
+    "nacionalidad": "Brazil",
+    "posicion": "Midfielder",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Lassana Diarra",
+    "apellido": "Diarra",
+    "equipos": ["Chelsea", "Arsenal", "Real Madrid", "Marseille", "PSG"],
+    "nacionalidad": "France",
+    "posicion": "Midfielder",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Patrick Kluivert",
+    "apellido": "Kluivert",
+    "equipos": ["Ajax", "AC Milan", "FC Barcelona", "Newcastle", "Valencia", "PSV Eindhoven"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Forward",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Edgar Davids",
+    "apellido": "Davids",
+    "equipos": ["Ajax", "AC Milan", "Juventus", "FC Barcelona", "Inter Milan", "Tottenham"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Midfielder",
+    "nacimiento": "1973"
+  },
+  {
+    "nombreCompleto": "Bojan Krkić",
+    "apellido": "Bojan",
+    "equipos": ["FC Barcelona", "AS Roma", "AC Milan", "Ajax", "Stoke City"],
+    "nacionalidad": "Spain",
+    "posicion": "Forward",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Yossi Benayoun",
+    "apellido": "Benayoun",
+    "equipos": ["Racing Santander", "West Ham", "Liverpool", "Chelsea", "Arsenal"],
+    "nacionalidad": "Israel",
+    "posicion": "Midfielder",
+    "nacimiento": "1980"
+  },
+  {
+    "nombreCompleto": "Emmanuel Eboué",
+    "apellido": "Eboué",
+    "equipos": ["Beveren", "Arsenal", "Galatasaray"],
+    "nacionalidad": "Ivory Coast",
+    "posicion": "Defender",
+    "nacimiento": "1983"
+  },
+  {
+    "nombreCompleto": "Bacary Sagna",
+    "apellido": "Sagna",
+    "equipos": ["Auxerre", "Arsenal", "Manchester City"],
+    "nacionalidad": "France",
+    "posicion": "Defender",
+    "nacimiento": "1983"
+  },
+  {
+    "nombreCompleto": "Gaël Clichy",
+    "apellido": "Clichy",
+    "equipos": ["Cannes", "Arsenal", "Manchester City"],
+    "nacionalidad": "France",
+    "posicion": "Defender",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Samir Nasri",
+    "apellido": "Nasri",
+    "equipos": ["Marseille", "Arsenal", "Manchester City", "Sevilla"],
+    "nacionalidad": "France",
+    "posicion": "Midfielder",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Emmanuel Adebayor",
+    "apellido": "Adebayor",
+    "equipos": ["Monaco", "Arsenal", "Manchester City", "Real Madrid", "Tottenham"],
+    "nacionalidad": "Togo",
+    "posicion": "Forward",
+    "nacimiento": "1984"
+  },
+  {
+    "nombreCompleto": "Owen Hargreaves",
+    "apellido": "Hargreaves",
+    "equipos": ["Bayern Munich", "Manchester United", "Manchester City"],
+    "nacionalidad": "England",
+    "posicion": "Midfielder",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "Andy Cole",
+    "apellido": "Cole",
+    "equipos": ["Newcastle", "Manchester United", "Manchester City"],
+    "nacionalidad": "England",
+    "posicion": "Forward",
+    "nacimiento": "1971"
+  },
+  {
+    "nombreCompleto": "Dimitar Berbatov",
+    "apellido": "Berbatov",
+    "equipos": ["Bayer Leverkusen", "Tottenham", "Manchester United", "Monaco"],
+    "nacionalidad": "Bulgaria",
+    "posicion": "Forward",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "Michael Carrick",
+    "apellido": "Carrick",
+    "equipos": ["West Ham", "Tottenham", "Manchester United"],
+    "nacionalidad": "England",
+    "posicion": "Midfielder",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "Teddy Sheringham",
+    "apellido": "Sheringham",
+    "equipos": ["Millwall", "Tottenham", "Manchester United", "West Ham"],
+    "nacionalidad": "England",
+    "posicion": "Forward",
+    "nacimiento": "1966"
+  },
+  {
+    "nombreCompleto": "Louis Saha",
+    "apellido": "Saha",
+    "equipos": ["Metz", "Fulham", "Manchester United", "Everton", "Tottenham", "Lazio"],
+    "nacionalidad": "France",
+    "posicion": "Forward",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "William Gallas",
+    "apellido": "Gallas",
+    "equipos": ["Chelsea", "Arsenal", "Tottenham"],
+    "nacionalidad": "France",
+    "posicion": "Defender",
+    "nacimiento": "1977"
+  },
+  {
+    "nombreCompleto": "Gabi Fernández",
+    "apellido": "Gabi",
+    "equipos": ["Atletico Madrid", "Getafe", "Real Zaragoza", "Al Sadd"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "1983"
+  },
+  {
+    "nombreCompleto": "Juanfran Torres",
+    "apellido": "Juanfran",
+    "equipos": ["Real Madrid", "Espanyol", "Osasuna", "Atletico Madrid"],
+    "nacionalidad": "Spain",
+    "posicion": "Defender",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Filipe Luís",
+    "apellido": "Filipe Luís",
+    "equipos": ["Figueirense", "Deportivo La Coruña", "Atletico Madrid", "Chelsea", "Flamengo"],
+    "nacionalidad": "Brazil",
+    "posicion": "Defender",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Arda Turan",
+    "apellido": "Turan",
+    "equipos": ["Galatasaray", "Atletico Madrid", "FC Barcelona"],
+    "nacionalidad": "Turkey",
+    "posicion": "Midfielder",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Tiago Mendes",
+    "apellido": "Tiago",
+    "equipos": ["Braga", "Benfica", "Chelsea", "Lyon", "Juventus", "Atletico Madrid"],
+    "nacionalidad": "Portugal",
+    "posicion": "Midfielder",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "Simão Sabrosa",
+    "apellido": "Simão",
+    "equipos": ["Sporting CP", "FC Barcelona", "Benfica", "Atletico Madrid", "Besiktas"],
+    "nacionalidad": "Portugal",
+    "posicion": "Forward",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Mario Hermoso",
+    "apellido": "Hermoso",
+    "equipos": ["Real Madrid", "Espanyol", "Atletico Madrid", "AS Roma"],
+    "nacionalidad": "Spain",
+    "posicion": "Defender",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Marcos Llorente",
+    "apellido": "Llorente",
+    "equipos": ["Real Madrid", "Alaves", "Atletico Madrid"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "José Antonio Reyes",
+    "apellido": "Reyes",
+    "equipos": ["Sevilla", "Arsenal", "Real Madrid", "Atletico Madrid", "Benfica"],
+    "nacionalidad": "Spain",
+    "posicion": "Forward",
+    "nacimiento": "1983"
+  },
+  {
+    "nombreCompleto": "Thomas Partey",
+    "apellido": "Partey",
+    "equipos": ["Atletico Madrid", "Mallorca", "Almeria", "Arsenal"],
+    "nacionalidad": "Ghana",
+    "posicion": "Midfielder",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Lucas Torreira",
+    "apellido": "Torreira",
+    "equipos": ["Pescara", "Sampdoria", "Arsenal", "Atletico Madrid", "Fiorentina", "Galatasaray"],
+    "nacionalidad": "Uruguay",
+    "posicion": "Midfielder",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "David Luiz",
+    "apellido": "Luiz",
+    "equipos": ["Benfica", "Chelsea", "PSG", "Arsenal", "Flamengo"],
+    "nacionalidad": "Brazil",
+    "posicion": "Defender",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Claude Makélélé",
+    "apellido": "Makélélé",
+    "equipos": ["Nantes", "Marseille", "Celta Vigo", "Real Madrid", "Chelsea", "PSG"],
+    "nacionalidad": "France",
+    "posicion": "Midfielder",
+    "nacimiento": "1973"
+  },
+  {
+    "nombreCompleto": "Maxwell Scherrer",
+    "apellido": "Maxwell",
+    "equipos": ["Cruzeiro", "Ajax", "Inter Milan", "FC Barcelona", "PSG"],
+    "nacionalidad": "Brazil",
+    "posicion": "Defender",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "Blaise Matuidi",
+    "apellido": "Matuidi",
+    "equipos": ["Troyes", "Saint-Étienne", "PSG", "Juventus", "Inter Miami"],
+    "nacionalidad": "France",
+    "posicion": "Midfielder",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Adrien Rabiot",
+    "apellido": "Rabiot",
+    "equipos": ["PSG", "Toulouse", "Juventus", "Marseille"],
+    "nacionalidad": "France",
+    "posicion": "Midfielder",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Zoumana Camara",
+    "apellido": "Camara",
+    "equipos": ["Saint-Étienne", "Inter Milan", "Marseille", "Lens", "PSG"],
+    "nacionalidad": "France",
+    "posicion": "Defender",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Lucas Hernández",
+    "apellido": "Hernández",
+    "equipos": ["Atletico Madrid", "Bayern Munich", "PSG"],
+    "nacionalidad": "France",
+    "posicion": "Defender",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Renato Sanches",
+    "apellido": "Sanches",
+    "equipos": ["Benfica", "Bayern Munich", "Swansea", "Lille", "PSG", "AS Roma"],
+    "nacionalidad": "Portugal",
+    "posicion": "Midfielder",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Bixente Lizarazu",
+    "apellido": "Lizarazu",
+    "equipos": ["Bordeaux", "Athletic Club", "Bayern Munich", "Marseille"],
+    "nacionalidad": "France",
+    "posicion": "Defender",
+    "nacimiento": "1969"
+  },
+  {
+    "nombreCompleto": "Roy Makaay",
+    "apellido": "Makaay",
+    "equipos": ["Vitesse", "Tenerife", "Deportivo La Coruña", "Bayern Munich", "Feyenoord"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Forward",
+    "nacimiento": "1975"
+  },
+  {
+    "nombreCompleto": "Willy Sagnol",
+    "apellido": "Sagnol",
+    "equipos": ["Saint-Étienne", "Monaco", "Bayern Munich"],
+    "nacionalidad": "France",
+    "posicion": "Defender",
+    "nacimiento": "1977"
+  },
+  {
+    "nombreCompleto": "Hasan Salihamidžić",
+    "apellido": "Salihamidžić",
+    "equipos": ["Hamburg", "Bayern Munich", "Juventus", "Wolfsburg"],
+    "nacionalidad": "Bosnia and Herzegovina",
+    "posicion": "Midfielder",
+    "nacimiento": "1977"
+  },
+  {
+    "nombreCompleto": "Robert Kovač",
+    "apellido": "Kovač",
+    "equipos": ["Nuremberg", "Bayer Leverkusen", "Bayern Munich", "Juventus", "Borussia Dortmund"],
+    "nacionalidad": "Croatia",
+    "posicion": "Defender",
+    "nacimiento": "1974"
+  },
+  {
+    "nombreCompleto": "Nuri Şahin",
+    "apellido": "Şahin",
+    "equipos": ["Borussia Dortmund", "Feyenoord", "Real Madrid", "Liverpool", "Werder Bremen"],
+    "nacionalidad": "Turkey",
+    "posicion": "Midfielder",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Tomas Rosicky",
+    "apellido": "Rosicky",
+    "equipos": ["Sparta Prague", "Borussia Dortmund", "Arsenal"],
+    "nacionalidad": "Czech Republic",
+    "posicion": "Midfielder",
+    "nacimiento": "1980"
+  },
+  {
+    "nombreCompleto": "Jens Lehmann",
+    "apellido": "Lehmann",
+    "equipos": ["Schalke 04", "AC Milan", "Borussia Dortmund", "Arsenal", "Stuttgart"],
+    "nacionalidad": "Germany",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1969"
+  },
+  {
+    "nombreCompleto": "Marc Bartra",
+    "apellido": "Bartra",
+    "equipos": ["FC Barcelona", "Borussia Dortmund", "Real Betis", "Trabzonspor"],
+    "nacionalidad": "Spain",
+    "posicion": "Defender",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Paco Alcácer",
+    "apellido": "Alcácer",
+    "equipos": ["Valencia", "Getafe", "FC Barcelona", "Borussia Dortmund", "Villarreal"],
+    "nacionalidad": "Spain",
+    "posicion": "Forward",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Mikel Merino",
+    "apellido": "Merino",
+    "equipos": ["Osasuna", "Borussia Dortmund", "Newcastle", "Real Sociedad", "Arsenal"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Sokratis Papastathopoulos",
+    "apellido": "Sokratis",
+    "equipos": ["Genoa", "AC Milan", "Werder Bremen", "Borussia Dortmund", "Arsenal"],
+    "nacionalidad": "Greece",
+    "posicion": "Defender",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Christian Vieri",
+    "apellido": "Vieri",
+    "equipos": ["Juventus", "Atletico Madrid", "Lazio", "Inter Milan", "AC Milan", "Monaco"],
+    "nacionalidad": "Italy",
+    "posicion": "Forward",
+    "nacimiento": "1973"
+  },
+  {
+    "nombreCompleto": "Angelo Peruzzi",
+    "apellido": "Peruzzi",
+    "equipos": ["AS Roma", "Juventus", "Inter Milan", "Lazio"],
+    "nacionalidad": "Italy",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1970"
+  },
+  {
+    "nombreCompleto": "Lilian Thuram",
+    "apellido": "Thuram",
+    "equipos": ["Monaco", "Parma", "Juventus", "FC Barcelona"],
+    "nacionalidad": "France",
+    "posicion": "Defender",
+    "nacimiento": "1972"
+  },
+  {
+    "nombreCompleto": "Giorgio Chiellini",
+    "apellido": "Chiellini",
+    "equipos": ["Livorno", "Fiorentina", "Juventus", "LAFC"],
+    "nacionalidad": "Italy",
+    "posicion": "Defender",
+    "nacimiento": "1984"
+  },
+  {
+    "nombreCompleto": "Leonardo Bonucci",
+    "apellido": "Bonucci",
+    "equipos": ["Inter Milan", "Bari", "Juventus", "AC Milan", "Union Berlin", "Fenerbahçe"],
+    "nacionalidad": "Italy",
+    "posicion": "Defender",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Gianluca Pesotto",
+    "apellido": "Pesotto",
+    "equipos": ["Varese", "Torino", "Juventus"],
+    "nacionalidad": "Italy",
+    "posicion": "Defender",
+    "nacimiento": "1970"
+  },
+  {
+    "nombreCompleto": "Alessio Tacchinardi",
+    "apellido": "Tacchinardi",
+    "equipos": ["Atalanta", "Juventus", "Villarreal"],
+    "nacionalidad": "Italy",
+    "posicion": "Midfielder",
+    "nacimiento": "1975"
+  },
+  {
+    "nombreCompleto": "Mauro Camoranesi",
+    "apellido": "Camoranesi",
+    "equipos": ["Santos Laguna", "Cruz Azul", "Verona", "Juventus", "Stuttgart"],
+    "nacionalidad": "Italy",
+    "posicion": "Midfielder",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Christian Panucci",
+    "apellido": "Panucci",
+    "equipos": ["Genoa", "AC Milan", "Real Madrid", "Inter Milan", "Chelsea", "Monaco", "AS Roma"],
+    "nacionalidad": "Italy",
+    "posicion": "Defender",
+    "nacimiento": "1973"
+  },
+  {
+    "nombreCompleto": "Massimo Oddo",
+    "apellido": "Oddo",
+    "equipos": ["Verona", "Lazio", "AC Milan", "Bayern Munich"],
+    "nacionalidad": "Italy",
+    "posicion": "Defender",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Jon Dahl Tomasson",
+    "apellido": "Tomasson",
+    "equipos": ["Heerenveen", "Newcastle", "Feyenoord", "AC Milan", "Stuttgart", "Villarreal"],
+    "nacionalidad": "Denmark",
+    "posicion": "Forward",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Filippo Inzaghi",
+    "apellido": "Inzaghi",
+    "equipos": ["Piacenza", "Parma", "Atalanta", "Juventus", "AC Milan"],
+    "nacionalidad": "Italy",
+    "posicion": "Forward",
+    "nacimiento": "1973"
+  },
+  {
+    "nombreCompleto": "Gennaro Gattuso",
+    "apellido": "Gattuso",
+    "equipos": ["Perugia", "Rangers", "Salernitana", "AC Milan", "Sion"],
+    "nacionalidad": "Italy",
+    "posicion": "Midfielder",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "Kakha Kaladze",
+    "apellido": "Kaladze",
+    "equipos": ["Dinamo Tbilisi", "Dynamo Kyiv", "AC Milan", "Genoa"],
+    "nacionalidad": "Georgia",
+    "posicion": "Defender",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "Marko Arnautović",
+    "apellido": "Arnautović",
+    "equipos": ["Twente", "Inter Milan", "Werder Bremen", "Stoke City", "West Ham", "Bologna"],
+    "nacionalidad": "Austria",
+    "posicion": "Forward",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Dejan Stanković",
+    "apellido": "Stanković",
+    "equipos": ["Red Star Belgrade", "Lazio", "Inter Milan"],
+    "nacionalidad": "Serbia",
+    "posicion": "Midfielder",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "Iván Córdoba",
+    "apellido": "Córdoba",
+    "equipos": ["San Lorenzo", "Inter Milan"],
+    "nacionalidad": "Colombia",
+    "posicion": "Defender",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Marco Materazzi",
+    "apellido": "Materazzi",
+    "equipos": ["Perugia", "Everton", "Inter Milan"],
+    "nacionalidad": "Italy",
+    "posicion": "Defender",
+    "nacimiento": "1973"
+  },
+  {
+    "nombreCompleto": "Maicon Douglas Sisenando",
+    "apellido": "Maicon",
+    "equipos": ["Cruzeiro", "Monaco", "Inter Milan", "Manchester City", "AS Roma"],
+    "nacionalidad": "Brazil",
+    "posicion": "Defender",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "Júlio César Soares",
+    "apellido": "Júlio César",
+    "equipos": ["Flamengo", "Chievo", "Inter Milan", "QPR", "Benfica"],
+    "nacionalidad": "Brazil",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Sergi Roberto",
+    "apellido": "Roberto",
+    "equipos": ["FC Barcelona", "Como"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Nacho Fernández",
+    "apellido": "Nacho",
+    "equipos": ["Real Madrid", "Al Qadsiah"],
+    "nacionalidad": "Spain",
+    "posicion": "Defender",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Lucas Vázquez",
+    "apellido": "Vázquez",
+    "equipos": ["Real Madrid", "Espanyol"],
+    "nacionalidad": "Spain",
+    "posicion": "Forward",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Joselu Mato",
+    "apellido": "Joselu",
+    "equipos": ["Real Madrid", "Hoffenheim", "Eintracht Frankfurt", "Stoke City", "Newcastle", "Alaves", "Espanyol", "Al Gharafa"],
+    "nacionalidad": "Spain",
+    "posicion": "Forward",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Arbeloa",
+    "apellido": "Arbeloa",
+    "equipos": ["Real Madrid", "Deportivo La Coruña", "Liverpool", "West Ham"],
+    "nacionalidad": "Spain",
+    "posicion": "Defender",
+    "nacimiento": "1983"
+  },
+  {
+    "nombreCompleto": "Steve McManaman",
+    "apellido": "McManaman",
+    "equipos": ["Liverpool", "Real Madrid", "Manchester City"],
+    "nacionalidad": "England",
+    "posicion": "Midfielder",
+    "nacimiento": "1972"
+  },
+  {
+    "nombreCompleto": "Dietmar Hamann",
+    "apellido": "Hamann",
+    "equipos": ["Bayern Munich", "Newcastle", "Liverpool", "Manchester City"],
+    "nacionalidad": "Germany",
+    "posicion": "Midfielder",
+    "nacimiento": "1973"
+  },
+  {
+    "nombreCompleto": "Pepe Reina",
+    "apellido": "Reina",
+    "equipos": ["FC Barcelona", "Villarreal", "Liverpool", "Napoli", "Bayern Munich", "AC Milan", "Aston Villa", "Lazio", "Como"],
+    "nacionalidad": "Spain",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1982"
+  },
+  {
+    "nombreCompleto": "Boudewijn Zenden",
+    "apellido": "Zenden",
+    "equipos": ["PSV Eindhoven", "FC Barcelona", "Chelsea", "Middlesbrough", "Liverpool", "Marseille", "Sunderland"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Midfielder",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Sander Westerveld",
+    "apellido": "Westerveld",
+    "equipos": ["Vitesse", "Liverpool", "Real Sociedad", "Mallorca"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1974"
+  },
+  {
+    "nombreCompleto": "Daniel Sturridge",
+    "apellido": "Sturridge",
+    "equipos": ["Manchester City", "Chelsea", "Bolton", "Liverpool", "West Brom", "Trabzonspor"],
+    "nacionalidad": "England",
+    "posicion": "Forward",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Joe Hart",
+    "apellido": "Hart",
+    "equipos": ["Shrewsbury Town", "Manchester City", "Birmingham", "Torino", "West Ham", "Burnley", "Tottenham", "Celtic"],
+    "nacionalidad": "England",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Kolo Touré",
+    "apellido": "Touré",
+    "equipos": ["Arsenal", "Manchester City", "Liverpool", "Celtic"],
+    "nacionalidad": "Ivory Coast",
+    "posicion": "Defender",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "James Milner",
+    "apellido": "Milner",
+    "equipos": ["Leeds United", "Swindon Town", "Newcastle", "Aston Villa", "Manchester City", "Liverpool", "Brighton"],
+    "nacionalidad": "England",
+    "posicion": "Midfielder",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Craig Bellamy",
+    "apellido": "Bellamy",
+    "equipos": ["Norwich City", "Coventry City", "Newcastle", "Celtic", "Blackburn", "Liverpool", "West Ham", "Manchester City", "Cardiff City"],
+    "nacionalidad": "Wales",
+    "posicion": "Forward",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Emmanuel Adebayor",
+    "apellido": "Adebayor",
+    "equipos": ["Metz", "Monaco", "Arsenal", "Manchester City", "Real Madrid", "Tottenham", "Crystal Palace", "Basaksehir"],
+    "nacionalidad": "Togo",
+    "posicion": "Forward",
+    "nacimiento": "1984"
+  },
+  {
+    "nombreCompleto": "Scott Parker",
+    "apellido": "Parker",
+    "equipos": ["Charlton", "Chelsea", "Newcastle", "West Ham", "Tottenham", "Fulham"],
+    "nacionalidad": "England",
+    "posicion": "Midfielder",
+    "nacimiento": "1980"
+  },
+  {
+    "nombreCompleto": "Brad Friedel",
+    "apellido": "Friedel",
+    "equipos": ["Galatasaray", "Columbus Crew", "Liverpool", "Blackburn", "Aston Villa", "Tottenham"],
+    "nacionalidad": "USA",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1971"
+  },
+  {
+    "nombreCompleto": "Pascal Chimbonda",
+    "apellido": "Chimbonda",
+    "equipos": ["Bastia", "Wigan", "Tottenham", "Sunderland", "Blackburn"],
+    "nacionalidad": "France",
+    "posicion": "Defender",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Louis Saha",
+    "apellido": "Saha",
+    "equipos": ["Metz", "Fulham", "Manchester United", "Everton", "Tottenham", "Lazio"],
+    "nacionalidad": "France",
+    "posicion": "Forward",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "Luka Jović",
+    "apellido": "Jović",
+    "equipos": ["Benfica", "Eintracht Frankfurt", "Real Madrid", "Fiorentina", "AC Milan"],
+    "nacionalidad": "Serbia",
+    "posicion": "Forward",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Dusan Tadic",
+    "apellido": "Tadic",
+    "equipos": ["FC Twente", "Southampton", "Ajax", "Fenerbahçe"],
+    "nacionalidad": "Serbia",
+    "posicion": "Midfielder",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Hakim Ziyech",
+    "apellido": "Ziyech",
+    "equipos": ["Heerenveen", "FC Twente", "Ajax", "Chelsea", "Galatasaray"],
+    "nacionalidad": "Morocco",
+    "posicion": "Midfielder",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Daley Blind",
+    "apellido": "Blind",
+    "equipos": ["Ajax", "Manchester United", "Girona"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Defender",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Nicolas Tagliafico",
+    "apellido": "Tagliafico",
+    "equipos": ["Banfield", "Independiente", "Ajax", "Lyon", "Marseille"],
+    "nacionalidad": "Argentina",
+    "posicion": "Defender",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Frenkie de Jong",
+    "apellido": "de Jong",
+    "equipos": ["Willem II", "Ajax", "FC Barcelona"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Midfielder",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "Christian Eriksen",
+    "apellido": "Eriksen",
+    "equipos": ["Ajax", "Tottenham", "Inter Milan", "Brentford", "Manchester United"],
+    "nacionalidad": "Denmark",
+    "posicion": "Midfielder",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Rafael van der Vaart",
+    "apellido": "van der Vaart",
+    "equipos": ["Ajax", "Hamburg", "Real Madrid", "Tottenham", "Real Betis"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Midfielder",
+    "nacimiento": "1983"
+  },
+  {
+    "nombreCompleto": "Jan Vertonghen",
+    "apellido": "Vertonghen",
+    "equipos": ["Ajax", "Tottenham", "Benfica", "Anderlecht"],
+    "nacionalidad": "Belgium",
+    "posicion": "Defender",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Marco van Basten",
+    "apellido": "van Basten",
+    "equipos": ["Ajax", "AC Milan"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Forward",
+    "nacimiento": "1964"
+  },
+  {
+    "nombreCompleto": "Dennis Bergkamp",
+    "apellido": "Bergkamp",
+    "equipos": ["Ajax", "Inter Milan", "Arsenal"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Forward",
+    "nacimiento": "1969"
+  },
+  {
+    "nombreCompleto": "Francesco Totti",
+    "apellido": "Totti",
+    "equipos": ["AS Roma"],
+    "nacionalidad": "Italy",
+    "posicion": "Forward",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Daniele De Rossi",
+    "apellido": "De Rossi",
+    "equipos": ["AS Roma", "Boca Juniors"],
+    "nacionalidad": "Italy",
+    "posicion": "Midfielder",
+    "nacimiento": "1983"
+  },
+  {
+    "nombreCompleto": "Radja Nainggolan",
+    "apellido": "Nainggolan",
+    "equipos": ["Piacenza", "Cagliari", "AS Roma", "Inter Milan", "Cagliari", "Antwerp"],
+    "nacionalidad": "Belgium",
+    "posicion": "Midfielder",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Edin Dzeko",
+    "apellido": "Dzeko",
+    "equipos": ["Teplice", "Wolfsburg", "Manchester City", "AS Roma", "Inter Milan", "Fenerbahçe"],
+    "nacionalidad": "Bosnia",
+    "posicion": "Forward",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Henrikh Mkhitaryan",
+    "apellido": "Mkhitaryan",
+    "equipos": ["Borussia Dortmund", "Manchester United", "Arsenal", "AS Roma", "Inter Milan"],
+    "nacionalidad": "Armenia",
+    "posicion": "Midfielder",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Lorenzo Pellegrini",
+    "apellido": "Pellegrini",
+    "equipos": ["AS Roma", "Sassuolo"],
+    "nacionalidad": "Italy",
+    "posicion": "Midfielder",
+    "nacimiento": "1996"
+  },
+  {
+    "nombreCompleto": "Paulo Dybala",
+    "apellido": "Dybala",
+    "equipos": ["Instituto", "Palermo", "Juventus", "AS Roma"],
+    "nacionalidad": "Argentina",
+    "posicion": "Forward",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Diego Maradona",
+    "apellido": "Maradona",
+    "equipos": ["Argentinos Juniors", "Boca Juniors", "FC Barcelona", "Napoli", "Sevilla", "Newell's Old Boys"],
+    "nacionalidad": "Argentina",
+    "posicion": "Forward",
+    "nacimiento": "1960"
+  },
+  {
+    "nombreCompleto": "Lorenzo Insigne",
+    "apellido": "Insigne",
+    "equipos": ["Napoli", "Toronto FC"],
+    "nacionalidad": "Italy",
+    "posicion": "Forward",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Dries Mertens",
+    "apellido": "Mertens",
+    "equipos": ["Gent", "PSV Eindhoven", "Napoli", "Galatasaray"],
+    "nacionalidad": "Belgium",
+    "posicion": "Forward",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Marek Hamsik",
+    "apellido": "Hamsik",
+    "equipos": ["Slovan Bratislava", "Brescia", "Napoli", "Dalian Pro"],
+    "nacionalidad": "Slovakia",
+    "posicion": "Midfielder",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Edinson Cavani",
+    "apellido": "Cavani",
+    "equipos": ["Danubio", "Palermo", "Napoli", "PSG", "Manchester United", "Valencia", "Boca Juniors"],
+    "nacionalidad": "Uruguay",
+    "posicion": "Forward",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Gonzalo Higuaín",
+    "apellido": "Higuaín",
+    "equipos": ["River Plate", "Real Madrid", "Napoli", "Juventus", "AC Milan", "Chelsea", "Inter Miami"],
+    "nacionalidad": "Argentina",
+    "posicion": "Forward",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Kalidou Koulibaly",
+    "apellido": "Koulibaly",
+    "equipos": ["Metz", "Genk", "Napoli", "Chelsea", "Al Hilal"],
+    "nacionalidad": "Senegal",
+    "posicion": "Defender",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Sergio Ramos",
+    "apellido": "Ramos",
+    "equipos": ["Sevilla", "Real Madrid", "PSG"],
+    "nacionalidad": "Spain",
+    "posicion": "Defender",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Ivan Rakitic",
+    "apellido": "Rakitic",
+    "equipos": ["Basel", "Schalke 04", "Sevilla", "FC Barcelona", "Al Shabab"],
+    "nacionalidad": "Croatia",
+    "posicion": "Midfielder",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Dani Alves",
+    "apellido": "Alves",
+    "equipos": ["Bahia", "Sevilla", "FC Barcelona", "Juventus", "PSG", "Sao Paulo", "Pumas UNAM"],
+    "nacionalidad": "Brazil",
+    "posicion": "Defender",
+    "nacimiento": "1983"
+  },
+  {
+    "nombreCompleto": "Jesús Navas",
+    "apellido": "Navas",
+    "equipos": ["Sevilla", "Manchester City"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Júlio Baptista",
+    "apellido": "Baptista",
+    "equipos": ["Sao Paulo", "Sevilla", "Real Madrid", "Arsenal", "AS Roma", "Malaga"],
+    "nacionalidad": "Brazil",
+    "posicion": "Forward",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "Alexandre Lacazette",
+    "apellido": "Lacazette",
+    "equipos": ["Lyon", "Arsenal"],
+    "nacionalidad": "France",
+    "posicion": "Forward",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Nabil Fekir",
+    "apellido": "Fekir",
+    "equipos": ["Lyon", "Real Betis", "Al Jazira"],
+    "nacionalidad": "France",
+    "posicion": "Midfielder",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Corentin Tolisso",
+    "apellido": "Tolisso",
+    "equipos": ["Lyon", "Bayern Munich"],
+    "nacionalidad": "France",
+    "posicion": "Midfielder",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Juninho Pernambucano",
+    "apellido": "Juninho",
+    "equipos": ["Vasco da Gama", "Lyon", "Al Gharafa"],
+    "nacionalidad": "Brazil",
+    "posicion": "Midfielder",
+    "nacimiento": "1975"
+  },
+  {
+    "nombreCompleto": "Karim Benzema",
+    "apellido": "Benzema",
+    "equipos": ["Lyon", "Real Madrid", "Al Ittihad"],
+    "nacionalidad": "France",
+    "posicion": "Forward",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Radamel Falcao",
+    "apellido": "Falcao",
+    "equipos": ["River Plate", "Porto", "Atletico Madrid", "Monaco", "Manchester United", "Chelsea", "Galatasaray", "Rayo Vallecano"],
+    "nacionalidad": "Colombia",
+    "posicion": "Forward",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "James Rodríguez",
+    "apellido": "Rodríguez",
+    "equipos": ["Envigado", "Banfield", "Porto", "Monaco", "Real Madrid", "Bayern Munich", "Everton", "Al Rayyan", "Rayo Vallecano"],
+    "nacionalidad": "Colombia",
+    "posicion": "Midfielder",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Hulk",
+    "apellido": "Hulk",
+    "equipos": ["Kawasaki Frontale", "Tokyo Verdy", "Consadole Sapporo", "Porto", "Zenit", "Shanghai SIPG", "Atletico Mineiro"],
+    "nacionalidad": "Brazil",
+    "posicion": "Forward",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Ricardo Carvalho",
+    "apellido": "Carvalho",
+    "equipos": ["Porto", "Chelsea", "Real Madrid", "Monaco", "Shanghai SIPG"],
+    "nacionalidad": "Portugal",
+    "posicion": "Defender",
+    "nacimiento": "1978"
+  },
+  {
+    "nombreCompleto": "Pepe",
+    "apellido": "Pepe",
+    "equipos": ["Marítimo", "Porto", "Real Madrid", "Besiktas", "FC Porto"],
+    "nacionalidad": "Portugal",
+    "posicion": "Defender",
+    "nacimiento": "1983"
+  },
+  {
+    "nombreCompleto": "Deco",
+    "apellido": "Deco",
+    "equipos": ["Corinthians", "Porto", "FC Barcelona", "Chelsea", "Fluminense"],
+    "nacionalidad": "Portugal",
+    "posicion": "Midfielder",
+    "nacimiento": "1977"
+  },
+  {
+    "nombreCompleto": "Luís Figo",
+    "apellido": "Figo",
+    "equipos": ["Sporting CP", "FC Barcelona", "Real Madrid", "Inter Milan"],
+    "nacionalidad": "Portugal",
+    "posicion": "Midfielder",
+    "nacimiento": "1972"
+  },
+  {
+    "nombreCompleto": "Rui Costa",
+    "apellido": "Costa",
+    "equipos": ["Benfica", "Fiorentina", "AC Milan"],
+    "nacionalidad": "Portugal",
+    "posicion": "Midfielder",
+    "nacimiento": "1972"
+  },
+  {
+    "nombreCompleto": "Dimitar Berbatov",
+    "apellido": "Berbatov",
+    "equipos": ["CSKA Sofia", "Bayer Leverkusen", "Tottenham", "Manchester United", "Fulham", "Monaco", "PAOK"],
+    "nacionalidad": "Bulgaria",
+    "posicion": "Forward",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "Henrik Larsson",
+    "apellido": "Larsson",
+    "equipos": ["Högaborg", "Helsingborg", "Feyenoord", "Celtic", "FC Barcelona", "Manchester United", "Helsingborg"],
+    "nacionalidad": "Sweden",
+    "posicion": "Forward",
+    "nacimiento": "1971"
+  },
+  {
+    "nombreCompleto": "Roy Keane",
+    "apellido": "Keane",
+    "equipos": ["Cobh Ramblers", "Nottingham Forest", "Manchester United", "Celtic"],
+    "nacionalidad": "Ireland",
+    "posicion": "Midfielder",
+    "nacimiento": "1971"
+  },
+  {
+    "nombreCompleto": "Neil Lennon",
+    "apellido": "Lennon",
+    "equipos": ["Manchester City", "Crewe Alexandra", "Leicester City", "Celtic", "Nottingham Forest", "Wycombe Wanderers"],
+    "nacionalidad": "Northern Ireland",
+    "posicion": "Midfielder",
+    "nacimiento": "1971"
+  },
+  {
+    "nombreCompleto": "N'Golo Kanté",
+    "apellido": "Kanté",
+    "equipos": ["Boulogne", "Caen", "Leicester City", "Chelsea", "Al Ittihad"],
+    "nacionalidad": "France",
+    "posicion": "Midfielder",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Riyad Mahrez",
+    "apellido": "Mahrez",
+    "equipos": ["Le Havre", "Leicester City", "Manchester City", "Al Ahli"],
+    "nacionalidad": "Algeria",
+    "posicion": "Midfielder",
+    "nacimiento": "1991"
+  },
+  {
+    "nombreCompleto": "Jamie Vardy",
+    "apellido": "Vardy",
+    "equipos": ["Stocksbridge Park", "Halifax Town", "Fleetwood Town", "Leicester City"],
+    "nacionalidad": "England",
+    "posicion": "Forward",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Kasper Schmeichel",
+    "apellido": "Schmeichel",
+    "equipos": ["Manchester City", "Darlington", "Bury", "Falkirk", "Cardiff City", "Coventry City", "Notts County", "Leeds United", "Leicester City", "Nice"],
+    "nacionalidad": "Denmark",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1986"
+  },
+  {
+    "nombreCompleto": "Andy Cole",
+    "apellido": "Cole",
+    "equipos": ["Arsenal", "Fulham", "Bristol City", "Newcastle", "Manchester United", "Blackburn", "Fulham", "Manchester City", "Portsmouth", "Sunderland"],
+    "nacionalidad": "England",
+    "posicion": "Forward",
+    "nacimiento": "1971"
+  },
+  {
+    "nombreCompleto": "Alan Shearer",
+    "apellido": "Shearer",
+    "equipos": ["Southampton", "Blackburn Rovers", "Newcastle"],
+    "nacionalidad": "England",
+    "posicion": "Forward",
+    "nacimiento": "1970"
+  },
+  {
+    "nombreCompleto": "Robbie Fowler",
+    "apellido": "Fowler",
+    "equipos": ["Liverpool", "Leeds United", "Manchester City", "Cardiff City", "Blackburn"],
+    "nacionalidad": "England",
+    "posicion": "Forward",
+    "nacimiento": "1975"
+  },
+  {
+    "nombreCompleto": "Jack Grealish",
+    "apellido": "Grealish",
+    "equipos": ["Aston Villa", "Manchester City"],
+    "nacionalidad": "England",
+    "posicion": "Midfielder",
+    "nacimiento": "1995"
+  },
+  {
+    "nombreCompleto": "Dwight Yorke",
+    "apellido": "Yorke",
+    "equipos": ["Aston Villa", "Manchester United", "Blackburn", "Birmingham City", "Sydney FC", "Sunderland"],
+    "nacionalidad": "Trinidad and Tobago",
+    "posicion": "Forward",
+    "nacimiento": "1971"
+  },
+  {
+    "nombreCompleto": "Ashley Young",
+    "apellido": "Young",
+    "equipos": ["Watford", "Aston Villa", "Manchester United", "Inter Milan", "Aston Villa", "Everton"],
+    "nacionalidad": "England",
+    "posicion": "Midfielder",
+    "nacimiento": "1985"
+  },
+  {
+    "nombreCompleto": "Tim Cahill",
+    "apellido": "Cahill",
+    "equipos": ["Millwall", "Everton", "New York Red Bulls", "Shanghai Shenhua", "Hangzhou Greentown", "Melbourne City"],
+    "nacionalidad": "Australia",
+    "posicion": "Midfielder",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Mikel Arteta",
+    "apellido": "Arteta",
+    "equipos": ["FC Barcelona", "PSG", "Rangers", "Real Sociedad", "Everton", "Arsenal"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "1982"
+  },
+  {
+    "nombreCompleto": "Romelu Lukaku",
+    "apellido": "Lukaku",
+    "equipos": ["Anderlecht", "Chelsea", "West Brom", "Everton", "Manchester United", "Inter Milan", "AS Roma", "Napoli"],
+    "nacionalidad": "Belgium",
+    "posicion": "Forward",
+    "nacimiento": "1993"
+  },
+  {
+    "nombreCompleto": "Yerry Mina",
+    "apellido": "Mina",
+    "equipos": ["Deportivo Pasto", "Palmeiras", "FC Barcelona", "Everton", "Cagliari"],
+    "nacionalidad": "Colombia",
+    "posicion": "Defender",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Fabian Delph",
+    "apellido": "Delph",
+    "equipos": ["Leeds United", "Aston Villa", "Manchester City", "Everton"],
+    "nacionalidad": "England",
+    "posicion": "Midfielder",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Michael Owen",
+    "apellido": "Owen",
+    "equipos": ["Liverpool", "Real Madrid", "Newcastle", "Manchester United", "Stoke City"],
+    "nacionalidad": "England",
+    "posicion": "Forward",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Xabi Alonso",
+    "apellido": "Alonso",
+    "equipos": ["Real Sociedad", "Eibar", "Liverpool", "Real Madrid", "Bayern Munich"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "1981"
+  },
+  {
+    "nombreCompleto": "Carlos Vela",
+    "apellido": "Vela",
+    "equipos": ["Chivas", "Celta Vigo", "Arsenal", "Salamanca", "Osasuna", "West Brom", "Real Sociedad", "LAFC"],
+    "nacionalidad": "Mexico",
+    "posicion": "Forward",
+    "nacimiento": "1989"
+  },
+  {
+    "nombreCompleto": "Mikel Oyarzabal",
+    "apellido": "Oyarzabal",
+    "equipos": ["Real Sociedad"],
+    "nacionalidad": "Spain",
+    "posicion": "Forward",
+    "nacimiento": "1997"
+  },
+  {
+    "nombreCompleto": "David de Gea",
+    "apellido": "de Gea",
+    "equipos": ["Atletico Madrid", "Manchester United", "Fiorentina"],
+    "nacionalidad": "Spain",
+    "posicion": "Goalkeeper",
+    "nacimiento": "1990"
+  },
+  {
+    "nombreCompleto": "Juan Mata",
+    "apellido": "Mata",
+    "equipos": ["Real Madrid", "Valencia", "Chelsea", "Manchester United", "Galatasaray"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "1988"
+  },
+  {
+    "nombreCompleto": "Santi Cazorla",
+    "apellido": "Cazorla",
+    "equipos": ["Oviedo", "Villarreal", "Recreativo", "Malaga", "Arsenal", "Villarreal", "Al Sadd", "Real Oviedo"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "1984"
+  },
+  {
+    "nombreCompleto": "Robert Pires",
+    "apellido": "Pires",
+    "equipos": ["Metz", "Marseille", "Arsenal", "Villarreal", "Aston Villa"],
+    "nacionalidad": "France",
+    "posicion": "Midfielder",
+    "nacimiento": "1973"
+  },
+  {
+    "nombreCompleto": "Marcos Senna",
+    "apellido": "Senna",
+    "equipos": ["São Caetano", "Villarreal", "New York Cosmos"],
+    "nacionalidad": "Spain",
+    "posicion": "Midfielder",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Diego Forlán",
+    "apellido": "Forlán",
+    "equipos": ["Independiente", "Manchester United", "Villarreal", "Atletico Madrid", "Inter Milan", "Internacional", "Cerezo Osaka", "Peñarol"],
+    "nacionalidad": "Uruguay",
+    "posicion": "Forward",
+    "nacimiento": "1979"
+  },
+  {
+    "nombreCompleto": "Ruud van Nistelrooy",
+    "apellido": "van Nistelrooy",
+    "equipos": ["Den Bosch", "Heerenveen", "PSV Eindhoven", "Manchester United", "Real Madrid", "Hamburg", "Malaga"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Forward",
+    "nacimiento": "1976"
+  },
+  {
+    "nombreCompleto": "Arjen Robben",
+    "apellido": "Robben",
+    "equipos": ["Groningen", "PSV Eindhoven", "Chelsea", "Real Madrid", "Bayern Munich"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Midfielder",
+    "nacimiento": "1984"
+  },
+  {
+    "nombreCompleto": "Eljero Elia",
+    "apellido": "Elia",
+    "equipos": ["ADO Den Haag", "FC Twente", "Hamburg", "Juventus", "Werder Bremen", "Southampton", "Feyenoord", "Basaksehir"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Forward",
+    "nacimiento": "1987"
+  },
+  {
+    "nombreCompleto": "Memphis Depay",
+    "apellido": "Depay",
+    "equipos": ["PSV Eindhoven", "Manchester United", "Lyon", "FC Barcelona", "Atletico Madrid", "Corinthians"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Forward",
+    "nacimiento": "1994"
+  },
+  {
+    "nombreCompleto": "Wout Weghorst",
+    "apellido": "Weghorst",
+    "equipos": ["Emmen", "Heracles", "AZ Alkmaar", "Wolfsburg", "Besiktas", "Burnley", "Manchester United", "Hoffenheim", "Ajax"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Forward",
+    "nacimiento": "1992"
+  },
+  {
+    "nombreCompleto": "Cody Gakpo",
+    "apellido": "Gakpo",
+    "equipos": ["PSV Eindhoven", "Liverpool"],
+    "nacionalidad": "Netherlands",
+    "posicion": "Forward",
+    "nacimiento": "1999"
+  }
+  ]

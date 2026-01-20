@@ -136,4 +136,64 @@ function ClienteRest() {
         });
     };
 
+    // ----------------------------
+    // Obtener estadísticas de un usuario
+    // ----------------------------
+    this.obtenerEstadisticas = function(email, callback){
+        $.getJSON("/obtenerEstadisticas/" + encodeURIComponent(email), function(data){
+            if (callback && typeof callback === 'function'){
+                callback(data);
+            }
+        });
+    };
+
+    // ----------------------------
+    // Obtener perfil de un usuario
+    // ----------------------------
+    this.obtenerPerfil = function(email, callback){
+        $.getJSON("/obtenerPerfil/" + encodeURIComponent(email), function(data){
+            if (callback && typeof callback === 'function'){
+                callback(data);
+            }
+        });
+    };
+
+    // ----------------------------
+    // Actualizar perfil de un usuario
+    // ----------------------------
+    this.actualizarPerfil = function(email, nick, fotoPerfil, callback){
+        $.ajax({
+            type: 'POST',
+            url: '/actualizarPerfil',
+            data: JSON.stringify({ 
+                email: email, 
+                nick: nick, 
+                fotoPerfil: fotoPerfil 
+            }),
+            contentType: 'application/json',
+            success: function(data){
+                if (callback && typeof callback === 'function'){
+                    callback(data);
+                }
+            },
+            error: function(xhr){
+                console.error('Error actualizando perfil:', xhr);
+                if (callback && typeof callback === 'function'){
+                    callback({ok: false, error: 'Error al actualizar'});
+                }
+            }
+        });
+    };
+
+    // ----------------------------
+    // Obtener logros de un usuario
+    // ----------------------------
+    this.obtenerLogros = function(email, callback){
+        $.getJSON("/obtenerLogros/" + encodeURIComponent(email), function(data){
+            if (callback && typeof callback === 'function'){
+                callback(data);
+            }
+        });
+    };
+
 }

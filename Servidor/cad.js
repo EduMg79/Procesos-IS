@@ -33,6 +33,14 @@ this.actualizarUsuario=function(obj,callback){
 actualizar(this.usuarios,obj,callback);
 }
 
+this.actualizarPerfil=function(email, datosNuevos, callback){
+  actualizarPerfil(this.usuarios, email, datosNuevos, callback);
+}
+
+this.obtenerPerfil=function(email, callback){
+  obtenerPerfil(this.usuarios, email, callback);
+}
+
 
 
 
@@ -87,6 +95,38 @@ actualizar(this.usuarios,obj,callback);
           console.log("Elemento actualizado");
           console.log(doc.value.email);
           callback({ email: doc.value.email });
+        }
+      }
+    );
+  }
+
+  function actualizarPerfil(coleccion, email, datosNuevos, callback) {
+    let updateData = {};
+    if (datosNuevos.nick) updateData.nick = datosNuevos.nick;
+    if (datosNuevos.fotoPerfil) updateData.fotoPerfil = datosNuevos.fotoPerfil;
+    
+    coleccion.findOneAndUpdate(
+      { email: email },
+      { $set: updateData },
+      { returnDocument: "after" },
+      function(err, result) {
+        if (err) {
+          callback({ ok: false, error: err });
+        } else {
+          callback({ ok: true, usuario: result.value });
+        }
+      }
+    );
+  }
+
+  function obtenerPerfil(coleccion, email, callback) {
+    coleccion.findOne(
+      { email: email },
+      function(err, usuario) {
+        if (err || !usuario) {
+          callback(undefined);
+        } else {
+          callback(usuario);
         }
       }
     );
