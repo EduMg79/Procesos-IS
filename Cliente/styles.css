@@ -1703,3 +1703,130 @@ input.form-control:focus{
         font-size: 3rem;
     }
 }
+
+/* Ultimate Tic-Tac-Toe Styles */
+.board-ultimate {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    min-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(102, 126, 234, 0.4);
+}
+
+.mini-tablero {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 4px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-height: 150px;
+}
+
+.mini-tablero.tablero-obligatorio {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.8), 0 0 50px rgba(255, 215, 0, 0.5);
+    transform: scale(1.05);
+    animation: pulsarTablero 1.5s ease-in-out infinite;
+}
+
+@keyframes pulsarTablero {
+    0%, 100% { box-shadow: 0 0 25px rgba(255, 215, 0, 0.8), 0 0 50px rgba(255, 215, 0, 0.5); }
+    50% { box-shadow: 0 0 35px rgba(255, 215, 0, 1), 0 0 70px rgba(255, 215, 0, 0.7); }
+}
+
+.mini-tablero.tablero-ganado {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.ultimate-cell {
+    aspect-ratio: 1;
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #333;
+    min-height: 40px;
+}
+
+.ultimate-cell:hover:not(.taken) {
+    background: linear-gradient(135deg, #f5f7ff 0%, #e8ecff 100%);
+    border-color: #667eea;
+    transform: scale(1.1);
+}
+
+.ultimate-cell.taken {
+    cursor: not-allowed;
+    background: rgba(240, 240, 240, 0.8);
+}
+
+.tablero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    font-weight: 900;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.tablero-overlay.x {
+    color: #3498db;
+    text-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
+}
+
+.tablero-overlay.o {
+    color: #e74c3c;
+    text-shadow: 0 0 20px rgba(231, 76, 60, 0.5);
+}
+
+.tablero-overlay.empate {
+    color: #95a5a6;
+    font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+    .board-ultimate {
+        gap: 10px;
+        padding: 15px;
+        max-width: 95vw;
+    }
+    
+    .mini-tablero {
+        gap: 2px;
+        padding: 5px;
+    }
+    
+    .ultimate-cell {
+        font-size: 1rem;
+        border-width: 1px;
+    }
+    
+    .tablero-overlay {
+        font-size: 3rem;
+    }
+}

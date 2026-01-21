@@ -340,6 +340,9 @@ function ControlWeb() {
                 <button type="button" class="btn btn-lg modo-btn" id="btnModoBasketballGrid" data-modo="basketballgrid">
                     <i class="fa fa-basketball-ball"></i> Basketball Grid
                 </button>
+                <button type="button" class="btn btn-lg modo-btn" id="btnModoUltimateTTT" data-modo="ultimatettt">
+                    <i class="fa fa-th"></i> Ultimate 3 en Raya
+                </button>
             </div>
             <div id="contenedor-modo"></div>
         </div>`;
@@ -360,6 +363,8 @@ function ControlWeb() {
                 cw.mostrarModoFootballGrid();
             } else if (modo === "basketballgrid"){
                 cw.mostrarModoBasketballGrid();
+            } else if (modo === "ultimatettt"){
+                cw.mostrarModoUltimateTTT();
             }
         });
         
@@ -557,6 +562,30 @@ function ControlWeb() {
             $("#resCrearPartidaBasketballGrid").html('<div class="alert alert-info"><i class="fa fa-spinner fa-spin"></i> Esperando rival...</div>');
             if (typeof ws !== 'undefined' && ws && typeof ws.crearPartidaBasketballGrid === 'function'){
                 ws.crearPartidaBasketballGrid();
+            }
+        });
+    };
+
+    this.mostrarModoUltimateTTT = function() {
+        const html = `
+        <div class="form-group" id="cmp-ultimatettt">
+            <h5><i class="fa fa-th text-info"></i> Ultimate Tic-Tac-Toe</h5>
+            <p class="text-muted small">¡Juego estratégico avanzado! Un tablero de 3x3 donde cada casilla contiene otro 3x3. Tu movimiento determina dónde juega tu oponente.</p>
+            
+            <button id="btnCrearPartidaUltimateTTT" type="button" class="btn btn-info btn-lg btn-block">
+                <i class="fa fa-play"></i> Comenzar Juego
+            </button>
+            <div id="resCrearPartidaUltimateTTT" class="mt-3"></div>
+        </div>`;
+        
+        $("#contenedor-modo").html(html);
+        
+        // Crear partida Ultimate TTT
+        $("#btnCrearPartidaUltimateTTT").on("click", () => {
+            $("#btnCrearPartidaUltimateTTT").prop('disabled', true);
+            $("#resCrearPartidaUltimateTTT").html('<div class="alert alert-info"><i class="fa fa-spinner fa-spin"></i> Esperando rival...</div>');
+            if (typeof ws !== 'undefined' && ws && typeof ws.crearPartidaUltimateTTT === 'function'){
+                ws.crearPartidaUltimateTTT();
             }
         });
     };
@@ -1406,6 +1435,211 @@ function ControlWeb() {
                 ws.realizarMovimientoBasketballGrid(window.filaSeleccionada, window.colSeleccionada, nombreJugador);
             }
             $("#modal-buscar-jugador").remove();
+        });
+    };
+
+    // ----------------------------
+    // Ultimate Tic-Tac-Toe Board
+    // ----------------------------
+    this.mostrarTableroUltimateTTT = function(datos) {
+        const tableroGrande = datos.tablero || [];
+        const tablerosPequenos = datos.tablerosPequenos || [];
+        const turnoActual = datos.turnoActual;
+        const ganador = datos.ganador;
+        const jugadores = datos.jugadores || [];
+        const tableroObligatorio = datos.tableroObligatorio;
+        const nick = $.cookie("nick");
+        
+        // Validar que tablerosPequenos tenga la estructura correcta
+        if (!tablerosPequenos || tablerosPequenos.length !== 3) {
+            console.error('tablerosPequenos no tiene la estructura correcta:', tablerosPequenos);
+            return;
+        }
+        
+        const rivalNick = jugadores.find(j => j !== nick) || 'Rival';
+        const esperandoRival = jugadores.length < 2;
+
+        let estadoTexto = '';
+        let estadoClase = 'waiting';
+        
+        if (esperandoRival) {
+            estadoTexto = '⏳ Esperando rival...';
+            estadoClase = 'waiting';
+        } else if (ganador === 'empate') {
+            estadoTexto = '¡Empate! Todos los tableros están completos';
+            estadoClase = 'finished';
+        } else if (ganador) {
+            if (ganador === nick) {
+                estadoTexto = '🎉 ¡Felicidades! Has ganado el Ultimate 3 en Raya';
+            } else {
+                estadoTexto = '😔 Has perdido. ¡Mejor suerte la próxima!';
+            }
+            estadoClase = 'finished';
+        } else if (turnoActual === nick) {
+            if (tableroObligatorio) {
+                estadoTexto = `✨ Tu turno - Debes jugar en el tablero iluminado`;
+            } else {
+                estadoTexto = '✨ Tu turno - Puedes jugar en cualquier tablero disponible';
+            }
+            estadoClase = 'playing';
+        } else {
+            estadoTexto = `⏳ Turno de ${rivalNick}`;
+            estadoClase = 'waiting';
+        }
+
+        // Construir el tablero grande con los 9 mini-tableros
+        let tableroHTML = '';
+        for (let bigRow = 0; bigRow < 3; bigRow++) {
+            for (let bigCol = 0; bigCol < 3; bigCol++) {
+                const estado = tableroGrande[bigRow] ? tableroGrande[bigRow][bigCol] : null;
+                const esObligatorio = tableroObligatorio && tableroObligatorio.i === bigRow && tableroObligatorio.j === bigCol;
+                const miniTablero = (tablerosPequenos[bigRow] && tablerosPequenos[bigRow][bigCol]) ? tablerosPequenos[bigRow][bigCol] : [];
+                
+                let claseTablero = 'mini-tablero';
+                if (esObligatorio && turnoActual === nick && !ganador) {
+                    claseTablero += ' tablero-obligatorio';
+                }
+                if (estado) {
+                    claseTablero += ' tablero-ganado';
+                }
+                
+                // Construir las 9 celdas del mini-tablero
+                let celdasHTML = '';
+                for (let smallRow = 0; smallRow < 3; smallRow++) {
+                    for (let smallCol = 0; smallCol < 3; smallCol++) {
+                        const valor = (miniTablero[smallRow] && miniTablero[smallRow][smallCol]) ? miniTablero[smallRow][smallCol] : null;
+                        const claseCell = `ultimate-cell ${valor ? 'taken' : ''}`;
+                        const contenido = valor || '';
+                        celdasHTML += `
+                            <div class="${claseCell}" 
+                                 data-bigrow="${bigRow}" 
+                                 data-bigcol="${bigCol}" 
+                                 data-smallrow="${smallRow}" 
+                                 data-smallcol="${smallCol}">
+                                ${contenido}
+                            </div>
+                        `;
+                    }
+                }
+                
+                // Si el mini-tablero está ganado, mostrar símbolo grande
+                let overlayHTML = '';
+                if (estado) {
+                    const simbolo = estado === 'empate' ? '−' : estado;
+                    const claseEstado = estado === 'empate' ? 'empate' : (estado === 'X' ? 'x' : 'o');
+                    overlayHTML = `<div class="tablero-overlay ${claseEstado}">${simbolo}</div>`;
+                }
+                
+                tableroHTML += `
+                    <div class="${claseTablero}" data-bigrow="${bigRow}" data-bigcol="${bigCol}">
+                        ${celdasHTML}
+                        ${overlayHTML}
+                    </div>
+                `;
+            }
+        }
+
+        const html = `
+        <div id="game-container">
+            <div id="game-header">
+                <h2 id="game-title">🎯 Ultimate Tic-Tac-Toe</h2>
+                <div id="game-info">
+                    <div class="info-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <h6>Tú</h6>
+                        <p>${nick}</p>
+                    </div>
+                    <div class="info-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <h6>Rival</h6>
+                        <p>${rivalNick}</p>
+                    </div>
+                    <div class="info-card timer-card" style="background: linear-gradient(135deg, #FA8BFF 0%, #2BD2FF 90%, #2BFF88 100%);">
+                        <h6>⏱️ Tiempo</h6>
+                        <p id="temporizador-display">60</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="game-layout">
+                <div id="ultimate-ttt-board" class="board-ultimate">
+                    ${tableroHTML}
+                </div>
+                
+                <div id="chat-container">
+                    <div id="chat-header">
+                        <i class="fa fa-comments"></i> Chat
+                    </div>
+                    <div id="chat-messages"></div>
+                    <div id="chat-input-container">
+                        <input type="text" id="chat-input" placeholder="Escribe un mensaje..." maxlength="200" />
+                        <button id="chat-send-btn"><i class="fa fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="game-status" class="${estadoClase}">
+                ${estadoTexto}
+            </div>
+            
+            <div id="game-controls">
+                <button id="btnSalirJuego" class="btn btn-secondary">
+                    <i class="fa fa-arrow-left"></i> Salir del juego
+                </button>
+                ${ganador ? '<button id="btnNuevaPartida" class="btn btn-success"><i class="fa fa-redo"></i> Nueva partida</button>' : ''}
+            </div>
+        </div>`;
+        
+        $(contenedorId).html(html);
+
+        // Event handler para celdas
+        $(".ultimate-cell:not(.taken)").on("click", function() {
+            if (turnoActual !== nick || ganador) return;
+            
+            const bigRow = parseInt($(this).data("bigrow"));
+            const bigCol = parseInt($(this).data("bigcol"));
+            const smallRow = parseInt($(this).data("smallrow"));
+            const smallCol = parseInt($(this).data("smallcol"));
+            
+            // Verificar si es un tablero válido
+            const estadoTablero = (tableroGrande[bigRow] && tableroGrande[bigRow][bigCol]) ? tableroGrande[bigRow][bigCol] : null;
+            if (estadoTablero) return; // Tablero ya ganado
+            if (tableroObligatorio && (tableroObligatorio.i !== bigRow || tableroObligatorio.j !== bigCol)) {
+                cw.mostrarMensajeTemporal('Debes jugar en el tablero iluminado', 'error');
+                return;
+            }
+            
+            if (typeof ws !== 'undefined' && ws && typeof ws.realizarMovimientoUltimateTTT === 'function') {
+                ws.realizarMovimientoUltimateTTT(bigRow, bigCol, smallRow, smallCol);
+            }
+        });
+
+        // Botón salir
+        $("#btnSalirJuego").on("click", function() {
+            if (confirm('¿Seguro que quieres salir del juego?')) {
+                if (typeof ws !== 'undefined' && ws && typeof ws.eliminarPartida === 'function' && ws.codigo) {
+                    ws.eliminarPartida(ws.codigo);
+                }
+                cw.mostrarPartidas();
+            }
+        });
+
+        // Botón nueva partida
+        $("#btnNuevaPartida").on("click", function() {
+            cw.mostrarPartidas();
+        });
+
+        // Chat handlers
+        $("#chat-send-btn").on("click", function() {
+            const mensaje = $("#chat-input").val().trim();
+            if (mensaje && typeof ws !== 'undefined' && ws && typeof ws.enviarMensajeChat === 'function') {
+                ws.enviarMensajeChat(mensaje);
+                $("#chat-input").val('');
+            }
+        });
+
+        $("#chat-input").on("keypress", function(e) {
+            if (e.which === 13) { // Enter key
+                $("#chat-send-btn").click();
+            }
         });
     };
 

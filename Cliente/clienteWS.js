@@ -68,6 +68,36 @@ function ClienteWS(){
           turnoActual: null,
           ganador: null
         });
+      } else if (datos.modo === 'basketballgrid' && typeof cw !== 'undefined' && cw && typeof cw.mostrarTableroBasketballGrid === 'function'){
+        cw.mostrarTableroBasketballGrid({
+          tablero: Array(3).fill(null).map(() => Array(3).fill(null)),
+          equiposFilas: datos.equiposFilas,
+          equiposColumnas: datos.equiposColumnas,
+          jugadores: [cli.email],
+          turnoActual: null,
+          ganador: null
+        });
+      } else if (datos.modo === 'ultimatettt' && typeof cw !== 'undefined' && cw && typeof cw.mostrarTableroUltimateTTT === 'function'){
+        // Crear tableros vacíos para Ultimate TTT
+        const tableroGrande = Array(3).fill(null).map(() => Array(3).fill(null));
+        const tablerosPequenos = [];
+        for(let i=0; i<3; i++){
+          tablerosPequenos[i] = [];
+          for(let j=0; j<3; j++){
+            tablerosPequenos[i][j] = [];
+            for(let k=0; k<3; k++){
+              tablerosPequenos[i][j][k] = [null, null, null];
+            }
+          }
+        }
+        cw.mostrarTableroUltimateTTT({
+          tablero: tableroGrande,
+          tablerosPequenos: tablerosPequenos,
+          jugadores: [cli.email],
+          turnoActual: null,
+          ganador: null,
+          tableroObligatorio: null
+        });
       } else if (!datos.esIA && typeof cw !== 'undefined' && cw && typeof cw.mostrarEsperandoRival === 'function'){
         // Solo mostrar esperando rival si NO es IA
         cw.mostrarEsperandoRival();
@@ -130,11 +160,13 @@ function ClienteWS(){
       if (!tieneSesion()){
         return;
       }
-      // Detectar modo Football Grid o Basketball Grid
+      // Detectar modo de juego
       if (datos.modo === 'footballgrid' && typeof cw !== 'undefined' && cw && typeof cw.mostrarTableroFootballGrid === 'function'){
         cw.mostrarTableroFootballGrid(datos);
       } else if (datos.modo === 'basketballgrid' && typeof cw !== 'undefined' && cw && typeof cw.mostrarTableroBasketballGrid === 'function'){
         cw.mostrarTableroBasketballGrid(datos);
+      } else if (datos.modo === 'ultimatettt' && typeof cw !== 'undefined' && cw && typeof cw.mostrarTableroUltimateTTT === 'function'){
+        cw.mostrarTableroUltimateTTT(datos);
       } else if (typeof cw !== 'undefined' && cw && typeof cw.mostrarTableroJuego === 'function'){
         cw.mostrarTableroJuego(datos);
       }
@@ -145,11 +177,13 @@ function ClienteWS(){
       if (!tieneSesion()){
         return;
       }
-      // Detectar modo Football Grid o Basketball Grid
+      // Detectar modo de juego
       if (datos.modo === 'footballgrid' && typeof cw !== 'undefined' && cw && typeof cw.mostrarTableroFootballGrid === 'function'){
         cw.mostrarTableroFootballGrid(datos);
       } else if (datos.modo === 'basketballgrid' && typeof cw !== 'undefined' && cw && typeof cw.mostrarTableroBasketballGrid === 'function'){
         cw.mostrarTableroBasketballGrid(datos);
+      } else if (datos.modo === 'ultimatettt' && typeof cw !== 'undefined' && cw && typeof cw.mostrarTableroUltimateTTT === 'function'){
+        cw.mostrarTableroUltimateTTT(datos);
       } else if (typeof cw !== 'undefined' && cw && typeof cw.mostrarTableroJuego === 'function'){
         cw.mostrarTableroJuego(datos);
       }
@@ -182,6 +216,16 @@ function ClienteWS(){
       }
       if (typeof cw !== 'undefined' && cw && typeof cw.mostrarTableroBasketballGrid === 'function'){
         cw.mostrarTableroBasketballGrid(datos);
+      }
+    });
+
+    this.socket.on("movimientoRealizadoUltimateTTT",function(datos){
+      console.log('movimientoRealizadoUltimateTTT', datos);
+      if (!tieneSesion()){
+        return;
+      }
+      if (typeof cw !== 'undefined' && cw && typeof cw.mostrarTableroUltimateTTT === 'function'){
+        cw.mostrarTableroUltimateTTT(datos);
       }
     });
 
@@ -310,6 +354,22 @@ function ClienteWS(){
     this.socket.emit("crearPartida",{"email":this.email, "tamano": 3, "esIA": false, "modoJuego": "basketballgrid"});
   };
 
+  this.crearPartidaUltimateTTT=function(){
+    if (!this.socket){
+      return;
+    }
+    // Robustez: asegurar email desde cookie de sesión
+    try {
+      if (!this.email){
+        const nick = (typeof $ !== 'undefined' && typeof $.cookie === 'function') ? $.cookie('nick') : null;
+        if (nick){
+          this.email = nick;
+        }
+      }
+    } catch(e) {}
+    this.socket.emit("crearPartida",{"email":this.email, "tamano": 3, "esIA": false, "modoJuego": "ultimatettt"});
+  };
+
   this.unirAPartida=function(codigo){
     if (!this.socket){
       return;
@@ -395,6 +455,29 @@ function ClienteWS(){
       "fila":fila,
       "columna":columna,
       "nombreJugador":nombreJugador
+    });
+  };
+
+  this.realizarMovimientoUltimateTTT=function(bigRow, bigCol, smallRow, smallCol){
+    if (!this.socket || !this.codigo){
+      return;
+    }
+    // Robustez: asegurar email desde cookie de sesión
+    try {
+      if (!this.email){
+        const nick = (typeof $ !== 'undefined' && typeof $.cookie === 'function') ? $.cookie('nick') : null;
+        if (nick){
+          this.email = nick;
+        }
+      }
+    } catch(e) {}
+    this.socket.emit("realizarMovimientoUltimateTTT",{
+      "email":this.email,
+      "codigo":this.codigo,
+      "bigRow":bigRow,
+      "bigCol":bigCol,
+      "smallRow":smallRow,
+      "smallCol":smallCol
     });
   };
 

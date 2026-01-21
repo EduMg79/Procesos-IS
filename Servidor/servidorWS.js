@@ -88,6 +88,13 @@ function ServidorWS(io){
                         "equiposFilas": res.equiposFilas,
                         "equiposColumnas": res.equiposColumnas
                     });
+                } else if (modoJuego === 'ultimatettt' && res){
+                    srv.enviarAlRemitente(socket,"partidaCreada",{
+                        "codigo":codigo, 
+                        "tamano":3, 
+                        "esIA":esIA, 
+                        "modo": "ultimatettt"
+                    });
                 } else {
                     srv.enviarAlRemitente(socket,"partidaCreada",{"codigo":codigo, "tamano":tamano, "esIA":esIA, "dificultadIA":dificultadIA});
                 }
@@ -137,6 +144,10 @@ function ServidorWS(io){
                             estadoJuego.equiposFilas = partida.equiposFilas;
                             estadoJuego.equiposColumnas = partida.equiposColumnas;
                             estadoJuego.modo = 'basketballgrid';
+                        } else if (partida.modo === 'ultimatettt'){
+                            estadoJuego.modo = 'ultimatettt';
+                            estadoJuego.tablerosPequenos = partida.tablerosPequenos;
+                            estadoJuego.tableroObligatorio = partida.tableroObligatorio;
                         }
                         io.to(res.codigo).emit('inicioJuego', estadoJuego);
                         
@@ -281,6 +292,38 @@ function ServidorWS(io){
                     estadoJuego.equiposColumnas = resultado.equiposColumnas;
                     estadoJuego.modo = 'basketballgrid';
                     io.to(codigo).emit('movimientoRealizadoBasketballGrid', estadoJuego);
+                    
+                    // Reiniciar temporizador después del movimiento
+                    const partida = sistema.partidas[codigo];
+                    if (partida && !partida.ganador){
+                        sistema.iniciarTemporizador(codigo, io);
+                    } else if (partida && partida.ganador){
+                        sistema.detenerTemporizador(codigo);
+                    }
+                } else {
+                    srv.enviarAlRemitente(socket,'error',{msg: resultado.msg || 'Movimiento inválido'});
+                }
+            });
+
+            socket.on('realizarMovimientoUltimateTTT',function(datos){
+                const email = datos ? datos.email : undefined;
+                const codigo = datos ? datos.codigo : undefined;
+                const bigRow = datos ? datos.bigRow : undefined;
+                const bigCol = datos ? datos.bigCol : undefined;
+                const smallRow = datos ? datos.smallRow : undefined;
+                const smallCol = datos ? datos.smallCol : undefined;
+
+                const resultado = sistema.realizarMovimientoUltimateTTT(email, codigo, bigRow, bigCol, smallRow, smallCol);
+                if (resultado && resultado.ok){
+                    // Si hay error, enviar mensaje solo al jugador que falló
+                    if (resultado.error){
+                        srv.enviarAlRemitente(socket,'errorTurno',{msg: resultado.error});
+                    }
+                    
+                    // Enviar estado actualizado a todos
+                    const estadoJuego = sistema.obtenerEstadoPartida(codigo);
+                    estadoJuego.modo = 'ultimatettt';
+                    io.to(codigo).emit('movimientoRealizadoUltimateTTT', estadoJuego);
                     
                     // Reiniciar temporizador después del movimiento
                     const partida = sistema.partidas[codigo];

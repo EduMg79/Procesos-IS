@@ -109,6 +109,8 @@ callback(obj);
       partida = new PartidaFootballGrid(codigo);
     } else if (modo === 'basketballgrid'){
       partida = new PartidaBasketballGrid(codigo);
+    } else if (modo === 'ultimatettt'){
+      partida = new PartidaUltimateTTT(codigo);
     } else {
       partida = new Partida(codigo, tamano || 3);
     }
@@ -143,6 +145,14 @@ callback(obj);
         modo: 'basketballgrid',
         equiposFilas: partida.equiposFilas,
         equiposColumnas: partida.equiposColumnas,
+        esIA: esIA
+      };
+    }
+    
+    if (modo === 'ultimatettt') {
+      return {
+        codigo: codigo, 
+        modo: 'ultimatettt',
         esIA: esIA
       };
     }
@@ -624,6 +634,74 @@ callback(obj);
     };
   }
 
+  this.realizarMovimientoUltimateTTT=function(email, codigo, bigRow, bigCol, smallRow, smallCol){
+    const partida=this.partidas[codigo];
+    const usr=this.usuarios[email];
+    
+    if (!partida || !usr){
+      return {ok:false, msg:'Partida o usuario no encontrado'};
+    }
+    
+    // Verificar que es el turno del jugador
+    if (partida.turnoActual !== (usr.nick || usr.email)){
+      return {ok:false, msg:'No es tu turno'};
+    }
+    
+    // Validar el movimiento
+    const validacion = partida.validarMovimiento(bigRow, bigCol, smallRow, smallCol);
+    if (!validacion.valido){
+      return {ok:true, error: validacion.error};
+    }
+    
+    // Realizar el movimiento
+    const simbolo = partida.simbolos[usr.nick || usr.email];
+    partida.tablerosPequenos[bigRow][bigCol][smallRow][smallCol] = simbolo;
+    
+    // Verificar si se ganó el mini-tablero
+    const resultadoMini = partida.verificarGanadorMini(partida.tablerosPequenos[bigRow][bigCol]);
+    if (resultadoMini){
+      partida.tableroGrande[bigRow][bigCol] = resultadoMini;
+    }
+    
+    // Verificar ganador del tablero grande
+    if (partida.verificarGanador()){
+      partida.ganador = usr.nick || usr.email;
+      partida.estado = 'finalizada';
+      
+      // Actualizar estadísticas
+      const perdedor = partida.jugadores.find(j => (j.nick || j.email) !== (usr.nick || usr.email));
+      this.actualizarEstadisticas(usr.email, 'victoria');
+      if (perdedor){
+        this.actualizarEstadisticas(perdedor.email || perdedor.nick, 'derrota');
+      }
+    } else if (partida.tableroLleno()){
+      partida.ganador = 'empate';
+      partida.estado = 'finalizada';
+    } else {
+      // Cambiar turno
+      partida.cambiarTurno();
+      
+      // Determinar el próximo tablero obligatorio
+      // El jugador debe ir al tablero (smallRow, smallCol)
+      if (partida.tableroGrande[smallRow][smallCol] === null){
+        // El tablero está disponible
+        partida.tableroObligatorio = {i: smallRow, j: smallCol};
+      } else {
+        // El tablero ya está ganado, puede jugar en cualquiera disponible
+        partida.tableroObligatorio = null;
+      }
+    }
+    
+    return {
+      ok:true,
+      tablero: partida.tableroGrande,
+      tablerosPequenos: partida.tablerosPequenos,
+      turnoActual: partida.turnoActual,
+      ganador: partida.ganador,
+      tableroObligatorio: partida.tableroObligatorio
+    };
+  }
+
   this.obtenerEstadoPartida=function(codigo){
     const partida=this.partidas[codigo];
     if (!partida){
@@ -654,6 +732,13 @@ callback(obj);
       estado.modo = 'basketballgrid';
       estado.equiposFilas = partida.equiposFilas;
       estado.equiposColumnas = partida.equiposColumnas;
+    }
+    
+    // Agregar datos específicos de Ultimate Tic-Tac-Toe
+    if (partida.modo === 'ultimatettt'){
+      estado.modo = 'ultimatettt';
+      estado.tablerosPequenos = partida.tablerosPequenos;
+      estado.tableroObligatorio = partida.tableroObligatorio;
     }
     
     return estado;
@@ -1389,6 +1474,172 @@ function PartidaBasketballGrid(codigo){
       }
     }
     return true;
+  }
+}
+
+// Ultimate Tic-Tac-Toe (3 en Raya Global)
+function PartidaUltimateTTT(codigo){
+  this.codigo=codigo;
+  this.jugadores=[];
+  this.maxJug=2;
+  this.modo='ultimatettt';
+  
+  // Tablero grande: 3x3 donde cada casilla es un mini-tablero
+  // null = no ganado, 'X' = ganado por X, 'O' = ganado por O, 'empate' = empate
+  this.tableroGrande = [];
+  for(let i=0; i<3; i++){
+    this.tableroGrande[i] = [null, null, null];
+  }
+  
+  // 9 mini-tableros: cada uno es 3x3
+  // tablerosPequenos[i][j] es el mini-tablero en la posición (i,j) del tablero grande
+  this.tablerosPequenos = [];
+  for(let i=0; i<3; i++){
+    this.tablerosPequenos[i] = [];
+    for(let j=0; j<3; j++){
+      this.tablerosPequenos[i][j] = [];
+      for(let k=0; k<3; k++){
+        this.tablerosPequenos[i][j][k] = [null, null, null];
+      }
+    }
+  }
+  
+  this.turnoActual=null;
+  this.ganador=null;
+  this.simbolos={};
+  this.estado='esperando';
+  this.tiempoRestante=60;
+  this.temporizador=null;
+  
+  // null = puede jugar en cualquier tablero pequeño disponible
+  // {i, j} = debe jugar en el tablero pequeño (i,j)
+  this.tableroObligatorio = null;
+  
+  this.iniciarJuego=function(){
+    if (this.jugadores.length===2){
+      this.simbolos[this.jugadores[0].nick || this.jugadores[0].email]='X';
+      this.simbolos[this.jugadores[1].nick || this.jugadores[1].email]='O';
+      this.turnoActual=this.jugadores[0].nick || this.jugadores[0].email;
+      this.estado='jugando';
+      this.tiempoRestante=60;
+    }
+  }
+  
+  this.cambiarTurno=function(){
+    const email0=this.jugadores[0].nick || this.jugadores[0].email;
+    const email1=this.jugadores[1].nick || this.jugadores[1].email;
+    this.turnoActual = (this.turnoActual===email0) ? email1 : email0;
+    this.tiempoRestante=60;
+  }
+  
+  // Verificar si un mini-tablero tiene ganador
+  this.verificarGanadorMini=function(tablero){
+    // Verificar filas
+    for(let i=0; i<3; i++){
+      if (tablero[i][0] && tablero[i][0]===tablero[i][1] && tablero[i][1]===tablero[i][2]){
+        return tablero[i][0];
+      }
+    }
+    
+    // Verificar columnas
+    for(let j=0; j<3; j++){
+      if (tablero[0][j] && tablero[0][j]===tablero[1][j] && tablero[1][j]===tablero[2][j]){
+        return tablero[0][j];
+      }
+    }
+    
+    // Diagonales
+    if (tablero[0][0] && tablero[0][0]===tablero[1][1] && tablero[1][1]===tablero[2][2]){
+      return tablero[0][0];
+    }
+    if (tablero[0][2] && tablero[0][2]===tablero[1][1] && tablero[1][1]===tablero[2][0]){
+      return tablero[0][2];
+    }
+    
+    // Verificar empate
+    let lleno = true;
+    for(let i=0; i<3; i++){
+      for(let j=0; j<3; j++){
+        if (tablero[i][j]===null){
+          lleno = false;
+          break;
+        }
+      }
+      if (!lleno) break;
+    }
+    if (lleno) return 'empate';
+    
+    return null;
+  }
+  
+  // Verificar ganador del tablero grande
+  this.verificarGanador=function(){
+    // Verificar filas
+    for(let i=0; i<3; i++){
+      if (this.tableroGrande[i][0] && 
+          this.tableroGrande[i][0]!=='empate' &&
+          this.tableroGrande[i][0]===this.tableroGrande[i][1] && 
+          this.tableroGrande[i][1]===this.tableroGrande[i][2]){
+        return true;
+      }
+    }
+    
+    // Verificar columnas
+    for(let j=0; j<3; j++){
+      if (this.tableroGrande[0][j] && 
+          this.tableroGrande[0][j]!=='empate' &&
+          this.tableroGrande[0][j]===this.tableroGrande[1][j] && 
+          this.tableroGrande[1][j]===this.tableroGrande[2][j]){
+        return true;
+      }
+    }
+    
+    // Diagonales
+    if (this.tableroGrande[0][0] && 
+        this.tableroGrande[0][0]!=='empate' &&
+        this.tableroGrande[0][0]===this.tableroGrande[1][1] && 
+        this.tableroGrande[1][1]===this.tableroGrande[2][2]){
+      return true;
+    }
+    if (this.tableroGrande[0][2] && 
+        this.tableroGrande[0][2]!=='empate' &&
+        this.tableroGrande[0][2]===this.tableroGrande[1][1] && 
+        this.tableroGrande[1][1]===this.tableroGrande[2][0]){
+      return true;
+    }
+    
+    return false;
+  }
+  
+  this.tableroLleno=function(){
+    for(let i=0; i<3; i++){
+      for(let j=0; j<3; j++){
+        if (this.tableroGrande[i][j]===null) return false;
+      }
+    }
+    return true;
+  }
+  
+  // Validar movimiento
+  this.validarMovimiento=function(bigRow, bigCol, smallRow, smallCol){
+    // Verificar que el tablero pequeño no esté ganado
+    if (this.tableroGrande[bigRow][bigCol] !== null){
+      return {valido: false, error: 'Este tablero pequeño ya está ganado o empatado'};
+    }
+    
+    // Verificar que la casilla esté vacía
+    if (this.tablerosPequenos[bigRow][bigCol][smallRow][smallCol] !== null){
+      return {valido: false, error: 'Esta casilla ya está ocupada'};
+    }
+    
+    // Verificar tablero obligatorio
+    if (this.tableroObligatorio !== null){
+      if (this.tableroObligatorio.i !== bigRow || this.tableroObligatorio.j !== bigCol){
+        return {valido: false, error: 'Debes jugar en el tablero iluminado'};
+      }
+    }
+    
+    return {valido: true};
   }
 }
 
