@@ -133,8 +133,8 @@ callback(obj);
       return {
         codigo: codigo, 
         modo: 'footballgrid',
-        equiposFilas: partida.equiposFilas,
-        equiposColumnas: partida.equiposColumnas,
+        condicionesFilas: partida.condicionesFilas,
+        condicionesColumnas: partida.condicionesColumnas,
         esIA: esIA
       };
     }
@@ -143,8 +143,8 @@ callback(obj);
       return {
         codigo: codigo, 
         modo: 'basketballgrid',
-        equiposFilas: partida.equiposFilas,
-        equiposColumnas: partida.equiposColumnas,
+        condicionesFilas: partida.condicionesFilas,
+        condicionesColumnas: partida.condicionesColumnas,
         esIA: esIA
       };
     }
@@ -477,8 +477,8 @@ callback(obj);
         ok:true, 
         tablero:partida.tablero, 
         turnoActual:partida.turnoActual,
-        equiposFilas: partida.equiposFilas,
-        equiposColumnas: partida.equiposColumnas,
+        condicionesFilas: partida.condicionesFilas,
+        condicionesColumnas: partida.condicionesColumnas,
         error: validacion.motivo
       };
     }
@@ -509,8 +509,8 @@ callback(obj);
         tablero:partida.tablero, 
         ganador:email, 
         empate:false,
-        equiposFilas: partida.equiposFilas,
-        equiposColumnas: partida.equiposColumnas
+        condicionesFilas: partida.condicionesFilas,
+        condicionesColumnas: partida.condicionesColumnas
       };
     }
     
@@ -522,8 +522,8 @@ callback(obj);
         ok:true, 
         tablero:partida.tablero, 
         empate:true,
-        equiposFilas: partida.equiposFilas,
-        equiposColumnas: partida.equiposColumnas
+        condicionesFilas: partida.condicionesFilas,
+        condicionesColumnas: partida.condicionesColumnas
       };
     }
     
@@ -533,8 +533,8 @@ callback(obj);
       ok:true, 
       tablero:partida.tablero, 
       turnoActual:partida.turnoActual,
-      equiposFilas: partida.equiposFilas,
-      equiposColumnas: partida.equiposColumnas
+      condicionesFilas: partida.condicionesFilas,
+      condicionesColumnas: partida.condicionesColumnas
     };
   }
 
@@ -573,8 +573,8 @@ callback(obj);
         ok:true, 
         tablero:partida.tablero, 
         turnoActual:partida.turnoActual,
-        equiposFilas: partida.equiposFilas,
-        equiposColumnas: partida.equiposColumnas,
+        condicionesFilas: partida.condicionesFilas,
+        condicionesColumnas: partida.condicionesColumnas,
         error: validacion.motivo
       };
     }
@@ -605,8 +605,8 @@ callback(obj);
         tablero:partida.tablero, 
         ganador:email, 
         empate:false,
-        equiposFilas: partida.equiposFilas,
-        equiposColumnas: partida.equiposColumnas
+        condicionesFilas: partida.condicionesFilas,
+        condicionesColumnas: partida.condicionesColumnas
       };
     }
     
@@ -618,8 +618,8 @@ callback(obj);
         ok:true, 
         tablero:partida.tablero, 
         empate:true,
-        equiposFilas: partida.equiposFilas,
-        equiposColumnas: partida.equiposColumnas
+        condicionesFilas: partida.condicionesFilas,
+        condicionesColumnas: partida.condicionesColumnas
       };
     }
     
@@ -629,8 +629,8 @@ callback(obj);
       ok:true, 
       tablero:partida.tablero, 
       turnoActual:partida.turnoActual,
-      equiposFilas: partida.equiposFilas,
-      equiposColumnas: partida.equiposColumnas
+      condicionesFilas: partida.condicionesFilas,
+      condicionesColumnas: partida.condicionesColumnas
     };
   }
 
@@ -723,15 +723,15 @@ callback(obj);
     // Agregar datos específicos de Football Grid
     if (partida.modo === 'footballgrid'){
       estado.modo = 'footballgrid';
-      estado.equiposFilas = partida.equiposFilas;
-      estado.equiposColumnas = partida.equiposColumnas;
+      estado.condicionesFilas = partida.condicionesFilas;
+      estado.condicionesColumnas = partida.condicionesColumnas;
     }
     
     // Agregar datos específicos de Basketball Grid
     if (partida.modo === 'basketballgrid'){
       estado.modo = 'basketballgrid';
-      estado.equiposFilas = partida.equiposFilas;
-      estado.equiposColumnas = partida.equiposColumnas;
+      estado.condicionesFilas = partida.condicionesFilas;
+      estado.condicionesColumnas = partida.condicionesColumnas;
     }
     
     // Agregar datos específicos de Ultimate Tic-Tac-Toe
@@ -744,7 +744,7 @@ callback(obj);
     return estado;
   }
 
-  this.buscarJugadoresPorNombre=function(query, equipo1, equipo2){
+  this.buscarJugadoresPorNombre=function(query, condicion1, condicion2){
     if (!query || query.length < 2){
       return [];
     }
@@ -769,7 +769,7 @@ callback(obj);
     }));
   }
 
-  this.buscarJugadoresNBAPorNombre=function(query, equipo1, equipo2){
+  this.buscarJugadoresNBAPorNombre=function(query, condicion1, condicion2){
     if (!query || query.length < 2){
       return [];
     }
@@ -831,8 +831,8 @@ callback(obj);
           const estadoJuego = sistema.obtenerEstadoPartida(codigo);
           if (partida.modo === 'footballgrid'){
             estadoJuego.modo = 'footballgrid';
-            estadoJuego.equiposFilas = partida.equiposFilas;
-            estadoJuego.equiposColumnas = partida.equiposColumnas;
+            estadoJuego.condicionesFilas = partida.condicionesFilas;
+            estadoJuego.condicionesColumnas = partida.condicionesColumnas;
             io.to(codigo).emit('tiempoAgotado', {});
             io.to(codigo).emit('movimientoRealizadoFootballGrid', estadoJuego);
           } else {
@@ -1227,10 +1227,10 @@ function PartidaFootballGrid(codigo){
   const sportsAPIModule=require("./sportsAPI.js");
   const api=new sportsAPIModule.SportsAPI();
   
-  // Generar grid aleatorio de equipos
+  // Generar grid aleatorio con condiciones variadas
   const grid = api.generarGridAleatorio();
-  this.equiposFilas = grid.equiposFilas;
-  this.equiposColumnas = grid.equiposColumnas;
+  this.condicionesFilas = grid.condicionesFilas;
+  this.condicionesColumnas = grid.condicionesColumnas;
   
   // Inicializar tablero 3x3 (solo para Football Grid)
   for(let i=0; i<3; i++){
@@ -1269,12 +1269,12 @@ function PartidaFootballGrid(codigo){
       return {valido:false, motivo:"Jugador ya utilizado"};
     }
     
-    // Obtener los equipos correspondientes
-    const equipoFila = this.equiposFilas[fila];
-    const equipoColumna = this.equiposColumnas[columna];
+    // Obtener las condiciones correspondientes
+    const condicionFila = this.condicionesFilas[fila];
+    const condicionColumna = this.condicionesColumnas[columna];
     
     // Validar con la API
-    const validacion = api.validarJugador(nombreJugador, equipoFila, equipoColumna);
+    const validacion = api.validarJugador(nombreJugador, condicionFila, condicionColumna);
     
     if (!validacion.valido){
       return validacion;
@@ -1363,10 +1363,10 @@ function PartidaBasketballGrid(codigo){
   const basketballAPIModule=require("./basketballAPI.js");
   const api=new basketballAPIModule.BasketballAPI();
   
-  // Generar grid aleatorio de equipos NBA
+  // Generar grid aleatorio con condiciones variadas
   const grid = api.generarGridAleatorio();
-  this.equiposFilas = grid.equiposFilas;
-  this.equiposColumnas = grid.equiposColumnas;
+  this.condicionesFilas = grid.condicionesFilas;
+  this.condicionesColumnas = grid.condicionesColumnas;
   
   // Inicializar tablero 3x3
   for(let i=0; i<3; i++){
@@ -1402,10 +1402,10 @@ function PartidaBasketballGrid(codigo){
       return {valido:false, motivo:"Jugador ya utilizado"};
     }
     
-    const equipoFila = this.equiposFilas[fila];
-    const equipoColumna = this.equiposColumnas[columna];
+    const condicionFila = this.condicionesFilas[fila];
+    const condicionColumna = this.condicionesColumnas[columna];
     
-    const validacion = api.validarJugador(nombreJugador, equipoFila, equipoColumna);
+    const validacion = api.validarJugador(nombreJugador, condicionFila, condicionColumna);
     
     if (!validacion.valido){
       return validacion;

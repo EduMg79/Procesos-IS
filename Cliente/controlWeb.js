@@ -749,7 +749,15 @@ function ControlWeb() {
     // 11) Mostrar partida eliminada
     // ----------------------------
     this.mostrarPartidaEliminada = function(datos) {
-        const msg = datos && datos.ok ? 'Partida eliminada correctamente' : 'No se pudo eliminar la partida (código no existe)';
+        let msg = 'No se pudo eliminar la partida';
+        if (datos && datos.ok) {
+            msg = 'Partida eliminada correctamente';
+        } else if (datos && datos.msg) {
+            msg = datos.msg;
+        } else {
+            msg = 'No se pudo eliminar la partida (código no existe o no eres el creador)';
+        }
+        
         const tipo = datos && datos.ok ? 'success' : 'danger';
         const icono = datos && datos.ok ? 'check-circle' : 'exclamation-circle';
         const html = `<div class="alert alert-${tipo}"><i class="fa fa-${icono}"></i> ${msg}</div>`;
@@ -759,6 +767,11 @@ function ControlWeb() {
             if (datos && datos.ok) {
                 $("#codigoEliminarMulti").val('');
             }
+        }
+
+        // Mostrar mensaje temporal si no se pudo eliminar
+        if (datos && !datos.ok) {
+            cw.mostrarMensajeTemporal(msg, 'error');
         }
 
         // Si acabamos de cancelar la partida que estábamos esperando, resetear UI
@@ -932,8 +945,8 @@ function ControlWeb() {
         const turnoActual = datos.turnoActual;
         const ganador = datos.ganador;
         const jugadores = datos.jugadores || [];
-        const equiposFilas = datos.equiposFilas || [];
-        const equiposColumnas = datos.equiposColumnas || [];
+        const condicionesFilas = datos.condicionesFilas || [];
+        const condicionesColumnas = datos.condicionesColumnas || [];
         const nick = $.cookie("nick");
         
         const rivalNick = jugadores.find(j => j !== nick) || 'Rival';
@@ -982,10 +995,10 @@ function ControlWeb() {
             <div id="game-layout">
                 <div id="football-grid-board" class="board-footballgrid">
                     <div class="grid-corner"></div>
-                    ${equiposColumnas.map(equipo => `<div class="grid-header grid-col-header">${equipo}</div>`).join('')}
-                    ${equiposFilas.map((equipoFila, i) => `
-                        <div class="grid-header grid-row-header">${equipoFila}</div>
-                        ${equiposColumnas.map((equipoCol, j) => {
+                    ${condicionesColumnas.map(condicion => `<div class="grid-header grid-col-header">${condicion.texto}</div>`).join('')}
+                    ${condicionesFilas.map((condicionFila, i) => `
+                        <div class="grid-header grid-row-header">${condicionFila.texto}</div>
+                        ${condicionesColumnas.map((condicionCol, j) => {
                             const celda = tablero[i] && tablero[i][j] ? tablero[i][j] : null;
                             const contenido = celda ? celda.nombre : '';
                             const claseTaken = celda ? 'taken' : '';
@@ -1027,7 +1040,7 @@ function ControlWeb() {
             const fila = parseInt($(this).data("fila"));
             const col = parseInt($(this).data("col"));
             
-            cw.mostrarBuscadorJugador(fila, col, equiposFilas[fila], equiposColumnas[col]);
+            cw.mostrarBuscadorJugador(fila, col, condicionesFilas[fila], condicionesColumnas[col]);
         });
 
         // Botón salir
@@ -1064,7 +1077,47 @@ function ControlWeb() {
     // ----------------------------
     // Buscador de jugadores para Football Grid
     // ----------------------------
-    this.mostrarBuscadorJugador = function(fila, col, equipo1, equipo2) {
+    this.mostrarBuscadorJugador = function(fila, col, condicion1, condicion2) {
+        // Generar mensaje de búsqueda basado en los tipos de condición
+        let mensajeBusqueda = "Busca un jugador";
+        
+        // Analizar condiciones para generar el mensaje apropiado
+        const esPosicion1 = condicion1.tipo === 'posicion';
+        const esPosicion2 = condicion2.tipo === 'posicion';
+        const esEdad1 = condicion1.tipo === 'edad';
+        const esEdad2 = condicion2.tipo === 'edad';
+        
+        if (esPosicion1 || esPosicion2) {
+            // Si alguna condición es posición, empezar con la posición
+            if (esPosicion1) {
+                mensajeBusqueda = `Busca un <strong>${condicion1.texto}</strong>`;
+            } else if (esPosicion2) {
+                mensajeBusqueda = `Busca un <strong>${condicion2.texto}</strong>`;
+            }
+        }
+        
+        // Agregar las demás condiciones
+        const condicionesTexto = [];
+        if (condicion1.tipo === 'equipo') {
+            condicionesTexto.push(`que haya jugado en <strong>${condicion1.texto}</strong>`);
+        } else if (condicion1.tipo === 'edad' && !esPosicion1) {
+            condicionesTexto.push(condicion1.texto.toLowerCase());
+        }
+        
+        if (condicion2.tipo === 'equipo') {
+            condicionesTexto.push(`que haya jugado en <strong>${condicion2.texto}</strong>`);
+        } else if (condicion2.tipo === 'edad' && !esPosicion2) {
+            condicionesTexto.push(condicion2.texto.toLowerCase());
+        }
+        
+        if (condicionesTexto.length > 0) {
+            if (esPosicion1 || esPosicion2) {
+                mensajeBusqueda += " " + condicionesTexto.join(" y ");
+            } else {
+                mensajeBusqueda += " " + condicionesTexto.join(" y ");
+            }
+        }
+        
         // Crear modal de búsqueda
         const modalHtml = `
         <div id="modal-buscar-jugador" class="modal-overlay">
@@ -1075,7 +1128,7 @@ function ControlWeb() {
                 </div>
                 <div class="modal-body-jugador">
                     <p class="text-muted small mb-3">
-                        Busca un jugador que haya jugado en <strong>${equipo1}</strong> y <strong>${equipo2}</strong>
+                        ${mensajeBusqueda}
                     </p>
                     <input type="text" id="inputBuscarJugador" class="form-control" placeholder="Escribe el nombre del jugador..." autocomplete="off" />
                     <div id="resultados-busqueda" class="resultados-busqueda"></div>
@@ -1085,11 +1138,11 @@ function ControlWeb() {
         
         $("body").append(modalHtml);
         
-        // Variables para guardar fila/col
+        // Variables para guardar fila/col y condiciones
         window.filaSeleccionada = fila;
         window.colSeleccionada = col;
-        window.equipo1Seleccionado = equipo1;
-        window.equipo2Seleccionado = equipo2;
+        window.condicion1Seleccionada = condicion1;
+        window.condicion2Seleccionada = condicion2;
         
         // Focus en input
         setTimeout(() => $("#inputBuscarJugador").focus(), 100);
@@ -1114,7 +1167,7 @@ function ControlWeb() {
             
             timeoutBusqueda = setTimeout(() => {
                 if (typeof ws !== 'undefined' && ws && typeof ws.buscarJugadores === 'function') {
-                    ws.buscarJugadores(query, equipo1, equipo2);
+                    ws.buscarJugadores(query, window.condicion1Seleccionada, window.condicion2Seleccionada);
                 }
             }, 300);
         });
@@ -1188,8 +1241,8 @@ function ControlWeb() {
         const turnoActual = datos.turnoActual;
         const ganador = datos.ganador;
         const jugadores = datos.jugadores || [];
-        const equiposFilas = datos.equiposFilas || [];
-        const equiposColumnas = datos.equiposColumnas || [];
+        const condicionesFilas = datos.condicionesFilas || [];
+        const condicionesColumnas = datos.condicionesColumnas || [];
         const nick = $.cookie("nick");
         
         const rivalNick = jugadores.find(j => j !== nick) || 'Rival';
@@ -1238,10 +1291,10 @@ function ControlWeb() {
             <div id="game-layout">
                 <div id="basketball-grid-board" class="board-basketballgrid">
                     <div class="grid-corner"></div>
-                    ${equiposColumnas.map(equipo => `<div class="grid-header grid-col-header">${equipo}</div>`).join('')}
-                    ${equiposFilas.map((equipoFila, i) => `
-                        <div class="grid-header grid-row-header">${equipoFila}</div>
-                        ${equiposColumnas.map((equipoCol, j) => {
+                    ${condicionesColumnas.map(condicion => `<div class="grid-header grid-col-header">${condicion.texto}</div>`).join('')}
+                    ${condicionesFilas.map((condicionFila, i) => `
+                        <div class="grid-header grid-row-header">${condicionFila.texto}</div>
+                        ${condicionesColumnas.map((condicionCol, j) => {
                             const celda = tablero[i] && tablero[i][j] ? tablero[i][j] : null;
                             const contenido = celda ? celda.nombre : '';
                             const claseTaken = celda ? 'taken' : '';
@@ -1283,7 +1336,7 @@ function ControlWeb() {
             const fila = parseInt($(this).data("fila"));
             const col = parseInt($(this).data("col"));
             
-            cw.mostrarBuscadorJugadorNBA(fila, col, equiposFilas[fila], equiposColumnas[col]);
+            cw.mostrarBuscadorJugadorNBA(fila, col, condicionesFilas[fila], condicionesColumnas[col]);
         });
 
         // Botón salir
@@ -1320,7 +1373,47 @@ function ControlWeb() {
     // ----------------------------
     // Buscador de jugadores para Basketball Grid
     // ----------------------------
-    this.mostrarBuscadorJugadorNBA = function(fila, col, equipo1, equipo2) {
+    this.mostrarBuscadorJugadorNBA = function(fila, col, condicion1, condicion2) {
+        // Generar mensaje de búsqueda basado en los tipos de condición
+        let mensajeBusqueda = "Busca un jugador";
+        
+        // Analizar condiciones para generar el mensaje apropiado
+        const esPosicion1 = condicion1.tipo === 'posicion';
+        const esPosicion2 = condicion2.tipo === 'posicion';
+        const esEdad1 = condicion1.tipo === 'edad';
+        const esEdad2 = condicion2.tipo === 'edad';
+        
+        if (esPosicion1 || esPosicion2) {
+            // Si alguna condición es posición, empezar con la posición
+            if (esPosicion1) {
+                mensajeBusqueda = `Busca un <strong>${condicion1.texto}</strong>`;
+            } else if (esPosicion2) {
+                mensajeBusqueda = `Busca un <strong>${condicion2.texto}</strong>`;
+            }
+        }
+        
+        // Agregar las demás condiciones
+        const condicionesTexto = [];
+        if (condicion1.tipo === 'equipo') {
+            condicionesTexto.push(`que haya jugado en <strong>${condicion1.texto}</strong>`);
+        } else if (condicion1.tipo === 'edad' && !esPosicion1) {
+            condicionesTexto.push(condicion1.texto.toLowerCase());
+        }
+        
+        if (condicion2.tipo === 'equipo') {
+            condicionesTexto.push(`que haya jugado en <strong>${condicion2.texto}</strong>`);
+        } else if (condicion2.tipo === 'edad' && !esPosicion2) {
+            condicionesTexto.push(condicion2.texto.toLowerCase());
+        }
+        
+        if (condicionesTexto.length > 0) {
+            if (esPosicion1 || esPosicion2) {
+                mensajeBusqueda += " " + condicionesTexto.join(" y ");
+            } else {
+                mensajeBusqueda += " " + condicionesTexto.join(" y ");
+            }
+        }
+        
         // Crear modal de búsqueda
         const modalHtml = `
         <div id="modal-buscar-jugador" class="modal-overlay">
@@ -1331,7 +1424,7 @@ function ControlWeb() {
                 </div>
                 <div class="modal-body-jugador">
                     <p class="text-muted small mb-3">
-                        Busca un jugador que haya jugado en <strong>${equipo1}</strong> y <strong>${equipo2}</strong>
+                        ${mensajeBusqueda}
                     </p>
                     <input type="text" id="inputBuscarJugadorNBA" class="form-control" placeholder="Escribe el nombre del jugador..." autocomplete="off" />
                     <div id="resultados-busqueda-nba" class="resultados-busqueda"></div>
@@ -1341,11 +1434,11 @@ function ControlWeb() {
         
         $("body").append(modalHtml);
         
-        // Variables para guardar fila/col
+        // Variables para guardar fila/col y condiciones
         window.filaSeleccionada = fila;
         window.colSeleccionada = col;
-        window.equipo1Seleccionado = equipo1;
-        window.equipo2Seleccionado = equipo2;
+        window.condicion1Seleccionada = condicion1;
+        window.condicion2Seleccionada = condicion2;
         
         // Focus en input
         setTimeout(() => $("#inputBuscarJugadorNBA").focus(), 100);
@@ -1370,7 +1463,7 @@ function ControlWeb() {
             
             timeoutBusqueda = setTimeout(() => {
                 if (typeof ws !== 'undefined' && ws && typeof ws.buscarJugadoresNBA === 'function') {
-                    ws.buscarJugadoresNBA(query, equipo1, equipo2);
+                    ws.buscarJugadoresNBA(query, window.condicion1Seleccionada, window.condicion2Seleccionada);
                 }
             }, 300);
         });
@@ -1842,7 +1935,7 @@ this.mostrarPaginaEstadisticas = function(email) {
                             </div>
                         </div>
                         <div class="stats-info">
-                            <p class="text-muted text-center mt-4"><i class="fa fa-info-circle"></i> Solo se cuentan partidas multijugador</p>
+                            <p class="text-center mt-4" style="color: white;"><i class="fa fa-info-circle"></i> Solo se cuentan partidas multijugador</p>
                         </div>
                     </div>
                 </div>`;
@@ -2040,4 +2133,5 @@ this.mostrarPaginaPerfil = function(email) {
     }
 };
 }
+
 

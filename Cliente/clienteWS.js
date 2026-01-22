@@ -62,8 +62,8 @@ function ClienteWS(){
       if (datos.modo === 'footballgrid' && typeof cw !== 'undefined' && cw && typeof cw.mostrarTableroFootballGrid === 'function'){
         cw.mostrarTableroFootballGrid({
           tablero: Array(3).fill(null).map(() => Array(3).fill(null)),
-          equiposFilas: datos.equiposFilas,
-          equiposColumnas: datos.equiposColumnas,
+          condicionesFilas: datos.condicionesFilas,
+          condicionesColumnas: datos.condicionesColumnas,
           jugadores: [cli.email],
           turnoActual: null,
           ganador: null
@@ -71,8 +71,8 @@ function ClienteWS(){
       } else if (datos.modo === 'basketballgrid' && typeof cw !== 'undefined' && cw && typeof cw.mostrarTableroBasketballGrid === 'function'){
         cw.mostrarTableroBasketballGrid({
           tablero: Array(3).fill(null).map(() => Array(3).fill(null)),
-          equiposFilas: datos.equiposFilas,
-          equiposColumnas: datos.equiposColumnas,
+          condicionesFilas: datos.condicionesFilas,
+          condicionesColumnas: datos.condicionesColumnas,
           jugadores: [cli.email],
           turnoActual: null,
           ganador: null
@@ -481,25 +481,25 @@ function ClienteWS(){
     });
   };
 
-  this.buscarJugadores=function(query, equipo1, equipo2){
+  this.buscarJugadores=function(query, condicion1, condicion2){
     if (!this.socket){
       return;
     }
     this.socket.emit("buscarJugadores",{
       "query":query,
-      "equipo1":equipo1,
-      "equipo2":equipo2
+      "condicion1":condicion1,
+      "condicion2":condicion2
     });
   };
 
-  this.buscarJugadoresNBA=function(query, equipo1, equipo2){
+  this.buscarJugadoresNBA=function(query, condicion1, condicion2){
     if (!this.socket){
       return;
     }
     this.socket.emit("buscarJugadoresNBA",{
       "query":query,
-      "equipo1":equipo1,
-      "equipo2":equipo2
+      "condicion1":condicion1,
+      "condicion2":condicion2
     });
   };
 

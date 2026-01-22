@@ -76,8 +76,8 @@ function ServidorWS(io){
                         "tamano":3, 
                         "esIA":esIA, 
                         "modo": "footballgrid",
-                        "equiposFilas": res.equiposFilas,
-                        "equiposColumnas": res.equiposColumnas
+                        "condicionesFilas": res.condicionesFilas,
+                        "condicionesColumnas": res.condicionesColumnas
                     });
                 } else if (modoJuego === 'basketballgrid' && res){
                     srv.enviarAlRemitente(socket,"partidaCreada",{
@@ -85,8 +85,8 @@ function ServidorWS(io){
                         "tamano":3, 
                         "esIA":esIA, 
                         "modo": "basketballgrid",
-                        "equiposFilas": res.equiposFilas,
-                        "equiposColumnas": res.equiposColumnas
+                        "condicionesFilas": res.condicionesFilas,
+                        "condicionesColumnas": res.condicionesColumnas
                     });
                 } else if (modoJuego === 'ultimatettt' && res){
                     srv.enviarAlRemitente(socket,"partidaCreada",{
@@ -137,12 +137,12 @@ function ServidorWS(io){
                         
                         // Para Grid games, enviar equipos
                         if (partida.modo === 'footballgrid'){
-                            estadoJuego.equiposFilas = partida.equiposFilas;
-                            estadoJuego.equiposColumnas = partida.equiposColumnas;
+                            estadoJuego.condicionesFilas = partida.condicionesFilas;
+                            estadoJuego.condicionesColumnas = partida.condicionesColumnas;
                             estadoJuego.modo = 'footballgrid';
                         } else if (partida.modo === 'basketballgrid'){
-                            estadoJuego.equiposFilas = partida.equiposFilas;
-                            estadoJuego.equiposColumnas = partida.equiposColumnas;
+                            estadoJuego.condicionesFilas = partida.condicionesFilas;
+                            estadoJuego.condicionesColumnas = partida.condicionesColumnas;
                             estadoJuego.modo = 'basketballgrid';
                         } else if (partida.modo === 'ultimatettt'){
                             estadoJuego.modo = 'ultimatettt';
@@ -166,10 +166,22 @@ function ServidorWS(io){
 
             socket.on('eliminarPartida',function(datos){
                 const codigo = datos ? datos.codigo : undefined;
+                const nick = datos ? datos.nick : undefined;
+                
                 if (codigo && sistema.partidas[codigo]){
+                    const partida = sistema.partidas[codigo];
+                    
+                    // Verificar que el usuario sea el creador de la partida
+                    const creador = partida.jugadores[0];
+                    const emailCreador = creador ? (creador.email || creador.nick) : null;
+                    
+                    if (emailCreador !== nick) {
+                        srv.enviarAlRemitente(socket,'partidaEliminada',{ok:false, codigo:codigo, msg:'Solo el creador puede eliminar la partida'});
+                        return;
+                    }
+                    
                     // Limpiar referencia de partida en los jugadores
                     try {
-                        const partida = sistema.partidas[codigo];
                         if (partida && Array.isArray(partida.jugadores)){
                             partida.jugadores.forEach(function(j){
                                 if (j){
@@ -185,7 +197,7 @@ function ServidorWS(io){
                     io.emit("listaPartidas",lista);
                 }
                 else{
-                    srv.enviarAlRemitente(socket,'partidaEliminada',{ok:false,codigo:codigo});
+                    srv.enviarAlRemitente(socket,'partidaEliminada',{ok:false,codigo:codigo, msg:'Partida no encontrada'});
                 }
             });
 
@@ -251,8 +263,8 @@ function ServidorWS(io){
                     
                     // Enviar estado actualizado a todos (sin mensaje de error)
                     const estadoJuego = sistema.obtenerEstadoPartida(codigo);
-                    estadoJuego.equiposFilas = resultado.equiposFilas;
-                    estadoJuego.equiposColumnas = resultado.equiposColumnas;
+                    estadoJuego.condicionesFilas = resultado.condicionesFilas;
+                    estadoJuego.condicionesColumnas = resultado.condicionesColumnas;
                     estadoJuego.modo = 'footballgrid';
                     io.to(codigo).emit('movimientoRealizadoFootballGrid', estadoJuego);
                     
@@ -288,8 +300,8 @@ function ServidorWS(io){
                     
                     // Enviar estado actualizado a todos (sin mensaje de error)
                     const estadoJuego = sistema.obtenerEstadoPartida(codigo);
-                    estadoJuego.equiposFilas = resultado.equiposFilas;
-                    estadoJuego.equiposColumnas = resultado.equiposColumnas;
+                    estadoJuego.condicionesFilas = resultado.condicionesFilas;
+                    estadoJuego.condicionesColumnas = resultado.condicionesColumnas;
                     estadoJuego.modo = 'basketballgrid';
                     io.to(codigo).emit('movimientoRealizadoBasketballGrid', estadoJuego);
                     
@@ -339,27 +351,27 @@ function ServidorWS(io){
 
             socket.on('buscarJugadores',function(datos){
                 const query = datos ? datos.query : undefined;
-                const equipo1 = datos ? datos.equipo1 : undefined;
-                const equipo2 = datos ? datos.equipo2 : undefined;
+                const condicion1 = datos ? datos.condicion1 : undefined;
+                const condicion2 = datos ? datos.condicion2 : undefined;
 
                 if (!query || query.trim() === ''){
                     return srv.enviarAlRemitente(socket,'resultadosBusquedaJugadores',{jugadores: []});
                 }
 
-                const resultados = sistema.buscarJugadoresPorNombre(query.trim(), equipo1, equipo2);
+                const resultados = sistema.buscarJugadoresPorNombre(query.trim(), condicion1, condicion2);
                 srv.enviarAlRemitente(socket,'resultadosBusquedaJugadores',{jugadores: resultados});
             });
 
             socket.on('buscarJugadoresNBA',function(datos){
                 const query = datos ? datos.query : undefined;
-                const equipo1 = datos ? datos.equipo1 : undefined;
-                const equipo2 = datos ? datos.equipo2 : undefined;
+                const condicion1 = datos ? datos.condicion1 : undefined;
+                const condicion2 = datos ? datos.condicion2 : undefined;
 
                 if (!query || query.trim() === ''){
                     return srv.enviarAlRemitente(socket,'resultadosBusquedaJugadoresNBA',{jugadores: []});
                 }
 
-                const resultados = sistema.buscarJugadoresNBAPorNombre(query.trim(), equipo1, equipo2);
+                const resultados = sistema.buscarJugadoresNBAPorNombre(query.trim(), condicion1, condicion2);
                 srv.enviarAlRemitente(socket,'resultadosBusquedaJugadoresNBA',{jugadores: resultados});
             });
 
