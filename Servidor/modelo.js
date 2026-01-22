@@ -1108,6 +1108,7 @@ this.actualizarPerfil=function(email, datosNuevos, callback){
 }
 function Usuario(nick){
  this.nick=nick;
+ this.email=nick; // El nick es el email del usuario
 }
 function Partida(codigo, tamano){
  this.codigo=codigo;

@@ -177,9 +177,11 @@ app.post('/loginUsuario', function(req, res, next){
         if (!user){ return res.status(401).send({ok:false,msg:'Credenciales inválidas'}); }
         req.login(user, function(err2){
             if (err2){ return res.status(500).send({ok:false,msg:'Error creando sesión'}); }
-            // Establecer cookie 'nick' con el email
+            // Establecer cookie 'nick' con el email (identificador único)
             setNickCookie(req, res, user.email);
-            return res.send({ok:true,nick:user.email,email:user.email});
+            // Enviar nick real si existe, sino usar parte del email
+            const nickDisplay = user.nick || user.email.split('@')[0];
+            return res.send({ok:true,nick:nickDisplay,email:user.email});
         });
     })(req,res,next);
 });

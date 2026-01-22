@@ -90,10 +90,13 @@ function ClienteRest() {
             data: JSON.stringify({ email: email, password: password }),
             contentType: 'application/json',
             success: function(data) {
-                if (data && data.ok && data.nick){
-                    $.cookie('nick', data.nick);
+                if (data && data.ok && data.email){
+                    // Guardar email como identificador único en cookie 'nick'
+                    $.cookie('nick', data.email);
+                    // Guardar nick de pantalla en cookie separada
+                    $.cookie('nickDisplay', data.nick || data.email.split('@')[0]);
                     if (typeof ws !== 'undefined' && ws){
-                        ws.email = data.email || data.nick || email;
+                        ws.email = data.email;
                     }
                     if (typeof $("#msg").html === 'function'){
                         $("#msg").html('<div class="alert alert-success">Bienvenido al sistema, ' + data.nick + '</div>');

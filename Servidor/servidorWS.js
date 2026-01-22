@@ -166,16 +166,21 @@ function ServidorWS(io){
 
             socket.on('eliminarPartida',function(datos){
                 const codigo = datos ? datos.codigo : undefined;
-                const nick = datos ? datos.nick : undefined;
+                const emailUsuario = datos ? datos.nick : undefined; // El cliente envía el email en el campo nick
+                
+                console.log('eliminarPartida - codigo:', codigo, 'emailUsuario:', emailUsuario);
                 
                 if (codigo && sistema.partidas[codigo]){
                     const partida = sistema.partidas[codigo];
                     
                     // Verificar que el usuario sea el creador de la partida
                     const creador = partida.jugadores[0];
+                    // El email del creador es el identificador único
                     const emailCreador = creador ? (creador.email || creador.nick) : null;
                     
-                    if (emailCreador !== nick) {
+                    console.log('eliminarPartida - creador:', creador, 'emailCreador:', emailCreador);
+                    
+                    if (emailCreador !== emailUsuario) {
                         srv.enviarAlRemitente(socket,'partidaEliminada',{ok:false, codigo:codigo, msg:'Solo el creador puede eliminar la partida'});
                         return;
                     }

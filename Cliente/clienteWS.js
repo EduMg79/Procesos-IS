@@ -390,7 +390,16 @@ function ClienteWS(){
     if (!this.socket){
       return;
     }
-    this.socket.emit("eliminarPartida",{"nick":this.nick,"codigo":codigo});
+    // Asegurar que tenemos el email desde la cookie si no está establecido
+    try {
+      if (!this.email){
+        const nick = (typeof $ !== 'undefined' && typeof $.cookie === 'function') ? $.cookie('nick') : null;
+        if (nick){
+          this.email = nick;
+        }
+      }
+    } catch(e) {}
+    this.socket.emit("eliminarPartida",{"nick":this.email,"codigo":codigo});
   };
 
   this.realizarMovimiento=function(fila, columna){
